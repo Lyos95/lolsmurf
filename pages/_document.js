@@ -18,7 +18,7 @@ class MyDocument extends Document {
                     <Main />
                     <NextScript />                   
                     <script
-                        src="https://www.paypal.com/sdk/js?client-id=AVdszeXsdUvowU-pnOqs0odD9EeZoy0hSx-7Zdf10CxYDleR-c96oEaKxEhZpoEbf1z4lGfwkpDhImqD">
+                        src="https://www.paypal.com/sdk/js?client-id=ActeDxf8liyWa8og-xYgIJs5G_JiB70Zk_w1_Xf-M-UosC8j7Eq8V4_Imd5us934RPmWJf6LXPtty3xE">
                     </script>
                 </body>
             </Html>

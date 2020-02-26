@@ -34,7 +34,7 @@ export default withRedux(initStore)(
             return (
                 <Container>
                     <DefaultSeo
-                        title="LeagueSmurf - Best League of Legends smurfs"
+                        title="LolSmurf - Best League of Legends smurfs"
                         description="Unverified Ranked Unranked. Cheap Prices. Instant Delivery. Buy now! Lifetime Warranty. Lifetime Warranty. Highlights: Online Buying Option Available, We Offer Premium Support Service, Providing Instant Delivery. "
                     />
                     <Provider store={store}>

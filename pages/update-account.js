@@ -7,9 +7,8 @@ import Router from 'next/router'
 
 
 const UpdateAccount = (props) => {
-  console.log(props);
+
   const router = useRouter()
-  console.log(router.query);
   
   
   const [inputFields, setInputFields] = useState(
@@ -56,7 +55,6 @@ const UpdateAccount = (props) => {
   };
 
   const handleSubmit = e => {
-    console.log('aaa');
     
     e.preventDefault();
     axios.post('/api/accounts/update-account',inputFields)

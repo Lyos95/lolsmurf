@@ -14,7 +14,7 @@ class Index extends Component {
     }
     async componentDidMount() {
         let approval =  await this.props.checkIfWeHaveThatAmountOfAccs()
-        console.log(approval);
+
         
         if(!approval){
           toast.info('We have updated your cart, we no longer have that amount of accounts', {

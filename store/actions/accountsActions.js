@@ -14,7 +14,6 @@ export const fetchAccount = (account) => async (dispatch) => {
         email: account.email,
         password: account.password
     });
-    console.log(res);
 
     dispatch({ type: FETCH_ACCOUNT, payload: res.data });
 };
@@ -38,7 +37,7 @@ export const fetchAccountsCounter = () => async (dispatch, getState) => {
 }
 
 export const checkIfWeHaveThatAmountOfAccs = () => async(dispatch,getState) => {
-    console.log('sadasdasdasdasdasdasd');
+
     
     let enumRegions = {
         "EU WEST": "EUW",
@@ -53,28 +52,22 @@ export const checkIfWeHaveThatAmountOfAccs = () => async(dispatch,getState) => {
     let products = getState().products.map((product) => {
         return { ...product,quantity:0, stock: data[enumRegions[product.title]] }
     })
-    console.log(products);
+
     let addedItems = getState().addedItems
     let newtotalProducts = getState().totalProducts
     let newSelectedProduct = Object.assign({},getState().selectedProduct)
-    console.log((addedItems));
+
     let newTotal = getState().total
     for(let i = 0; i<addedItems.length; i++) {
         for(let j=0; j<products.length; j++){
-            console.log(addedItems[i].title);
-            console.log( products[j].title);
-            console.log(products[j].stock);
-            console.log( addedItems[i].quantity);
             
             if(addedItems[i].title === products[j].title && products[j].stock < addedItems[i].quantity){
                 newTotal = newTotal - (addedItems[i].quantity-products[j].stock)*products[j].price
                 newtotalProducts = newtotalProducts - (addedItems[i].quantity-products[j].stock)
-                console.log(products[j].stock-addedItems[i].quantity);
-                console.log(newtotalProducts);                
+             
                 addedItems[i].quantity = products[j].stock
                 addedItems[i].stock = products[j].stock
                 tran = false
-                console.log(tran);
                 if(products[j].title === newSelectedProduct.title){
                     newSelectedProduct.stock = products[j].stock
                     
@@ -82,14 +75,12 @@ export const checkIfWeHaveThatAmountOfAccs = () => async(dispatch,getState) => {
                     
                 }
                 
-                console.log('detected inconsistencia en'+addedItems[i].title);
                 
             }
         }
     }
     addedItems = addedItems.filter(item => item.stock > 0)
-    console.log(addedItems);
-    console.log(tran);
+
     let addedItemsCopy = addedItems.map(item => item) 
     let productsCopy = products.map(item => item) 
     dispatch({ type: CHECK_IF_ENOUGH_ACCS, payload: {
@@ -99,7 +90,7 @@ export const checkIfWeHaveThatAmountOfAccs = () => async(dispatch,getState) => {
                                                      totalProducts: newtotalProducts,
                                                      selectedProduct: newSelectedProduct
                                                     } });
-    console.log(tran);
+
     return tran
 }
 
@@ -110,7 +101,6 @@ export const verifyTransaction = (orderID, email, total, products) => async (dis
         amount: total,
         products: products
     });
-    console.log(response.data);
     
     dispatch({type: RESET, payload:{}})
     dispatch({type: SAVE_CLIENT_ACCOUNTS, payload:response.data.accounts})
@@ -123,7 +113,7 @@ export const saveAccounts = (products) => async (dispatch) => {
 }
 
 export const fetchClientAccounts = (accounts) => async(dispatch) => {
-    console.log(accounts);
+
     
 }
 

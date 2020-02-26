@@ -78,13 +78,10 @@ const Account = mongoose.model("account");
                                   "TURK":0,
                                   "PBE":0
                                 };
-                                console.log('init');
                                 
             let accountsFromBD = await Account.find();
-            console.log(accountsFromBD);
             
             for(let i = 0; i< accountsFromBD.length; i++){
-                console.log('ite '+i);
                 if(accountsFromBD[i].status === 'NOT_SOLD'){
                     accountsObject[accountsFromBD[i].region] = accountsObject[accountsFromBD[i].region]+ 1;
                 }

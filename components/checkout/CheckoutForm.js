@@ -26,7 +26,6 @@ function CheckoutForm({total, shipping,verifyTransaction,checkIfWeHaveThatAmount
         
             let resultado = async () =>{
               let approval =  await checkIfWeHaveThatAmountOfAccs()
-              console.log(approval);
               
               if(!approval){
                 toast.info('We have updated your cart, we no longer have that amount of accounts', {
@@ -44,7 +43,8 @@ function CheckoutForm({total, shipping,verifyTransaction,checkIfWeHaveThatAmount
         
         
 
-       // if(sameEmail){            
+       // if(sameEmail){ 
+                      
            if(total > 0){
             paypal.Buttons({createOrder: async function(data, actions) {
                 // This function sets up the details of the transaction, including the amount and line item details.
@@ -61,7 +61,6 @@ function CheckoutForm({total, shipping,verifyTransaction,checkIfWeHaveThatAmount
                   
                       // This function captures the funds from the transaction.
                       return actions.order.capture().then(async function(details) {
-                          console.log(details.payer);                    
                         // This function shows a transaction success message to your buyer.
                         
                         let response = await verifyTransaction(data.orderID,details.payer.email_address,total,products)
@@ -83,10 +82,9 @@ function CheckoutForm({total, shipping,verifyTransaction,checkIfWeHaveThatAmount
             }
         }*/
     }
-    }, [sameEmail])
+    }, [sameEmail,total])
 
     function handlechange (event){
-        console.log(event.target);
         if(event.target.name === 'email'){
             setEmail(event.target.value)
             let regex = new RegExp(/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/)
@@ -147,7 +145,6 @@ function CheckoutForm({total, shipping,verifyTransaction,checkIfWeHaveThatAmount
         
     }
     function handleSubmit() {
-        console.log("Form submitted.");
     }
 
     let totalAmount = (total + shipping).toFixed(2)

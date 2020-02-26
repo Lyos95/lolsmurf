@@ -30,7 +30,7 @@ const initState = {
         {
             id: 1,
             title: "EU WEST",
-            price: 9.25,
+            price: 0.01,
             image: require("../../assets/regions/demacia.png"),
             stock: 0,
             quantity: 0
@@ -260,10 +260,8 @@ const cartReducer = (state = initState, action) => {
             shipping: state.shipping += 6
         }
     }
-    console.log(action);
     
     if(action.type === SAVE_CLIENT_ACCOUNTS) {
-        console.log(action);
         
         return {
             ...state,

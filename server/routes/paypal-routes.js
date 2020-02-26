@@ -5,10 +5,10 @@ const express = require('express')
 const router = express.Router()
 const User = mongoose.model("user");
 const bcrypt = require("bcryptjs")
-const PAYPAL_CLIENT = 'AVdszeXsdUvowU-pnOqs0odD9EeZoy0hSx-7Zdf10CxYDleR-c96oEaKxEhZpoEbf1z4lGfwkpDhImqD';
-const PAYPAL_SECRET = 'EI9BewzQVbobJgxkKBLhov_xy4_CrJNaM7CdMd_e4dThZ7ypo7SXDePGhg4tbBr7Cxij1Gf5kGmzJ0rn';
-const PAYPAL_OAUTH_API = 'https://api.sandbox.paypal.com/v1/oauth2/token/';
-const PAYPAL_ORDER_API = 'https://api.sandbox.paypal.com/v2/checkout/orders/';
+const PAYPAL_CLIENT = 'ActeDxf8liyWa8og-xYgIJs5G_JiB70Zk_w1_Xf-M-UosC8j7Eq8V4_Imd5us934RPmWJf6LXPtty3xE';
+const PAYPAL_SECRET = 'EO0gZ4bm0DrrEXvyri_nIiF_mYBJpaCeT-e8OwuUaJYXxeUwo7xh61Jos_ZLxTQOmPo86KWTWR0QQFHr';
+const PAYPAL_OAUTH_API = 'https://api.paypal.com/v1/oauth2/token/';
+const PAYPAL_ORDER_API = 'https://api.paypal.com/v2/checkout/orders/';
 var Base64 = require('js-base64').Base64;
 const axios = require('axios');
 const Account = mongoose.model("account");
@@ -25,7 +25,7 @@ router.post('/', async function (req, res, next) {
   try {
 
     let orderID = req.body.orderID
-    console.log(orderID);
+
 
     let email = req.body.email
     let amount = req.body.amount
@@ -49,11 +49,10 @@ router.post('/', async function (req, res, next) {
         Authorization: `Bearer ${auth.data.access_token}`
       }
     })
-    console.log(details);
+
 
     // 4. Handle any errors from the call
     if (details.error) {
-      console.log('entrada 1');
 
       //   return response.send(500);
     }
@@ -93,14 +92,18 @@ router.post('/', async function (req, res, next) {
 
 
       }
-      const transporter = nodemailer.createTransport({
-        service: 'gmail',
+
+      var transporter = nodemailer.createTransport({
+        host: 'mail.privateemail.com',
+        port: 465,
+        secure: true, // true for 465, false for other ports
         auth: {
-          user: 'prefloplab@gmail.com',
-          pass: 'Television1+'
+          user: 'support@lolsmurf.net', // your domain email address
+          pass: 'television1' // your password
         }
       });
-      console.log(accountsSold);
+
+
       
       let html = `<html>
                     <head>
@@ -149,13 +152,14 @@ router.post('/', async function (req, res, next) {
       </body>
       </html>`
       const mailOptions = {
-        from: 'prefloplab@gmail.com',
+        from: 'support@lolsmurf.net',
         to: 'fran_uma@outlook.es',
         subject: 'League of Legends Smurfs',
         html: html
       };
       transporter.sendMail(mailOptions, (err, response) => {
         if (err) {
+          
           console.error('Error sending the mail');
         } else {
           res.status(200).json('recovery email sent');
@@ -167,7 +171,6 @@ router.post('/', async function (req, res, next) {
         accounts: accountsSold
       });
     } else {
-      console.log('Tuve un error');
 
       res.send({
         response: '400',
@@ -176,8 +179,6 @@ router.post('/', async function (req, res, next) {
     }
     // return response.send(200);
   } catch (e) {
-    console.log(e);
-    console.log('error');
 
     res.send({
       response: '400',

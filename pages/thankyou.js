@@ -28,7 +28,6 @@ class Index extends Component {
         }
 
         let getName = (region) => {
-            console.log(this.props.products);
             switch (region) {
                 case 'EUW': 
                     return 'EU WEST'

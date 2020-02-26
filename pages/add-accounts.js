@@ -46,7 +46,6 @@ const AddAccounts = (props) => {
   };
 
   useEffect(() => {
-    console.log(props);
     if(!props.logged){
       Router.push({
         pathname: '/login'
@@ -139,7 +138,6 @@ const AddAccounts = (props) => {
 };
 
 const mapStateToProps = (state) => {
-  console.log(state.userLogged);
   
   return {
       logged: state.userLogged

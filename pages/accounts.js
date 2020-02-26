@@ -24,7 +24,6 @@ class Accounts extends Component {
     })
     }else {
     const {data} = await axios.get('/api/accounts');
-    console.log(data);
     
     let columns = data.map((account) => {
         return {
