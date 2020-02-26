@@ -30,7 +30,7 @@ const initState = {
         {
             id: 1,
             title: "EU WEST",
-            price: 0.01,
+            price: 9.25,
             image: require("../../assets/regions/demacia.png"),
             stock: 0,
             quantity: 0

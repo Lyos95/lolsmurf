@@ -25,14 +25,14 @@ router.post('/', async function (req, res, next) {
   try {
 
     let orderID = req.body.orderID
-
+   
 
     let email = req.body.email
     let amount = req.body.amount
     let products = req.body.products
-
+    
     let basicAuth = await Base64.encodeURI(`${PAYPAL_CLIENT}:${PAYPAL_SECRET}`);
-
+  
 
     let axiosConfig = {
       headers: {
@@ -42,7 +42,7 @@ router.post('/', async function (req, res, next) {
     };
 
     let auth = await axios.post(PAYPAL_OAUTH_API, `grant_type=client_credentials`, axiosConfig)
-
+    
     let details = await axios.get(PAYPAL_ORDER_API + orderID, {
       headers: {
         Accept: `application/json`,
@@ -58,8 +58,7 @@ router.post('/', async function (req, res, next) {
     }
 
     // 5. Validate the transaction details are as expected
-
-
+    
     if (Number(details.data.purchase_units[0].amount.value) === Number(amount)) {
       //    return response.send(400);
 
@@ -153,7 +152,7 @@ router.post('/', async function (req, res, next) {
       </html>`
       const mailOptions = {
         from: 'support@lolsmurf.net',
-        to: 'fran_uma@outlook.es',
+        to: email,
         subject: 'League of Legends Smurfs',
         html: html
       };
@@ -179,7 +178,8 @@ router.post('/', async function (req, res, next) {
     }
     // return response.send(200);
   } catch (e) {
-
+    console.log(e);
+    
     res.send({
       response: '400',
       accounts: []

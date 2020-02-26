@@ -66,6 +66,8 @@ function CheckoutForm({total, shipping,verifyTransaction,checkIfWeHaveThatAmount
                         let response = await verifyTransaction(data.orderID,details.payer.email_address,total,products)
                         
                           //Llamada al endpoint para traer las cuentas para el usuario
+                          console.log(response);
+                          
                           Router.push({
                             pathname: '/thankyou'
                         })
