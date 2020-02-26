@@ -54,7 +54,7 @@ class Index extends Component {
                                 <AccordionItem>
                                     <AccordionItemHeading>
                                         <AccordionItemButton>
-                                            Jow do you level your accounts?
+                                            How do you level your accounts?
                                         </AccordionItemButton>
                                     </AccordionItemHeading>
                                     <AccordionItemPanel>
@@ -71,7 +71,7 @@ class Index extends Component {
                                     </AccordionItemHeading>
                                     <AccordionItemPanel>
                                         <p>
-                                        After purchasing your LoL account the login details will be displayed INSTANTLY on your screen. No more waiting for emails with account details in! Of course we will also send you an email with all the account information.
+                                        After purchasing your LoL account the login details will be displayed <b>INSTANTLY</b> on your screen. No more waiting for emails with account details in! Of course we will also send you an email with all the account information.
                                         </p>
                                     </AccordionItemPanel>
                                 </AccordionItem>
@@ -83,7 +83,7 @@ class Index extends Component {
                                     </AccordionItemHeading>
                                     <AccordionItemPanel>
                                         <p>
-                                        No, your main account will not be banned. This is a completly new account so your main account is completly safe.
+                                        <b>No</b>, your main account will not be banned. This is a completly new account so your main account is completly safe.
                                         </p>
                                     </AccordionItemPanel>
                                 </AccordionItem>
@@ -95,7 +95,7 @@ class Index extends Component {
                                     </AccordionItemHeading>
                                     <AccordionItemPanel>
                                         <p>
-                                            Yes! But you have to buy 20 chamops, so you will need to buy all the 450BE champs and from then you can buy the champs you like the most!
+                                            Yes! But you have to buy <b>20 champs</b>, so you will need to buy all the 450BE champs and from then you can buy the champs you like the most!
                                         </p>
                                     </AccordionItemPanel>
                                 </AccordionItem>
