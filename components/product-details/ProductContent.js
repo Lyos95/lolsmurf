@@ -120,7 +120,7 @@ class ProductContent extends Component {
                             <li><span>Product:</span> <a>League of Legends lvl 30 account</a></li>
                             <li><span>Email:</span><a>Unverified</a></li>
                             <li><span>Warranty:</span><a> Lifetime warranty</a></li>
-                            <li><span>BE:</span> <a>±40000</a></li>
+                            <li><span>BE:</span> <a>±35000</a></li>
                         </ul>
 
                         <div className="product-size-wrapper">
