@@ -54,11 +54,7 @@ class DetailsTab extends Component {
                                     </a>
                                 </li>
 
-                                <li onClick={(e) => {e.preventDefault(); this.openTabSection(e, 'tab4')}}>
-                                    <a href="#">
-                                        <div className="dot"></div> Reviews
-                                    </a>
-                                </li>
+                            
                             </ul>
                         </div>
 
@@ -72,7 +68,7 @@ class DetailsTab extends Component {
                                         <div className="row">
                                             <div className="col-lg-6 col-md-6">
                                                 <ul>
-                                                    <li>BE: Around 40000</li>
+                                                    <li>BE: Around 35000</li>
                                                     <li>Warranty: lifetime warranty</li>
                                                     <li>Email: Unverified</li>
                                                 </ul>

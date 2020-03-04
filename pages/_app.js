@@ -20,6 +20,20 @@ export default withRedux(initStore)(
             super(props)
             this.persistor = persistStore(props.store)
           }
+          componentDidMount () {
+            // Include the Crisp code here, without the <script></script> tags
+            window.$crisp = [];
+            window.CRISP_WEBSITE_ID = "340f0a84-4c85-43bf-a5a0-ec570e266448";
+        
+            (function() {
+              var d = document;
+              var s = d.createElement("script");        
+              s.src = "https://client.crisp.chat/l.js";
+              s.async = 1;
+              d.getElementsByTagName("head")[0].appendChild(s);
+            })();
+           };
+          
         static async getInitialProps ({ Component, ctx }) {
             return {
                 pageProps: Component.getInitialProps
