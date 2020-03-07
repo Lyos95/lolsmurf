@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Link from 'next/link';
-import TrustBoxContainer from '../trustbox/Trustbox';
 
 const useTagFunc = () => {
     let useTag = '<use xlink:href="#star" />';
@@ -54,11 +53,7 @@ class DetailsTab extends Component {
                                         <div className="dot"></div> Why Buy From Us
                                     </a>
                                 </li>
-                                <li onClick={(e) => {e.preventDefault(); this.openTabSection(e, 'tab4')}}>
-                                    <a href="#">
-                                        <div className="dot"></div> Reviewa
-                                    </a>
-                                </li>
+                                
                             
                             </ul>
                         </div>
@@ -128,7 +123,6 @@ class DetailsTab extends Component {
                                             
 
                                             <div className="review-comments">
-                                              <TrustBoxContainer data-template-id="53aa8912dec7e10d38f59f36" />
                                             </div>
                                         </div>
                                     </div>
