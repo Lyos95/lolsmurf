@@ -26,6 +26,13 @@ class DetailsTab extends Component {
         evt.currentTarget.className += "current";
     }
 
+    componentDidMount() {
+        var aScript = document.createElement('script');
+        aScript.type = 'text/javascript';
+        aScript.src = "https://apps.elfsight.com/p/platform.js";
+        aScript.defer = "true"
+        document.head.appendChild(aScript);
+    }
     render() {
         return (
             <div className="col-lg-12 col-md-12 tamosdandomargen">
@@ -52,9 +59,14 @@ class DetailsTab extends Component {
                                     <a href="#">
                                         <div className="dot"></div> Why Buy From Us
                                     </a>
-                                </li>
+                                </li> 
+                                <li onClick={(e) => {e.preventDefault(); this.openTabSection(e, 'tab4')}}>
+                                    <a href="#">
+                                        <div className="dot"></div> Reviews
+                                    </a>
+                                </li>                                
                                 
-                            
+                                
                             </ul>
                         </div>
 
@@ -118,9 +130,8 @@ class DetailsTab extends Component {
                                 <div id="tab4" className="tabs_item">
                                     <div className="products-details-tab-content">
                                         <div className="product-review-form">
-                                            <h3>Customer Reviews</h3>
 
-                                            
+                                            <div class="elfsight-app-1512fc74-69be-46f6-9621-4a51dd193515"></div>                                           
 
                                             <div className="review-comments">
                                             </div>

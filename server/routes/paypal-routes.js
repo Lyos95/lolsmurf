@@ -125,11 +125,15 @@ router.post('/', async function (req, res, next) {
                       tr:nth-child(even) {
                         background-color: #dddddd;
                       }
+                      #review {
+                        text-align: center;
+                      }
                       </style>
                   </head>
                   <body>
                     <h2>Accounts</h2>
                     </br></br>
+                    Leave us a <a href="https://es.trustpilot.com/evaluate/lolsmurf.net">review</<a> 
                     <table>
                       <tr>
                         <th>Region</th>
@@ -147,7 +151,7 @@ router.post('/', async function (req, res, next) {
 
       }
       html = html + `</table>
-
+      <p id='review' >Leave us a <a href="https://es.trustpilot.com/evaluate/lolsmurf.net">review</a></p> 
       </body>
       </html>`
       const mailOptions = {
