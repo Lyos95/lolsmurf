@@ -6,7 +6,6 @@ import Facility from '../components/shop-style-four/Facility';
 import OfferArea from '../components/shop-style-four/OfferArea';
 import Products from '../components/shop-style-one/Products';
 import { connect } from 'react-redux';
-import TrustBoxContainer from '../components/trustbox/TrustBox'
 import {checkIfWeHaveThatAmountOfAccs} from '../store/actions/accountsActions'
 import { ToastContainer, toast, Slide } from 'react-toastify';
 class Index extends Component {
@@ -33,7 +32,6 @@ class Index extends Component {
     render() {
         return (
             <React.Fragment>
-                <TrustBoxContainer/>
                 <Navbar />
                 <Banner />
                 <Facility />
