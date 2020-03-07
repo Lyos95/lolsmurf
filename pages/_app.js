@@ -20,7 +20,7 @@ export default withRedux(initStore)(
             super(props)
             this.persistor = persistStore(props.store)
           }
-          componentDidMount () {
+          async componentDidMount () {
             // Include the Crisp code here, without the <script></script> tags
             window.$crisp = [];
             window.CRISP_WEBSITE_ID = "340f0a84-4c85-43bf-a5a0-ec570e266448";
@@ -34,16 +34,19 @@ export default withRedux(initStore)(
               
             })();
 
-            (function(w,d,s,r,n){
-                w.TrustpilotObject=n;
-                w[n]=w[n]||function(){(w[n].q=w[n].q||[]).push(arguments)};
-                var a=d.createElement(s);
-                a.async=1;a.src=r;
+            await((async function(w,d,s,r,n){
+                 w.TrustpilotObject=n;
+                w[n]=w[n]||await function(){(w[n].q=w[n].q||[]).push(arguments)};
+                var a= await d.createElement(s);
+                a.async=1;
+                a.src=r;
                 a.type='text/java'+s;
-                var f=d.getElementsByTagName(s)[0];
-                f.parentNode.insertBefore(a,f)
-            })(window,document,'script', 'https://invitejs.trustpilot.com/tp.min.js', 'tp')
-            tp('register', '2FJR5e6SfOTWKCXO');
+                var f= await d.getElementsByTagName(s)[0];
+                await f.parentNode.insertBefore(a,f)
+            })(window,document,'script', 'https://invitejs.trustpilot.com/tp.min.js', 'tp'))
+            console.log(tp);
+            
+            await tp('register', '2FJR5e6SfOTWKCXO');
            };
           
         static async getInitialProps ({ Component, ctx }) {

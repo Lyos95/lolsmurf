@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Link from 'next/link';
+import TrustBoxContainer from '../trustbox/Trustbox';
 
 const useTagFunc = () => {
     let useTag = '<use xlink:href="#star" />';
@@ -53,7 +54,11 @@ class DetailsTab extends Component {
                                         <div className="dot"></div> Why Buy From Us
                                     </a>
                                 </li>
-
+                                <li onClick={(e) => {e.preventDefault(); this.openTabSection(e, 'tab4')}}>
+                                    <a href="#">
+                                        <div className="dot"></div> Reviewa
+                                    </a>
+                                </li>
                             
                             </ul>
                         </div>
@@ -123,44 +128,7 @@ class DetailsTab extends Component {
                                             
 
                                             <div className="review-comments">
-                                                <div className="review-item">
-                                                    <div className="rating">
-                                                        <i className="fas fa-star"></i>
-                                                        <i className="fas fa-star"></i>
-                                                        <i className="fas fa-star"></i>
-                                                        <i className="fas fa-star"></i>
-                                                        <i className="fas fa-star"></i>
-                                                    </div>
-                                                    <h3>100% trustworthly and fast delivery</h3>
-                                                    <span><strong>Alfred</strong> on <strong>Sep 21, 2019</strong></span>
-                                                    <p>Honestly had my doubts at first, thought I was gonna get scammed or something but nah this was legit. I just went and bought one of the accounts and within 2 minutes they sent me an email with the information.</p>
-                                                </div>
-
-                                                <div className="review-item">
-                                                    <div className="rating">
-                                                        <i className="fas fa-star"></i>
-                                                        <i className="fas fa-star"></i>
-                                                        <i className="fas fa-star"></i>
-                                                        <i className="fas fa-star"></i>
-                                                        <i className="far fa-star"></i>
-                                                    </div>
-                                                    <h3>The warranty is amazing</h3>
-                                                    <span><strong>Anonymous</strong> on <strong>Jan 21, 2020</strong></span>
-                                                    <p>Very good, replace if banned, quick and easy</p>
-                                                </div>
-
-                                                <div className="review-item">
-                                                    <div className="rating">
-                                                        <i className="fas fa-star"></i>
-                                                        <i className="fas fa-star"></i>
-                                                        <i className="fas fa-star"></i>
-                                                        <i className="fas fa-star"></i>
-                                                        <i className="fas fa-star"></i>
-                                                    </div>
-                                                    <h3>Fast delivery</h3>
-                                                    <span><strong>Anonymous</strong> on <strong>Sep 21, 2019</strong></span>
-                                                    <p>The easiest, most streamlined transaction imaginable. Quick and smooth delivery of the account. Would HUGELY recommend!</p>
-                                                </div>
+                                              <TrustBoxContainer data-template-id="53aa8912dec7e10d38f59f36" />
                                             </div>
                                         </div>
                                     </div>
