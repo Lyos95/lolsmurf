@@ -12,6 +12,13 @@ import {checkIfWeHaveThatAmountOfAccs} from '../store/actions/accountsActions'
 import { ToastContainer, toast, Slide } from 'react-toastify';
 
 class Index extends Component {
+
+    state = {
+        hoursDisplayed:0,
+        minutesDisplayed:0,
+        secondsDisplayed:0
+    };
+
     async componentDidMount() {
       
             let approval =  await this.props.checkIfWeHaveThatAmountOfAccs()
@@ -28,14 +35,50 @@ class Index extends Component {
               });
           }
       
+          let second = 1000;
+          let minute = second * 60;
+          let hour = minute * 60;
+          let day = hour * 24;
+          let countDown = new Date();
+          countDown.setHours(23,59,59)
+          countDown = countDown.getTime()
+          
+          this.myInterval = setInterval(() => {    
+  
+              let now = new Date().getTime(),
+                  distance = countDown - now;      
+                this.setState({
+                    hoursDisplayed:Math.floor((distance % (day)) / (hour)),
+                    minutesDisplayed: Math.floor((distance % (hour)) / (minute)),
+                    secondsDisplayed:Math.floor((distance % (minute)) / second)
+                });
+                
+        
+              if (distance < 0) {
+                  this.setState({
+                      hoursDisplayed:0,
+                      minutesDisplayed: 0,
+                      secondsDisplayed:0
+                  });
+              }
+              
+            }, 1000)
         
     }
     render() {
+        let {hoursDisplayed,minutesDisplayed,secondsDisplayed} = this.state
         return (
             <React.Fragment>
                 <Navbar />
                 <Breadcrumb title={this.getRegionName()} />
-
+                <div class="container-timing-details">
+                    <h4><b><u>Countdown</u></b></h4>
+                    <ul>
+                        <li><span id="hours">{hoursDisplayed}</span>Hours</li>
+                        <li><span id="minutes">{minutesDisplayed}</span>Minutes</li>
+                        <li><span id="seconds">{secondsDisplayed}</span>Seconds</li>
+                    </ul>
+                </div>
                 <section className="products-details-area pt-60">
                     <div className="container">
                         <div className="row">

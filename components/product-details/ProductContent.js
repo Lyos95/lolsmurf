@@ -110,7 +110,7 @@ class ProductContent extends Component {
                         <h3>{this.props.product.title} League of legends account</h3>
 
                         <div className="price">
-                            <span className="new-price">$9.25</span>
+                            <span className="new-price"><del>$18.5</del> <span style={{color:'#c56161'}}>$9.25</span></span>
                         </div>
 
                         <p>Fresh new League of legends acount (level 30), ideal for smurfing</p>

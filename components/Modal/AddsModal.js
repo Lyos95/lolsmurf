@@ -29,29 +29,11 @@ class AddsModal extends Component {
         let { open } = this.state;
         return (
             <div className={`bts-popup ${open ? 'is-visible' : ''}`} role="alert">
-                <div className="bts-popup-container">
-                    <h3>Free Shipping</h3>
-                    <p>Worldwide free shipping for all members. To become a member subscribe for our <strong>free offers / discount newsletter.</strong></p>
-
-                    <form>
-                        <input type="email" className="form-control" placeholder="mail@name.com" name="EMAIL" required={true} />
-                        <button type="submit"><i className="far fa-paper-plane"></i></button>
-                    </form>
-
-                    <ul>
-                        <li><a href="#" className="facebook"><i className="fab fa-facebook-f"></i></a></li>
-                        <li><a href="#" className="twitter"><i className="fab fa-twitter"></i></a></li>
-                        <li><a href="#" className="linkdein"><i className="fab fa-linkedin-in"></i></a></li>
-                        <li><a href="#" className="instagram"><i className="fab fa-instagram"></i></a></li>
-                    </ul>
-
-                    <div className="img-box">
-
-                    </div>
-
+                <div className="bts-popup-container poroOffer">
                     <Link href="#">
-                        <a onClick={this.closeModal} className="bts-popup-close"></a>
+                        <a onClick={this.closeModal} className="bts-popup-close close-white"></a>
                     </Link>
+                    <a href="https://www.lolsmurf.net/product-details" className="btnOffer">Buy now!</a>
                 </div>
             </div>
         );

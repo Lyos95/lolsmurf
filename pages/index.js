@@ -5,6 +5,7 @@ import Banner from '../components/shop-style-four/Banner';
 import Facility from '../components/shop-style-four/Facility';
 import OfferArea from '../components/shop-style-four/OfferArea';
 import Products from '../components/shop-style-one/Products';
+import AddsModal from '../components/Modal/AddsModal'
 import { connect } from 'react-redux';
 import {checkIfWeHaveThatAmountOfAccs} from '../store/actions/accountsActions'
 import { ToastContainer, toast, Slide } from 'react-toastify';
@@ -32,9 +33,11 @@ class Index extends Component {
     render() {
         return (
             <React.Fragment>
+                <AddsModal />
                 <Navbar />
                 <Banner />
                 <Facility />
+                
                 <Products />
                 <OfferArea />
                 <Footer />

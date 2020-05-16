@@ -58,6 +58,7 @@ This files table contents are outlined below>>>>>
 Default CSS
 =================================================*/
 @import url("https://fonts.googleapis.com/css?family=Archivo:400,400i,500,500i,600,600i,700,700i&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 body {
   padding: 0;
   margin: 0;
@@ -1009,7 +1010,7 @@ Modal CSS
   top: 12px;
   width: 16px;
   height: 3px;
-  background-color: #222222;
+  background-color: #96928dd1 !important;
 }
 .bts-popup .bts-popup-container h3 {
   text-transform: uppercase;
@@ -1203,7 +1204,6 @@ Main Banner Area CSS
   background-repeat: no-repeat;
   background-position: center center;
 }
-
 .main-banner.item-bg4 {
   background-image: url(../pictures/mainbanner.jpg);
 }
@@ -5450,7 +5450,6 @@ Sidebar Area CSS
   background-repeat: no-repeat;
   background-position: center center !important;
 }
-
 .widget-area .widget_comero_posts_thumb .item .info {
   overflow: hidden;
 }
@@ -6418,6 +6417,116 @@ Go Top CSS
   .margin-picture-acc {
     margin-bottom: 79px !important;
   }
+}
+
+.poroOffer {
+  background-size: cover !important;
+  height: 300px;
+  background-image: url("../pictures/poro.jpg") !important;
+}
+@media (max-width: 580px) {
+  .poroOffer {
+    height: 221px !important;
+    width: 423px !important;
+  }
+}
+@media (max-width: 420px) {
+  .poroOffer {
+    width: 317px !important;
+    height: 160px !important;
+  }
+}
+
+@keyframes shadow-pulse {
+  0% {
+    box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.2);
+  }
+  100% {
+    box-shadow: 0 0 0 35px rgba(0, 0, 0, 0);
+  }
+}
+.btnOffer {
+  font-family: "Press Start 2P";
+  background: #e82223cc;
+  width: 147px;
+  text-align: center;
+  height: 33px;
+  padding-left: 6px;
+  padding-top: 8px;
+  border-radius: 11px;
+  transform: translate(309px, 159px);
+  animation: shadow-pulse 1s infinite;
+}
+@media (max-width: 691px) {
+  .btnOffer {
+    transform: translate(420px, 179px);
+  }
+}
+@media (max-width: 580px) {
+  .btnOffer {
+    transform: translate(248px, 138px) !important;
+  }
+}
+@media (max-width: 420px) {
+  .btnOffer {
+    transform: translate(147px, 93px) !important;
+  }
+}
+
+.container-timing {
+  color: #333;
+  margin: 0 auto;
+  padding: 0.5rem;
+  text-align: center;
+  background: #d8d8d86b;
+}
+.container-timing h1 {
+  margin-left: 21px;
+  margin-bottom: -13px;
+  margin-top: 16px;
+}
+.container-timing ul {
+  color: #c56161;
+}
+.container-timing li {
+  display: inline-block;
+  font-size: 1.5em;
+  list-style-type: none;
+  padding: 1em;
+  text-transform: uppercase;
+}
+.container-timing li span {
+  display: block;
+  font-size: 4.5rem;
+}
+
+.container-timing-details {
+  color: #333;
+  margin: 0 auto;
+  padding-top: 0.25rem;
+  text-align: center;
+  background: #d8d8d86b;
+}
+.container-timing-details h1 {
+  margin-left: 21px;
+  margin-bottom: -13px;
+  margin-top: 16px;
+}
+.container-timing-details ul {
+  color: #c56161;
+  margin-left: -7px;
+  margin-top: -9px;
+}
+.container-timing-details li {
+  display: inline-block;
+  font-size: 1.2em;
+  list-style-type: none;
+  padding: 1em;
+  text-transform: uppercase;
+}
+.container-timing-details li span {
+  display: block;
+  font-size: 2rem;
 }
 
 /*# sourceMappingURL=style.css.map */

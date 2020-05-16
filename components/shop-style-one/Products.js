@@ -9,12 +9,50 @@ import QuickView from '../Modal/QuickView';
 
 class Products extends Component {
 
+
+ 
+
+
     state = {
         modalOpen: false,
         modalImage: '',
         price: 0,
-        idd: null
+        idd: null,
+        hoursDisplayed:0,
+        minutesDisplayed:0,
+        secondsDisplayed:0
     };
+    componentDidMount() {
+        let second = 1000;
+        let minute = second * 60;
+        let hour = minute * 60;
+        let day = hour * 24;
+        let countDown = new Date();
+        countDown.setHours(23,59,59)
+        countDown = countDown.getTime()
+        
+        this.myInterval = setInterval(() => {    
+
+            let now = new Date().getTime(),
+                distance = countDown - now;      
+              this.setState({
+                  hoursDisplayed:Math.floor((distance % (day)) / (hour)),
+                  minutesDisplayed: Math.floor((distance % (hour)) / (minute)),
+                  secondsDisplayed:Math.floor((distance % (minute)) / second)
+              });
+              
+      
+            if (distance < 0) {
+                this.setState({
+                    hoursDisplayed:0,
+                    minutesDisplayed: 0,
+                    secondsDisplayed:0
+                });
+            }
+            
+          }, 1000)
+      }
+
 
     openTabSection = (evt, tabNmae) => {
         let i, tabcontent, tablinks;
@@ -61,10 +99,6 @@ class Products extends Component {
     }
 
     handleAddToCompare = (id) => {
-        this.props.
-
-
-
         this.props.addToCompare(id); 
 
         toast.info('Added to the compare', {
@@ -77,12 +111,21 @@ class Products extends Component {
         });
     }
 
-
+    
     render() {
         let { products,viewProductDetails } = this.props;
         const { modalOpen } = this.state;
+        let {hoursDisplayed,minutesDisplayed,secondsDisplayed} = this.state
         return (
             <section className="all-products-area pb-60">
+                <div class="container-timing">
+                    <h1><b><u>Countdown</u></b></h1>
+                    <ul>
+                        <li><span id="hours">{hoursDisplayed}</span>Hours</li>
+                        <li><span id="minutes">{minutesDisplayed}</span>Minutes</li>
+                        <li><span id="seconds">{secondsDisplayed}</span>Seconds</li>
+                    </ul>
+                </div>
                 <ReactTooltip  />
                 <ToastContainer transition={Slide} />
                 <div className="container">
@@ -105,7 +148,6 @@ class Products extends Component {
                                 <div className="tab_content">                                   
                                     <div id="tab1" className="tabs_item">
                                         <div className="row">
-
                                             {products.map((data, idx) => (
                                                 <div className="col-lg-3 col-md-6 col-sm-6 col-6" key={idx}>
                                                     <div className="single-product-box">
@@ -123,9 +165,9 @@ class Products extends Component {
                                                                     <a><b>{data.title}</b></a>
                                                                 </Link>
                                                             </h3>
-
+                                                     
                                                             <div className="product-price">
-                                                                <span className="new-price">${data.price}</span>
+                                                                <span className="new-price"><del>$18.5</del> <span style={{color:"#c56161"}}>${data.price}</span></span>
                                                             </div>
 
                                                             <Link href="/product-details">
