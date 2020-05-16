@@ -118,7 +118,7 @@ class Products extends Component {
         let {hoursDisplayed,minutesDisplayed,secondsDisplayed} = this.state
         return (
             <section className="all-products-area pb-60">
-                <div class="container-timing">
+                <div className="container-timing">
                     <h1><b><u>Countdown</u></b></h1>
                     <ul>
                         <li><span id="hours">{hoursDisplayed}</span>Hours</li>
