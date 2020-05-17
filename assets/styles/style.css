@@ -152,6 +152,46 @@ img {
 }
 
 /*btn(primary&light)*/
+.btn {
+  border: 1px solid transparent;
+  padding: 11px 25px;
+  line-height: initial;
+  border-radius: 0;
+  transition: 0.5s;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 14px;
+}
+.btn.disabled, .btn:disabled {
+  opacity: 1;
+}
+
+.btn-primary {
+  color: #ffffff;
+  background-color: #222222;
+  border-color: #222222;
+}
+.btn-primary.disabled, .btn-primary:disabled {
+  color: #ffffff;
+  background-color: #222222;
+  border-color: #222222;
+}
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show > .btn-primary.dropdown-toggle {
+  box-shadow: unset;
+  background-color: transparent;
+  color: #222222;
+  border-color: #222222;
+}
+.btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .show > .btn-primary.dropdown-toggle:focus {
+  box-shadow: unset;
+}
+.btn-primary:hover, .btn-primary:focus {
+  box-shadow: unset;
+  background-color: transparent;
+  color: #222222;
+  border-color: #222222;
+}
+
 .btn-light {
   background-color: transparent;
   color: #222222;
