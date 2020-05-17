@@ -71,7 +71,7 @@ body {
     padding: 0;
     margin: 0;
     font: {
-        family: $font-family;
+        family: $font-family !important;
         size: 14px;
     }
 }
@@ -161,22 +161,7 @@ img {
         background-color: transparent;
     }
 }
-/*btn(primary&light)*/
-.btnLOL {
-    border: 1px solid transparent;
-    padding: 11px 25px;
-    line-height: initial;
-    border-radius: 0;
-    transition: $transition;
-    text-transform: uppercase;
-    font: {
-        weight: 400;
-        size: $font-size;
-    }
-    &.disabled, &:disabled {
-        opacity: 1;
-    }
-}
+/*btn(primary&light)*/ 
 
 //BORRAR
 .btnLOL {
@@ -223,32 +208,7 @@ img {
         border-color: $black-color;
     }
 }
-.btn-light {
-    background-color: transparent;
-    color: $black-color;
-    border-color: $black-color;
 
-    &.disabled, &:disabled {
-        background-color: transparent;
-        color: $black-color;
-        border-color: $black-color;
-    }
-    &:not(:disabled):not(.disabled).active, &:not(:disabled):not(.disabled):active, .show>&.dropdown-toggle {
-        box-shadow: unset;
-        color: $white-color;
-        background-color: $black-color;
-        border-color: $black-color;
-    }
-    &:not(:disabled):not(.disabled).active:focus, &:not(:disabled):not(.disabled):active:focus, .show>&.dropdown-toggle:focus {
-        box-shadow: unset;
-    }
-    &:hover, &:focus {
-        box-shadow: unset;
-        color: $white-color;
-        background-color: $black-color;
-        border-color: $black-color;
-    }
-}
 
 
 //BORRAR
@@ -277,6 +237,7 @@ img {
         color: $white-color;
         background-color: $black-color;
         border-color: $black-color;
+        text-decoration: none;
     }
 }
 
@@ -895,12 +856,12 @@ Navbar Area CSS
             position: relative;
             margin-right: 17px;
             line-height: initial;
-    
+            text-decoration: none;
             a {
                 color: $black-color;
                 text-transform: uppercase;
                 position: relative;
-    
+                text-decoration: none;
                 &::before {
                     content: '';
                     position: absolute;
@@ -5730,7 +5691,7 @@ Products Details Area CSS
             display: inline-block;
             position: relative;
             line-height: initial;
-
+            text-decoration: none;
             &::before {
                 content: '';
                 position: absolute;

@@ -1,3 +1,6 @@
+
+import '../assets/styles/stylelol.css';
+import '../assets/styles/responsivelol.css';
 import '../assets/styles/bootstrap.min.css';
 import '../assets/styles/fontawesome.min.css';
 import '../assets/styles/animate.min.css';
@@ -13,8 +16,7 @@ import { DefaultSeo } from 'next-seo';
 import GoTop from '../components/Shared/GoTop';
 import { persistStore } from 'redux-persist'
 import { PersistGate } from 'redux-persist/integration/react'
-import '../assets/styles/stylelol.css';
-import '../assets/styles/responsivelol.css';
+
 export default withRedux(initStore)(
     class MyApp extends App {
         constructor(props) {

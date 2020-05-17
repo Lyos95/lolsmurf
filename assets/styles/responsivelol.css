@@ -28,7 +28,7 @@
     margin-bottom: 15px;
   }
 
-  .btn {
+  .btnLOL {
     padding: 11px 23px;
     font-size: 12px;
   }
@@ -233,7 +233,7 @@
     margin-bottom: 25px;
   }
 
-  .single-product-box .product-content .btn {
+  .single-product-box .product-content .btnLOL {
     display: inline-block;
     width: auto;
   }
@@ -554,7 +554,7 @@
     max-width: 120px;
     min-width: 120px;
   }
-  .product-details-content .wishlist-compare-btn .btn {
+  .product-details-content .wishlist-compare-btn .btnLOL {
     text-transform: capitalize;
     padding: 11px 13px;
   }
@@ -571,7 +571,7 @@
   .products-details-tab .tab_content .tabs_item .products-details-tab-content ol {
     margin-top: 12px;
   }
-  .products-details-tab .tab_content .tabs_item .products-details-tab-content .product-review-form .review-title .btn {
+  .products-details-tab .tab_content .tabs_item .products-details-tab-content .product-review-form .review-title .btnLOL {
     position: relative;
     right: 0;
     top: 0;
@@ -639,7 +639,7 @@
   .cart-buttons .continue-shopping-box {
     margin-bottom: 12px;
   }
-  .cart-buttons .btn {
+  .cart-buttons .btnLOL {
     display: block;
     width: 100%;
   }
@@ -1105,7 +1105,7 @@
   .product-details-content .product-info-btn a:not(:first-child) {
     margin-left: 10px;
   }
-  .product-details-content .wishlist-compare-btn .btn {
+  .product-details-content .wishlist-compare-btn .btnLOL {
     padding: 10px 20px;
     font-size: 13px;
     text-transform: capitalize;

@@ -73,7 +73,7 @@ class Cart extends Component {
                                     <a className="btn btn-primary">Proceed to Checkout</a>
                                 </Link>
                                 <Link href="/cart">
-                                    <a className="btn btn-light">View Shopping Cart</a>
+                                    <a className="btnLOL btn-lightLOL" style={{width:"fit-content"}}>View Shopping Cart</a>
                                 </Link>
                             </div>
                         </div>
