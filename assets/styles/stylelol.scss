@@ -162,7 +162,7 @@ img {
     }
 }
 /*btn(primary&light)*/
-.btn {
+.btnLOL {
     border: 1px solid transparent;
     padding: 11px 25px;
     line-height: initial;
@@ -177,6 +177,26 @@ img {
         opacity: 1;
     }
 }
+
+//BORRAR
+.btnLOL {
+    border: 1px solid transparent;
+    padding: 11px 25px;
+    line-height: initial;
+    border-radius: 0;
+    transition: $transition;
+    text-transform: uppercase;
+    font: {
+        weight: 400;
+        size: $font-size;
+    }
+    &.disabled, &:disabled {
+        opacity: 1;
+    }
+}
+
+
+//
 .btn-primary {
     color: $white-color;
     background-color: $black-color;
@@ -229,6 +249,41 @@ img {
         border-color: $black-color;
     }
 }
+
+
+//BORRAR
+
+.btn-lightLOL {
+    background-color: transparent;
+    color: $black-color;
+    border-color: $black-color;
+
+    &.disabled, &:disabled {
+        background-color: transparent;
+        color: $black-color;
+        border-color: $black-color;
+    }
+    &:not(:disabled):not(.disabled).active, &:not(:disabled):not(.disabled):active, .show>&.dropdown-toggle {
+        box-shadow: unset;
+        color: $white-color;
+        background-color: $black-color;
+        border-color: $black-color;
+    }
+    &:not(:disabled):not(.disabled).active:focus, &:not(:disabled):not(.disabled):active:focus, .show>&.dropdown-toggle:focus {
+        box-shadow: unset;
+    }
+    &:hover, &:focus {
+        box-shadow: unset;
+        color: $white-color;
+        background-color: $black-color;
+        border-color: $black-color;
+    }
+}
+
+
+//
+
+
 /*owl-carousel-btn*/
 .owl-theme {
     .owl-nav {
@@ -1006,10 +1061,10 @@ Modal CSS
                 }
             }
             .product-cart-btn {
-                .btn {
+                .btnLOL {
                     display: block;
 
-                    &.btn-light {
+                    &.btn-lightLOL {
                         margin-top: 12px;
                     }
                 }
@@ -1343,10 +1398,10 @@ Modal CSS
                 }
             }
             .product-cart-btn {
-                .btn {
+                .btnLOL {
                     display: block;
 
-                    &.btn-light {
+                    &.btn-lightLOL {
                         margin-top: 15px;
                     }
                 }
@@ -2085,7 +2140,7 @@ All Products Area CSS
                 margin: 0 2px;
             }
         }
-        .btn {
+        .btnLOL {
             display: block;
             width: 100%;
         }
@@ -2107,7 +2162,7 @@ All Products Area CSS
         }        
     }
 }
-.btn-light {
+.btn-lightLOL {
     &:hover{
         background-color: $black-color;
         color: $white-color;
@@ -2499,7 +2554,7 @@ Products QuickView Modal Area CSS
                         }
                     }
                 }
-                .btn {
+                .btnLOL {
                     height: 45px;
                     top: -2px;
                     position: relative;
@@ -2588,10 +2643,10 @@ Category Products Area CSS
                 weight: 700;
             }
         }
-        .btn {
+        .btnLOL {
             margin-top: 22px;
         }
-        .btn-light {
+        .btn-lightLOL {
             background-color: transparent;
             color: $white-color;
             border-color: $white-color;
@@ -5427,7 +5482,7 @@ Products Details Area CSS
     .wishlist-compare-btn {
         margin-top: 20px;
 
-        .btn {
+        .btnLOL {
             i {
                 margin-right: 3px;
             }
@@ -5655,7 +5710,7 @@ Products Details Area CSS
                 }
             }
         }
-        .btn {
+        .btnLOL {
             height: 45px;
             top: -2px;
             position: relative;
@@ -5790,7 +5845,7 @@ Products Details Area CSS
                 margin-top: 15px;
             }
         }
-        .btn {
+        .btnLOL {
             display: block;
         }
     }
@@ -5969,7 +6024,7 @@ Products Details Area CSS
                             display: inline-block;
                             padding-left: 5px;
                         }
-                        .btn {
+                        .btnLOL {
                             position: absolute;
                             right: 0;
                             top: 50%;
@@ -6039,7 +6094,7 @@ Products Details Area CSS
                                     padding-top: 15px;
                                 }
                             }
-                            .btn {
+                            .btnLOL {
                                 margin-top: 10px;
                             }
                             .review-rating {
@@ -7149,7 +7204,7 @@ Checkout CSS
         span {
             display: block;
 
-            .btn {
+            .btnLOL {
                 width: 100%;
             }
             .btn-primary {
@@ -7209,7 +7264,7 @@ Login Area CSS
             }
         }
     }
-    .btn {
+    .btnLOL {
         display: block;
         width: 100%;
         padding: 14px 25px;
@@ -7285,7 +7340,7 @@ Signup Area CSS
             }
         }
     }
-    .btn {
+    .btnLOL {
         display: block;
         width: 100%;
         padding: 14px 25px;

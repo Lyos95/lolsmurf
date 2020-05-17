@@ -152,7 +152,7 @@ img {
 }
 
 /*btn(primary&light)*/
-.btn {
+.btnLOL {
   border: 1px solid transparent;
   padding: 11px 25px;
   line-height: initial;
@@ -162,7 +162,21 @@ img {
   font-weight: 400;
   font-size: 14px;
 }
-.btn.disabled, .btn:disabled {
+.btnLOL.disabled, .btnLOL:disabled {
+  opacity: 1;
+}
+
+.btnLOL {
+  border: 1px solid transparent;
+  padding: 11px 25px;
+  line-height: initial;
+  border-radius: 0;
+  transition: 0.5s;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 14px;
+}
+.btnLOL.disabled, .btnLOL:disabled {
   opacity: 1;
 }
 
@@ -212,6 +226,32 @@ img {
   box-shadow: unset;
 }
 .btn-light:hover, .btn-light:focus {
+  box-shadow: unset;
+  color: #ffffff;
+  background-color: #222222;
+  border-color: #222222;
+}
+
+.btn-lightLOL {
+  background-color: transparent;
+  color: #222222;
+  border-color: #222222;
+}
+.btn-lightLOL.disabled, .btn-lightLOL:disabled {
+  background-color: transparent;
+  color: #222222;
+  border-color: #222222;
+}
+.btn-lightLOL:not(:disabled):not(.disabled).active, .btn-lightLOL:not(:disabled):not(.disabled):active, .show > .btn-lightLOL.dropdown-toggle {
+  box-shadow: unset;
+  color: #ffffff;
+  background-color: #222222;
+  border-color: #222222;
+}
+.btn-lightLOL:not(:disabled):not(.disabled).active:focus, .btn-lightLOL:not(:disabled):not(.disabled):active:focus, .show > .btn-lightLOL.dropdown-toggle:focus {
+  box-shadow: unset;
+}
+.btn-lightLOL:hover, .btn-lightLOL:focus {
   box-shadow: unset;
   color: #ffffff;
   background-color: #222222;
@@ -874,10 +914,10 @@ Modal CSS
 .shoppingCartModal .modal-content .modal-body .product-cart-subtotal span.subtotal {
   float: right;
 }
-.shoppingCartModal .modal-content .modal-body .product-cart-btn .btn {
+.shoppingCartModal .modal-content .modal-body .product-cart-btn .btnLOL {
   display: block;
 }
-.shoppingCartModal .modal-content .modal-body .product-cart-btn .btn.btn-light {
+.shoppingCartModal .modal-content .modal-body .product-cart-btn .btnLOL.btn-lightLOL {
   margin-top: 12px;
 }
 .shoppingCartModal .close {
@@ -1169,10 +1209,10 @@ Modal CSS
   font-size: 14px;
   color: #222222;
 }
-.shoppingWishlistModal .modal-content .modal-body .product-cart-btn .btn {
+.shoppingWishlistModal .modal-content .modal-body .product-cart-btn .btnLOL {
   display: block;
 }
-.shoppingWishlistModal .modal-content .modal-body .product-cart-btn .btn.btn-light {
+.shoppingWishlistModal .modal-content .modal-body .product-cart-btn .btnLOL.btn-lightLOL {
   margin-top: 15px;
 }
 .shoppingWishlistModal .close {
@@ -1827,7 +1867,7 @@ All Products Area CSS
 .single-product-box .product-content .rating i {
   margin: 0 2px;
 }
-.single-product-box .product-content .btn {
+.single-product-box .product-content .btnLOL {
   display: block;
   width: 100%;
 }
@@ -1841,7 +1881,7 @@ All Products Area CSS
   visibility: visible;
 }
 
-.btn-light:hover {
+.btn-lightLOL:hover {
   background-color: #222222;
   color: #ffffff;
 }
@@ -2151,12 +2191,12 @@ Products QuickView Modal Area CSS
 .productQuickView .modal-content .product-content .product-add-to-cart .input-counter input::placeholder {
   color: #222222;
 }
-.productQuickView .modal-content .product-content .product-add-to-cart .btn {
+.productQuickView .modal-content .product-content .product-add-to-cart .btnLOL {
   height: 45px;
   top: -2px;
   position: relative;
 }
-.productQuickView .modal-content .product-content .product-add-to-cart .btn i {
+.productQuickView .modal-content .product-content .product-add-to-cart .btnLOL i {
   margin-right: 2px;
 }
 .productQuickView .modal-content .product-content .view-full-info {
@@ -2229,20 +2269,20 @@ Category Products Area CSS
   font-size: 20px;
   font-weight: 700;
 }
-.single-category-box .category-content .btn {
+.single-category-box .category-content .btnLOL {
   margin-top: 22px;
 }
-.single-category-box .category-content .btn-light {
+.single-category-box .category-content .btn-lightLOL {
   background-color: transparent;
   color: #ffffff;
   border-color: #ffffff;
 }
-.single-category-box .category-content .btn-light:not(:disabled):not(.disabled).active, .single-category-box .category-content .btn-light:not(:disabled):not(.disabled):active, .show > .single-category-box .category-content .btn-light.dropdown-toggle {
+.single-category-box .category-content .btn-lightLOL:not(:disabled):not(.disabled).active, .single-category-box .category-content .btn-lightLOL:not(:disabled):not(.disabled):active, .show > .single-category-box .category-content .btn-lightLOL.dropdown-toggle {
   color: #222222;
   background-color: #ffffff;
   border-color: #ffffff;
 }
-.single-category-box .category-content .btn-light:hover, .single-category-box .category-content .btn-light:focus {
+.single-category-box .category-content .btn-lightLOL:hover, .single-category-box .category-content .btn-lightLOL:focus {
   color: #222222;
   background-color: #ffffff;
   border-color: #ffffff;
@@ -4592,10 +4632,10 @@ Products Details Area CSS
 .product-details-content .wishlist-compare-btn {
   margin-top: 20px;
 }
-.product-details-content .wishlist-compare-btn .btn i {
+.product-details-content .wishlist-compare-btn .btnLOL i {
   margin-right: 3px;
 }
-.product-details-content .wishlist-compare-btn .btn:not(:first-child) {
+.product-details-content .wishlist-compare-btn .btnLOL:not(:first-child) {
   margin-left: 10px;
 }
 .product-details-content .product-color-switch {
@@ -4765,12 +4805,12 @@ Products Details Area CSS
 .product-details-content .product-add-to-cart .input-counter input::placeholder {
   color: #222222;
 }
-.product-details-content .product-add-to-cart .btn {
+.product-details-content .product-add-to-cart .btnLOL {
   height: 45px;
   top: -2px;
   position: relative;
 }
-.product-details-content .product-add-to-cart .btn i {
+.product-details-content .product-add-to-cart .btnLOL i {
   margin-right: 2px;
 }
 .product-details-content .product-info-btn {
@@ -4886,7 +4926,7 @@ Products Details Area CSS
 .product-details-content .buy-checkbox-btn .item:not(:first-child) {
   margin-top: 15px;
 }
-.product-details-content .buy-checkbox-btn .btn {
+.product-details-content .buy-checkbox-btn .btnLOL {
   display: block;
 }
 .product-details-content .custom-payment-options {
@@ -5032,7 +5072,7 @@ Products Details Area CSS
   display: inline-block;
   padding-left: 5px;
 }
-.products-details-tab .tab_content .tabs_item .products-details-tab-content .product-review-form .review-title .btn {
+.products-details-tab .tab_content .tabs_item .products-details-tab-content .product-review-form .review-title .btnLOL {
   position: absolute;
   right: 0;
   top: 50%;
@@ -5090,7 +5130,7 @@ Products Details Area CSS
 .products-details-tab .tab_content .tabs_item .products-details-tab-content .product-review-form .review-form form .form-group textarea {
   padding-top: 15px;
 }
-.products-details-tab .tab_content .tabs_item .products-details-tab-content .product-review-form .review-form form .btn {
+.products-details-tab .tab_content .tabs_item .products-details-tab-content .product-review-form .review-form form .btnLOL {
   margin-top: 10px;
 }
 .products-details-tab .tab_content .tabs_item .products-details-tab-content .product-review-form .review-form form .review-rating {
@@ -5978,7 +6018,7 @@ Checkout CSS
 .order-details .order-btn span {
   display: block;
 }
-.order-details .order-btn span .btn {
+.order-details .order-btn span .btnLOL {
   width: 100%;
 }
 .order-details .order-btn span .btn-primary.btn-disabled {
@@ -6026,7 +6066,7 @@ Login Area CSS
 .login-form .form-group .form-control:focus {
   border-color: #222222;
 }
-.login-form .btn {
+.login-form .btnLOL {
   display: block;
   width: 100%;
   padding: 14px 25px;
@@ -6094,7 +6134,7 @@ Signup Area CSS
 .signup-form .form-group .form-control:focus {
   border-color: #222222;
 }
-.signup-form .btn {
+.signup-form .btnLOL {
   display: block;
   width: 100%;
   padding: 14px 25px;

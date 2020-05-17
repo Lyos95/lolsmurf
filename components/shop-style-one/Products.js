@@ -172,7 +172,7 @@ class Products extends Component {
 
                                                             <Link href="/product-details">
                                                                 <a 
-                                                                    className="btn btn-light"
+                                                                    className="btnLOL btn-lightLOL"
                                                                     onClick={() => {viewProductDetails(data.id)}}
                                                                 >
                                                                     Buy now!
