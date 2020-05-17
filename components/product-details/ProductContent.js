@@ -155,7 +155,7 @@ class ProductContent extends Component {
                                         }
                                     }                               
                                 }}>EUW</a></li>
-                                <li className = {this.props.product.id === 3 ? 'active hover-pointer' : 'hover-pointer'}><a onClick={() => {
+                                <li className = {this.props.product.id === 3 ? 'active hover-pointer' : 'hover-pointer'}><a style={{width:'fit-content'}} onClick={() => {
                                     this.props.setProduct(3);                                  
                                     let item= this.props.products.find(item=> 3 === item.id)
                                     if(item.stock === 0 || (item.stock - item.quantity === 0)){                                      

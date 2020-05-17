@@ -44,24 +44,24 @@ class DetailsTab extends Component {
                                     onClick={(e) => {e.preventDefault(); this.openTabSection(e, 'tab1')}}
                                     className="current"
                                 >
-                                    <a href="#">
+                                    <a style={{textDecoration:"none"}} href="#">
                                         <div className="dot"></div> Description
                                     </a>
                                 </li>
 
                                 <li onClick={(e) => {e.preventDefault(); this.openTabSection(e, 'tab2')}}>
-                                    <a href="#">
+                                    <a style={{textDecoration:"none"}} href="#">
                                         <div className="dot"></div> Delivery
                                     </a>
                                 </li>
                                 
                                 <li onClick={(e) => {e.preventDefault(); this.openTabSection(e, 'tab3')}}>
-                                    <a href="#">
+                                    <a style={{textDecoration:"none"}} href="#">
                                         <div className="dot"></div> Why Buy From Us
                                     </a>
                                 </li> 
                                 <li onClick={(e) => {e.preventDefault(); this.openTabSection(e, 'tab4')}}>
-                                    <a href="#">
+                                    <a style={{textDecoration:"none"}} href="#">
                                         <div className="dot"></div> Reviews
                                     </a>
                                 </li>                                
@@ -131,7 +131,7 @@ class DetailsTab extends Component {
                                     <div className="products-details-tab-content">
                                         <div className="product-review-form">
 
-                                            <div class="elfsight-app-1512fc74-69be-46f6-9621-4a51dd193515"></div>                                           
+                                            <div className="elfsight-app-1512fc74-69be-46f6-9621-4a51dd193515"></div>                                           
 
                                             <div className="review-comments">
                                             </div>
