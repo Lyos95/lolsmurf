@@ -1,10 +1,9 @@
 import '../assets/styles/bootstrap.min.css';
 import '../assets/styles/fontawesome.min.css';
-import '../assets/styles/style.css';
-import '../assets/styles/responsive.css';
 import '../assets/styles/animate.min.css';
 import '../assets/styles/slick.css';
 import '../assets/styles/slick-theme.css';
+
 
 import { Provider } from 'react-redux';
 import App, {Container} from 'next/app';
@@ -14,6 +13,8 @@ import { DefaultSeo } from 'next-seo';
 import GoTop from '../components/Shared/GoTop';
 import { persistStore } from 'redux-persist'
 import { PersistGate } from 'redux-persist/integration/react'
+import '../assets/styles/style.css';
+import '../assets/styles/responsive.css';
 export default withRedux(initStore)(
     class MyApp extends App {
         constructor(props) {
