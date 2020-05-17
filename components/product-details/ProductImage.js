@@ -15,7 +15,7 @@ class ProductImage extends Component {
                 <div className="products-page-gallery">
                     <div className="product-page-gallery-main">
                        <div>
-                           <div class="move-bottom margin-picture-acc">
+                           <div className="move-bottom margin-picture-acc">
 
                             <img src={this.props.image}></img>
 

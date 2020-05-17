@@ -90,7 +90,7 @@ class RelatedProducts extends Component {
                 <div class="related-products-area">
                     <div class="container">
                         <div class="section-title">
-                            <h2><span class="dot"></span> Related Products</h2>
+                            <h2><span className="dot"></span> Related Products</h2>
                         </div>
 
                         <div class="row">

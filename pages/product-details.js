@@ -71,7 +71,7 @@ class Index extends Component {
             <React.Fragment>
                 <Navbar />
                 <Breadcrumb title={this.getRegionName()} />
-                <div class="container-timing-details">
+                <div className="container-timing-details">
                     <h4><b><u>Countdown</u></b></h4>
                     <ul>
                         <li><span id="hours">{hoursDisplayed}</span>Hours</li>
