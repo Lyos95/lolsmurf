@@ -53,7 +53,7 @@ class CartContent extends Component {
                                         <div className="col-lg-7 col-md-7">
                                             <div className="continue-shopping-box">
                                                 <Link href="/">
-                                                    <a className="btnLOL btn-lightLOL" style={{width: "fit-content"}}>Continue Shopping</a>
+                                                    <a className="btnLOL btn-lightLOL" style={{display: "table",textAlign:"center"}}>Continue Shopping</a>
                                                 </Link>
                                             </div>
                                         </div>
@@ -68,7 +68,7 @@ class CartContent extends Component {
                                         <li>Total <span><b>${this.props.total + this.props.shipping}</b></span></li>
                                     </ul>
                                     <Link href="/checkout">
-                                        <a className="btn btn-primary">Proceed to Checkout</a>
+                                        <a className="btn btn-primary ">Proceed to Checkout</a>
                                     </Link>
                                 </div>
                             </form>

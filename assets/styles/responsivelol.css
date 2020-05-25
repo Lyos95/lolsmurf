@@ -1333,5 +1333,44 @@
     outline: 0;
   }
 }
+.buy-btn {
+  padding: 0.375rem 12.75rem !important;
+}
+@media (max-width: 1199px) {
+  .buy-btn {
+    padding: 0.375rem 10.75rem !important;
+  }
+}
+@media (max-width: 991px) {
+  .buy-btn {
+    padding: 0.375rem 7.75rem !important;
+  }
+}
+@media (max-width: 767px) {
+  .buy-btn {
+    padding: 0.375rem 10.75rem !important;
+  }
+}
+@media (max-width: 460px) {
+  .buy-btn {
+    padding: 0.375rem 8.75rem !important;
+  }
+}
+@media (max-width: 390px) {
+  .buy-btn {
+    padding: 0.375rem 7.75rem !important;
+  }
+}
+@media (max-width: 359px) {
+  .buy-btn {
+    padding: 0.375rem 5.75rem !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .btn-check {
+    padding: 0.375rem 0.9rem !important;
+  }
+}
 
 /*# sourceMappingURL=responsivelol.css.map */

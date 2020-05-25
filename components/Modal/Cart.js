@@ -70,10 +70,10 @@ class Cart extends Component {
 
                             <div className="product-cart-btn">
                                 <Link href="/checkout">
-                                    <a className="btn btn-primary">Proceed to Checkout</a>
+                                    <a className="btn btn-primary btn-check">Proceed to Checkout</a>
                                 </Link>
                                 <Link href="/cart">
-                                    <a className="btnLOL btn-lightLOL" style={{width:"fit-content"}}>View Shopping Cart</a>
+                                    <a className="btnLOL btn-lightLOL" style={{display:"table"}}>View Shopping Cart</a>
                                 </Link>
                             </div>
                         </div>

@@ -33,7 +33,6 @@ class Index extends Component {
     render() {
         return (
             <React.Fragment>
-                <AddsModal />
                 <Navbar />
                 <Banner />
                 <Facility />
