@@ -33,7 +33,8 @@ const initState = {
             price: 9.25,
             image: require("../../assets/regions/demacia.png"),
             stock: 0,
-            quantity: 0
+            quantity: 0,
+            imageALT: "lol account euw"
         },
         {
             id: 2,
@@ -41,7 +42,8 @@ const initState = {
             price: 9.25,
             image: require("../../assets/regions/Noxus.png"),
             stock: 0,
-            quantity: 0
+            quantity: 0,
+            imageALT: "lol account na"
         },
         {
             id: 3,
@@ -49,7 +51,8 @@ const initState = {
             price: 9.25,
             image: require("../../assets/regions/flelyor.png"),
             stock: 0,
-            quantity: 0
+            quantity: 0,
+            imageALT: "lol account eune"
         },
         {
             id: 4,
@@ -57,7 +60,8 @@ const initState = {
             price: 9.25,
             image: require("../../assets/regions/Shuriman.png"),
             stock: 0,
-            quantity: 0
+            quantity: 0,
+            imageALT: "lol account turkey"
         },
         {
             id: 5,
@@ -65,7 +69,8 @@ const initState = {
             price: 9.25,
             image: require("../../assets/regions/Piltober.png"),
             stock: 0,
-            quantity: 0
+            quantity: 0,
+            imageALT: "lol account pbe"
         }
     ],
     addedItems:[],

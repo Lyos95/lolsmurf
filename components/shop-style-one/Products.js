@@ -154,7 +154,7 @@ class Products extends Component {
                                                         <div className="product-image">
                                                             <Link href="/product-details">
                                                                 <a>
-                                                                    <img onClick={() => {viewProductDetails(data.id)}} src={data.image} alt="image" />
+                                                                    <img onClick={() => {viewProductDetails(data.id)}} src={data.image} alt={data.imageALT} />
                                                                 </a>
                                                             </Link>                                                          
                                                         </div>

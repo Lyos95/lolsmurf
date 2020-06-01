@@ -9,6 +9,7 @@ import AddsModal from '../components/Modal/AddsModal'
 import { connect } from 'react-redux';
 import {checkIfWeHaveThatAmountOfAccs} from '../store/actions/accountsActions'
 import { ToastContainer, toast, Slide } from 'react-toastify';
+import ArticleContent from '../components/Common/ArticleContent';
 class Index extends Component {
     constructor(props){
         super(props)
@@ -39,6 +40,7 @@ class Index extends Component {
                 
                 <Products />
                 <OfferArea />
+                <ArticleContent/>
                 <Footer />
                 <ToastContainer transition={Slide} />
             </React.Fragment>
