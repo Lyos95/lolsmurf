@@ -11,7 +11,7 @@ import { connect } from 'react-redux';
 import {checkIfWeHaveThatAmountOfAccs} from '../store/actions/accountsActions'
 import { ToastContainer, toast, Slide } from 'react-toastify';
 import { ProductJsonLd } from 'next-seo';
-
+import {NextSeo} from 'next-seo'
 class Index extends Component {
 
     state = {
