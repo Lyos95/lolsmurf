@@ -13,6 +13,14 @@ const dev = process.env.NODE_ENV !== 'production';
 const app = next({ dir: '.', dev });
 const handle = app.getRequestHandler();
 
+
+const sitemapOptions = {
+    root: __dirname + '/static/sitemap/',
+    headers: {
+        'Content-Type': 'text/xml;charset=UTF-8'
+    }
+};
+
 app.prepare().then(() => {
     const server = express();
     // Static files
@@ -33,6 +41,9 @@ app.prepare().then(() => {
     server.use('/api/user',usersAPI)
     server.use('/api/paypal-transaction-complete',paypalAPI)
     
+ 
+
+    server.get('/sitemap.xml', (req, res) => res.status(200).sendFile('sitemap.xml', sitemapOptions));
     server.get('*', (req, res) => {
         return handle(req, res)
     });
@@ -53,4 +64,6 @@ app.prepare().then(() => {
         if (err) throw err
         console.log(`> Read on http://localhost:${PORT}`)
     });
+    
+    
 })

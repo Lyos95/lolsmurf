@@ -4,12 +4,14 @@ import Navbar from '../components/Layout/Navbar';
 import Facility from '../components/shop-style-one/Facility';
 import Footer from '../components/Layout/Footer';
 import { connect } from 'react-redux'
+import {NextSeo} from 'next-seo'
 
 class Index extends Component {
     constructor(props){
         super(props)
     }
     render() {
+        
         function getImage(region) {
             switch (region) {
                 case 'EUW':
@@ -84,6 +86,11 @@ class Index extends Component {
 
         return (
             <React.Fragment>
+               <NextSeo    noindex={true}
+                title='▷LolSmurf - Best League of Legends smurfs'
+                description= 'Level 30 &amp; Unranked ✅- Lifetime Guarantee ✅ Instant Delivery ⚡⚡- 100% Buyer Satisfaction ✅'
+                canonical="'https://www.lolsmurf.net/thankyou"
+                />
                 <Navbar />
 
                 <div className="thank-you-area">

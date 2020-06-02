@@ -4,11 +4,19 @@ import Footer from '../components/Layout/Footer';
 import Facility from '../components/Common/Facility';
 import Breadcrumb from '../components/Common/Breadcrumb';
 import Testimonials from '../components/Common/Testimonials';
+import {NextSeo} from 'next-seo'
 
 class Index extends Component {
     render() {
         return (
             <React.Fragment>
+              
+
+                <NextSeo 
+                title='▷LolSmurf - About - Best League of Legends smurfs'
+                description= 'Level 30 &amp; Unranked ✅- Lifetime Guarantee ✅ Instant Delivery ⚡⚡- 100% Buyer Satisfaction ✅'
+                canonical="'https://www.lolsmurf.net/about"
+                />
                 <Navbar />
                 <Breadcrumb title="About Us" />
                 <section className="about-area ptb-60">

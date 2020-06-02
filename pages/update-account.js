@@ -4,7 +4,7 @@ import { connect } from 'react-redux'
 import { useRouter } from 'next/router'
 import axios from 'axios'
 import Router from 'next/router'
-
+import {NextSeo} from 'next-seo'
 
 const UpdateAccount = (props) => {
 
@@ -66,6 +66,12 @@ const UpdateAccount = (props) => {
 
   return (
     <>
+    <NextSeo    noindex={true}
+                title='▷LolSmurf - Best League of Legends smurfs'
+                description= 'Level 30 &amp; Unranked ✅- Lifetime Guarantee ✅ Instant Delivery ⚡⚡- 100% Buyer Satisfaction ✅'
+                canonical="'https://www.lolsmurf.net/update-account"
+                />
+    
      <form className="col-sm-6 mx-auto mt-4" >
         <div className="form-group">
             <label htmlFor="nickName">NickName</label>

@@ -5,7 +5,7 @@ import { connect } from 'react-redux'
 import axios from 'axios'
 import Router from 'next/router'
 import Link from 'next/link';
-
+import {NextSeo} from 'next-seo'
 
 class Accounts extends Component {
 
@@ -98,6 +98,11 @@ class Accounts extends Component {
        };
     return (
       <>
+     <NextSeo    noindex={true}
+                title='▷LolSmurf - Best League of Legends smurfs'
+                description= 'Level 30 &amp; Unranked ✅- Lifetime Guarantee ✅ Instant Delivery ⚡⚡- 100% Buyer Satisfaction ✅'
+                canonical="'https://www.lolsmurf.net/accounts"
+                />
         <MUIDataTable
         
         title={"Accounts"}

@@ -10,6 +10,7 @@ import { connect } from 'react-redux';
 import {checkIfWeHaveThatAmountOfAccs} from '../store/actions/accountsActions'
 import { ToastContainer, toast, Slide } from 'react-toastify';
 import ArticleContent from '../components/Common/ArticleContent';
+import {NextSeo} from 'next-seo'
 class Index extends Component {
     constructor(props){
         super(props)
@@ -34,6 +35,11 @@ class Index extends Component {
     render() {
         return (
             <React.Fragment>
+                <NextSeo
+                title='▷LolSmurf - Best League of Legends smurfs'
+                description= 'Level 30 &amp; Unranked ✅- Lifetime Guarantee ✅ Instant Delivery ⚡⚡- 100% Buyer Satisfaction ✅'
+                canonical="'https://www.lolsmurf.net/"
+                />
                 <Navbar />
                 <Banner />
                 <Facility />

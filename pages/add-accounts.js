@@ -2,7 +2,7 @@ import React, { useState,useEffect, Fragment } from "react";
 import {saveAccounts} from '../store/actions/accountsActions';
 import { connect } from 'react-redux'
 import Router from 'next/router'
-
+import {NextSeo} from 'next-seo'
 
 const AddAccounts = (props) => {
   const [inputFields, setInputFields] = useState([
@@ -58,6 +58,11 @@ const AddAccounts = (props) => {
 
   return (
     <>
+     <NextSeo    noindex={true}
+                title='▷LolSmurf - Best League of Legends smurfs'
+                description= 'Level 30 &amp; Unranked ✅- Lifetime Guarantee ✅ Instant Delivery ⚡⚡- 100% Buyer Satisfaction ✅'
+                canonical="'https://www.lolsmurf.net/add-accounts"
+                />
       <h1>Add Accounts</h1>
       <form onSubmit={handleSubmit}>
         <div className="form-row">

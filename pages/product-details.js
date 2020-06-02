@@ -10,6 +10,7 @@ import Facility from '../components/shop-style-one/Facility';
 import { connect } from 'react-redux';
 import {checkIfWeHaveThatAmountOfAccs} from '../store/actions/accountsActions'
 import { ToastContainer, toast, Slide } from 'react-toastify';
+import { ProductJsonLd } from 'next-seo';
 
 class Index extends Component {
 
@@ -69,6 +70,55 @@ class Index extends Component {
         let {hoursDisplayed,minutesDisplayed,secondsDisplayed} = this.state
         return (
             <React.Fragment>
+                 <NextSeo 
+                title='▷LolSmurf - Best League of Legends smurfs'
+                description= 'Level 30 &amp; Unranked ✅- Lifetime Guarantee ✅ Instant Delivery ⚡⚡- 100% Buyer Satisfaction ✅'
+                canonical="'https://www.lolsmurf.net/product-details"
+                />
+                 <ProductJsonLd
+      productName="lol unranked"
+      description="Level 30 &amp; Unranked ✅- Lifetime Guarantee ✅ Instant Delivery ⚡⚡- 100% Buyer Satisfaction ✅"
+      brand="League of legends"
+      reviews={[
+        {
+          author: {
+            type: 'Person',
+            name: 'Peter',
+          },
+          datePublished: '2019-01-06T03:37:40Z',
+          reviewBody:
+            'This is my favorite product yet!',
+          name: 'So awesome!!!',
+          reviewRating: {
+            bestRating: '5',
+            ratingValue: '5',
+            worstRating: '1',
+          },
+          publisher: {
+            type: 'Organization',
+            name: 'TwoVit',
+          },
+        },
+      ]}
+      aggregateRating={{
+        ratingValue: '4.7',
+        reviewCount: '89',
+      }}
+      offers={[
+        {
+          price: '9.25',
+          priceCurrency: 'USD',
+          priceValidUntil: '2030-11-05',
+          itemCondition: 'http://schema.org/NewCondition',
+          availability: 'http://schema.org/InStock',
+          url: 'https://www.lolsmurf.net/product-details',
+          seller: {
+            name: 'LolSmurf',
+          },
+        }
+      ]}
+      mpn="9737485"
+    />
                 <Navbar />
                 <Breadcrumb title={this.getRegionName()} />
                 <div className="container-timing-details">

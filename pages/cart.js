@@ -7,6 +7,7 @@ import CartContent from '../components/cart/CartContent';
 import { ToastContainer, toast, Slide } from 'react-toastify';
 import { connect } from 'react-redux';
 import {verifyTransaction ,checkIfWeHaveThatAmountOfAccs} from '../store/actions/accountsActions'
+import {NextSeo} from 'next-seo'
 
 class Index extends Component {
     async componentDidMount() {
@@ -29,6 +30,11 @@ class Index extends Component {
     render() {
         return (
             <React.Fragment>
+                  <NextSeo    noindex={true}
+                title='▷LolSmurf - Best League of Legends smurfs'
+                description= 'Level 30 &amp; Unranked ✅- Lifetime Guarantee ✅ Instant Delivery ⚡⚡- 100% Buyer Satisfaction ✅'
+                canonical="'https://www.lolsmurf.net/cart"
+                />
                 <Navbar />
                 <Breadcrumb title="Cart" />
                 <CartContent />
