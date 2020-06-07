@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import LazyLoad from 'react-lazyload';
 
 class ProductImage extends Component {
 
@@ -16,8 +17,10 @@ class ProductImage extends Component {
                     <div className="product-page-gallery-main">
                        <div>
                            <div className="move-bottom margin-picture-acc">
-
-                            <img src={this.props.image}></img>
+                            <LazyLoad once>
+                                <img src={this.props.image} alt={this.props.alt}></img>
+                            </LazyLoad>
+                            
 
                            </div>
                        </div>

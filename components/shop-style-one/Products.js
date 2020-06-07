@@ -6,6 +6,7 @@ import ReactTooltip from 'react-tooltip'
 import { ToastContainer, toast, Slide } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import QuickView from '../Modal/QuickView';
+import LazyLoad from 'react-lazyload';
 
 class Products extends Component {
 
@@ -154,7 +155,9 @@ class Products extends Component {
                                                         <div className="product-image">
                                                             <Link href="/product-details">
                                                                 <a>
-                                                                    <img onClick={() => {viewProductDetails(data.id)}} src={data.image} alt={data.imageALT} />
+                                                                    <LazyLoad once>
+                                                                        <img onClick={() => {viewProductDetails(data.id)}} src={data.image} alt={data.imageALT} />
+                                                                    </LazyLoad>
                                                                 </a>
                                                             </Link>                                                          
                                                         </div>

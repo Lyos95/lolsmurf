@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import TopPanel from './TopPanel';
 import TopHeader from './TopHeader';
 import MegaMenu from './MegaMenu';
 import { initGA, logPageView } from "../googleAnalytics.js"

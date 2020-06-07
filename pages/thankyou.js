@@ -15,15 +15,15 @@ class Index extends Component {
         function getImage(region) {
             switch (region) {
                 case 'EUW':
-                    return require('../assets/regions/demacia.png')
+                    return require('../assets/regions/demacia.jpg')
                 case 'TURK':
-                    return require('../assets/regions/Shuriman.png')
+                    return require('../assets/regions/Shuriman.jpg')
                 case 'EUNE':
-                    return require('../assets/regions/flelyor.png')
+                    return require('../assets/regions/flelyor.jpg')
                 case 'NA':
-                    return require('../assets/regions/Noxus.png')
+                    return require('../assets/regions/Noxus.jpg')
                 case 'PBE':
-                    return require('../assets/regions/Piltober.png')
+                    return require('../assets/regions/Piltober.jpg')
                 default:
                     break;
             }

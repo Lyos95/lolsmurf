@@ -31,7 +31,7 @@ const initState = {
             id: 1,
             title: "EU WEST",
             price: 9.25,
-            image: require("../../assets/regions/demacia.png"),
+            image: require("../../assets/regions/demacia.jpg"),
             stock: 0,
             quantity: 0,
             imageALT: "lol account euw"
@@ -40,7 +40,7 @@ const initState = {
             id: 2,
             title: "NA",
             price: 9.25,
-            image: require("../../assets/regions/Noxus.png"),
+            image: require("../../assets/regions/Noxus.jpg"),
             stock: 0,
             quantity: 0,
             imageALT: "lol account na"
@@ -49,7 +49,7 @@ const initState = {
             id: 3,
             title: "EU NORDIC & EAST",
             price: 9.25,
-            image: require("../../assets/regions/flelyor.png"),
+            image: require("../../assets/regions/flelyor.jpg"),
             stock: 0,
             quantity: 0,
             imageALT: "lol account eune"
@@ -58,7 +58,7 @@ const initState = {
             id: 4,
             title: "TURKEY",
             price: 9.25,
-            image: require("../../assets/regions/Shuriman.png"),
+            image: require("../../assets/regions/Shuriman.jpg"),
             stock: 0,
             quantity: 0,
             imageALT: "lol account turkey"
@@ -67,7 +67,7 @@ const initState = {
             id: 5,
             title: "PBE",
             price: 9.25,
-            image: require("../../assets/regions/Piltober.png"),
+            image: require("../../assets/regions/Piltober.jpg"),
             stock: 0,
             quantity: 0,
             imageALT: "lol account pbe"
@@ -82,9 +82,10 @@ const initState = {
                         id: 1,
                         title: "EU WEST",
                         price: 9.25,
-                        image: require("../../assets/regions/demacia.png"),
+                        image: require("../../assets/regions/demacia.jpg"),
                         stock: 0,
-                        quantity: 0
+                        quantity: 0,
+                        imageALT: "lol account euw"
                     },
     soldAccounts: [],
     userLogged: false
