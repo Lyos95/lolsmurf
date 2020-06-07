@@ -3,8 +3,7 @@ const withCSS = require('@zeit/next-css');
 const withFonts = require('next-fonts');
 const withPlugins = require('next-compose-plugins');
 const optimizedImages = require('next-optimized-images');
-const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
-const CriticalPlugin = require('webpack-plugin-critical').CriticalPlugin;
+const withPurgeCss = require('next-purgecss');
 
 module.exports = withPlugins([
     [optimizedImages, {
@@ -30,11 +29,5 @@ module.exports = withPlugins([
             quality: 75,
         },
     }],
-    [withCSS],[withFonts],[withSass], [new UglifyJsPlugin()],
-    [new CriticalPlugin({
-        src: 'index.html',
-        inline: true,
-        minify: true,
-        dest: 'index.html'
-      })]
+    [withCSS],[withPurgeCss],[withFonts],[withSass]
 ]);
