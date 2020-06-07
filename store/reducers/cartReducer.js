@@ -7,7 +7,8 @@ import { FETCH_ACCOUNT, FETCH_ACCOUNTS_COUNTER,RESET } from "../actions/action-t
 
 const persistConfig = {
     key: 'root',
-    storage
+    storage,
+    blacklist:['products']
   }
 
 import { 
