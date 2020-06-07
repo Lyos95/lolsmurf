@@ -41,8 +41,7 @@ class Index extends Component {
                 />
                 <Navbar />
                 <Banner />
-                <Facility />
-                
+                <Facility />                
                 <Products />
                 <OfferArea />
                 <ArticleContent/>
