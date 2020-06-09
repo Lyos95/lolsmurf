@@ -29,5 +29,5 @@ module.exports = withPlugins([
             quality: 75,
         },
     }],
-    [withCSS],[withPurgeCss],[withFonts],[withSass]
+    [withCSS],[withFonts],[withSass]
 ]);
