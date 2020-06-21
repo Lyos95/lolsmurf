@@ -1,20 +1,14 @@
 import React, { Component } from 'react';
 import Navbar from '../components/Layout/Navbar';
-import dynamic from 'next/dynamic'
-
-const Footer = dynamic(() => import('../components/Layout/Footer'))
-
-const Banner = dynamic(() => import('../components/shop-style-four/Banner'))
-const Facility = dynamic(() => import('../components/shop-style-four/Facility'))
-const OfferArea = dynamic(() => import('../components/shop-style-four/OfferArea'))
-const Products = dynamic(() => import('../components/shop-style-one/Products'))
-const ArticleContent = dynamic(() => import('../components/Common/ArticleContent'))
-
-
+import Footer from '../components/Layout/Footer';
+import Banner from '../components/shop-style-four/Banner';
+import Facility from '../components/shop-style-four/Facility';
+import OfferArea from '../components/shop-style-four/OfferArea';
+import Products from '../components/shop-style-one/Products';
 import { connect } from 'react-redux';
 import {checkIfWeHaveThatAmountOfAccs} from '../store/actions/accountsActions'
 import { ToastContainer, toast, Slide } from 'react-toastify';
-
+import ArticleContent from '../components/Common/ArticleContent';
 import {NextSeo} from 'next-seo'
 class Index extends Component {
     constructor(props){
