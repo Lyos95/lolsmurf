@@ -1,11 +1,11 @@
 
-import '../assets/styles/stylelol.css';
-import '../assets/styles/responsivelol.css';
+import '../assets/styles/stylelol.min.css';
+import '../assets/styles/responsivelol.min.css';
 import '../assets/styles/bootstrap.min.css';
 import '../assets/styles/fontawesome.min.css';
 import '../assets/styles/animate.min.css';
-import '../assets/styles/slick.css';
-import '../assets/styles/slick-theme.css';
+import '../assets/styles/slick.min.css';
+import '../assets/styles/slick-theme.min.css';
 
 
 import { Provider } from 'react-redux';
@@ -23,9 +23,10 @@ export default withRedux(initStore)(
             super(props)
             this.persistor = persistStore(props.store)
           }
-         // componentDidMount () {
+          /*
+          componentDidMount () {
             // Include the Crisp code here, without the <script></script> tags
-           /* window.$crisp = [];
+            window.$crisp = [];
             window.CRISP_WEBSITE_ID = "340f0a84-4c85-43bf-a5a0-ec570e266448";
         
             (function() {
@@ -35,8 +36,8 @@ export default withRedux(initStore)(
               s.async = 1;
               d.getElementsByTagName("head")[0].appendChild(s);
               
-            })();*/
-       // };
+            })();
+        }*/
           
         static async getInitialProps ({ Component, ctx }) {
             return {

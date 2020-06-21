@@ -2781,7 +2781,7 @@ blockquote {
   margin: 20px 0;
 }
 blockquote::before {
-  font-family: "Font Awesome 5 Free";
+  font-family: "Font Awesome 5 Free", sans-serif;
   content: "";
   position: absolute;
   left: 30px;
@@ -6450,7 +6450,7 @@ Go Top CSS
   }
 }
 .btnOffer {
-  font-family: "Press Start 2P";
+  font-family: "Press Start 2P", sans-serif;
   background: #e82223cc;
   width: 147px;
   text-align: center;
