@@ -5,6 +5,7 @@ import Facility from '../components/shop-style-one/Facility';
 import Footer from '../components/Layout/Footer';
 import { connect } from 'react-redux'
 import {NextSeo} from 'next-seo'
+import Pixel from '../components/Pixel'
 
 class Index extends Component {
     constructor(props){
@@ -86,6 +87,7 @@ class Index extends Component {
 
         return (
             <React.Fragment>
+                <Pixel name='FACEBOOK_PIXEL_1' />
                <NextSeo    noindex={true}
                 title='▷LolSmurf - Best League of Legends smurfs'
                 description= 'Level 30 &amp; Unranked ✅- Lifetime Guarantee ✅ Instant Delivery ⚡⚡- 100% Buyer Satisfaction ✅'
