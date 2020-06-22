@@ -74,13 +74,13 @@ class DetailsTab extends Component {
                             <div className="tab_content">
                                 <div id="tab1" className="tabs_item">
                                     <div className="products-details-tab-content">
-                                        <p>These accounts are perfect for anyone who wants to practice new champs in a different account or for those who want to smurf and prove themselves in ranked. You will receive the blue essence gained from leveling up as well as the capsules gained from getting to level 30. Inside these capsules, you can gain a mix of additional blue essence and champion shards!! With champion shards, you have 2 possibilities, you can either exchange them for blue essences or you can get the champion cheaper than you would in the league of legends store!! The accounts have a lifetime warranty
+                                        <p>These accounts are perfect for anyone who wants to practice new champs in a different account or for those who just want to smurf and prove themselves in ranked games. You will receive the blue essence gained from leveling up as well as the capsules gained from getting to level 30. Inside these capsules, you can gain a mix of additional blue essence and champion shards!! With champion shards, you have 2 possibilities, you can either exchange them for blue essences or you can get the champion cheaper than you would in the league of legends store!! The accounts have a lifetime warranty
 </p>
 
                                         <div className="row">
                                             <div className="col-lg-6 col-md-6">
                                                 <ul>
-                                                    <li>BE: Around 35000</li>
+                                                    <li>BE: Around 40000</li>
                                                     <li>Warranty: lifetime warranty</li>
                                                     <li>Email: Unverified</li>
                                                 </ul>
