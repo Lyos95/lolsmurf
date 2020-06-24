@@ -53,7 +53,7 @@ class CartProduct extends Component {
                             <ul>
                                 <li>Region: <strong>{data.title}</strong></li>
                                 <li>Email: <strong>Unverified</strong></li>
-                                <li>BE: <strong>±40000 BE</strong></li>
+                                <li>BE: <strong>+40000 BE</strong></li>
                             </ul>
                         </td>
 
