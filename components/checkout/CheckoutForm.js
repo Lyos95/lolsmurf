@@ -46,37 +46,57 @@ function CheckoutForm({total, shipping,verifyTransaction,checkIfWeHaveThatAmount
        // if(sameEmail){ 
                       
            if(total > 0){
-            paypal.Buttons({createOrder: async function(data, actions) {
-                // This function sets up the details of the transaction, including the amount and line item details.
-                return actions.order.create({
-                  purchase_units: [{
-                    amount: {
-                      value: total,
-                      currency_code: "USD"
-                    }
-                  }]
-                });
-              },
-              onApprove: async function(data, actions) {
-                  
-                      // This function captures the funds from the transaction.
-                      return actions.order.capture().then(async function(details) {
-                        // This function shows a transaction success message to your buyer.
-                        
-                        let response = await verifyTransaction(data.orderID,details.payer.email_address,total,products)
-                        
-                          //Llamada al endpoint para traer las cuentas para el usuario
-                          console.log(response);
+
+            var FUNDING_SOURCES = [
+                paypal.FUNDING.PAYPAL
+            ];
+
+            FUNDING_SOURCES.forEach(function(fundingSource) {
+
+                // Initialize the buttons
+                var button = paypal.Buttons({
+                    fundingSource: fundingSource,
+                    createOrder: async function(data, actions) {
+                        // This function sets up the details of the transaction, including the amount and line item details.
+                        return actions.order.create({
+                          purchase_units: [{
+                            amount: {
+                              value: total,
+                              currency_code: "USD"
+                            }
+                          }]
+                        });
+                      },
+                      onApprove: async function(data, actions) {
                           
-                          Router.push({
-                            pathname: '/thankyou'
-                        })
-                      });
-                   
-                  }
-                  
-                  
-            }).render('#paypal-button-container');
+                              // This function captures the funds from the transaction.
+                              return actions.order.capture().then(async function(details) {
+                                // This function shows a transaction success message to your buyer.
+                                
+                                let response = await verifyTransaction(data.orderID,details.payer.email_address,total,products)
+                                
+                                  //Llamada al endpoint para traer las cuentas para el usuario
+                                  console.log(response);
+                                  
+                                  Router.push({
+                                    pathname: '/thankyou'
+                                })
+                              });
+                           
+                          }
+                        
+                });
+            
+                // Check if the button is eligible
+                if (button.isEligible()) {            
+                    // Render the standalone button for that funding source
+                    button.render('#paypal-button-container');
+                }
+            });
+
+
+
+
      /*   }else{
             console.log('eliminando...');
             if(document.getElementById('paypal-button-container')){
