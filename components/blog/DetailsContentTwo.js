@@ -35,7 +35,7 @@ export class DetailsContentTwo extends Component {
                                         <img style={{marginBottom:'20px',cursor:'pointer'}} onClick={()=>{}} src={require("../../assets/blog/buy-lol-smurf.jpg")} />
                                     </Link>
 
-                                    <p>In League of legends, solo queue is often an completly mess 
+                                    <p>In League of legends, solo queue is often a completely mess 
                                         with different personalities and playstyles, which often results in some seriously questionable decisions. 
                                         But it's always important to focus on yourself and your own performance. Don't blame 
                                         anyone else, because if you do, you won't improve. Once you start taking ownership of the match 
@@ -48,7 +48,7 @@ export class DetailsContentTwo extends Component {
 
                                     <blockquote className="wp-block-quote">
                                         <p>This is not a definitive list. League of Legends is home to hundreds of champions,
-                                          so if your favourite champion isn't here, or a meta-breaking league of legends champion isn't on this list, don't 
+                                          so if your favorite champion isn't here, or a meta-breaking league of legends champion isn't on this list, don't 
                                           count them out!!</p>
                                     </blockquote>
 
@@ -62,7 +62,7 @@ export class DetailsContentTwo extends Component {
                                     like Karma will be neutralized with this pick, making their adc vulnerable</p>
 
                                     <p> <b>Bladesurge will be an easy tool </b>for you to dash towards minions <b>to ensure you earn as much gold as possible</b>, 
-                                        but this hability can also be used more aggressively against enemy champions to look for kills. 
+                                        but this ability can also be used more aggressively against enemy champions to look for kills. 
                                         <b>Her ultimate will give you a huge playmaking option</b>, as it can entrap key targets for you and 
                                         your allies to follow up on
                                     </p>
@@ -72,15 +72,15 @@ export class DetailsContentTwo extends Component {
                                         take over the top lane and then snowball his advantage in other lanes with the rest of his team 
                                         leading them to victory.</p>
 
-                                    <p> <b>Thanks to his bleeding passive</b>, Darius can to disrupt his lane opponent with a constant damage over time 
-                                        that <b>makes winning long and short trades easier</b>, and on top of while your enemy is retreating
+                                    <p> <b>Thanks to his bleeding passive</b>, Darius can to disrupt his lane opponent with constant damage over time 
+                                        that <b>makes winning long and short trades easier</b>, and on top of while your enemy is retreating 
                                         <b>you can heal by using Decimate</b>.
 
                                         You really need to put yourself in a dangerous position to apply Hemorrhage by  
                                         mixing his long-range abilities with auto attacks.</p>
 
-                                    <p> <b>Darius’ kill potential skyrockets once he reaches his level 6 and unlock Noxian Guillotine.</b>
-                                        If you take this power into a teamfight you can become a one man army.
+                                    <p> <b>Darius’ kill potential skyrockets once he reaches his level 6 and unlocks Noxian Guillotine.</b>
+                                        If you take this power into a team fight you can become a one-man army.
                                     </p>
                                     <Link href="/product-details">
                                         <img style={{marginBottom:'20px',cursor:'pointer'}} onClick={()=>{}} src={require("../../assets/blog/buy-lol-smurf.jpg")} />
@@ -95,7 +95,7 @@ export class DetailsContentTwo extends Component {
                                     </p>
 
                                     <p>Ekko is an <b>amazing champion to look for ganks.</b> You start with Timewinder, 
-                                       that apply a nice bit amount of damage and also slow your enemy. This synergies well with Parallel Convergence,
+                                       which applies a nice bit amount of damage and also slows your enemy. This synergies well with Parallel Convergence,
                                        and Phase Dive which.
                                        Keep in mind that  Ekko has his <b>Chronobreaking</b> so <b>even if you mess up you can just rewind</b>.
                                        </p>
@@ -105,7 +105,7 @@ export class DetailsContentTwo extends Component {
                                     </p>
                                     <h3>Kha’Zix</h3>
                                     <p> If you like hunting your enemies, then Kha’Zix is your champion for smurf your enemies in solo queue.
-                                        He is undoubtedly a strong jungler,and <b>his true power lies in his ability to walk around the map killing champions</b>
+                                        He is undoubtedly a strong jungler, and <b>his true power lies in his ability to walk around the map killing champions</b> 
                                         out of position or casually farming in lane alone.
 
                                     </p>
@@ -117,7 +117,7 @@ export class DetailsContentTwo extends Component {
                                         trying to run away from you.
                                        </p>
 
-                                    <p> This champion <b>is a play maker </b>, Kha’Zix is an ideal pick for the solo queue where everything is a completly mess.
+                                    <p> This champion <b>is a playmaker </b>, Kha’Zix is an ideal pick for the solo queue where everything is a completely mess.
                                     </p>
 
                                     <Link href="/product-details">
@@ -133,7 +133,7 @@ export class DetailsContentTwo extends Component {
                                     </p>
 
                                     <p> Your skill<b>,Death Mark, is gonna be a really powerful tool to use to kill weak opponents</b>,
-                                        that will allow you to set up some high burst damage. Plus,his passive, Contempt for the Weak,
+                                        that will allow you to set up some high burst damage. Plus, his passive, Contempt for the Weak,
                                          will help you a lot by finishing off weakened targets.
                                     </p>
 
