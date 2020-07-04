@@ -4,6 +4,7 @@ import Footer from '../components/Layout/Footer';
 import Facility from '../components/Common/Facility';
 import Breadcrumb from '../components/Common/Breadcrumb';
 import DetailsContentTwo from '../components/blog/DetailsContentTwo';
+import {NextSeo} from 'next-seo'
 
 class BlogDetailsTwo extends Component {
     render() {
