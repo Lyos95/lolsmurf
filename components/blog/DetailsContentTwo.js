@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Link from 'next/link';
 import BlogSidebar from './BlogSidebar';
 
+
 export class DetailsContentTwo extends Component {
     render() {
         return (
@@ -11,7 +12,7 @@ export class DetailsContentTwo extends Component {
                         <div className="col-lg-8">
                             <div className="blog-details">
                                 <div className="article-img">
-                                    <img src={require("../../images/blog2.jpg")} alt="image" />
+                                    <img src={require("../../assets/blog/best-champs-to-carry-low-elo.jpg")} alt="best-champs-to-carry-low-elo" />
                                 </div>
 
                                 <div className="article-content">
@@ -19,264 +20,225 @@ export class DetailsContentTwo extends Component {
                                         <li>
                                             <i className="far fa-user"></i> 
                                             <Link href="#">
-                                                <a>Novine</a>
+                                                <a>Skenry</a>
                                             </Link>
                                         </li>
-                                        <li><i className="far fa-calendar-alt"></i> April 08, 2019</li>
-                                        <li><i className="far fa-comment-dots"></i> 2 Comment</li>
+                                        <li><i className="far fa-calendar-alt"></i> June 30, 2020</li>
                                     </ul>
 
-                                    <h3>The Most Popular New top Business Apps</h3>
+                                    <h1>Best champs to carry low elo</h1>
 
-                                    <p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                                    <p>In this article we are going to see what are the best League of Legends solo queue champions for top, mid, jungle and bot that will help you to rank up in solo queue</p>
 
-                                    <p>Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                    <p>Before we start we would recommend you to <b>practice this champions in a different account (lol smurf account) </b>so you won't lose any any lps in your main account while you are practicing</p>
+                                    <Link href="/product-details">
+                                        <img style={{marginBottom:'20px',cursor:'pointer'}} onClick={()=>{}} src={require("../../assets/blog/buy-lol-smurf.jpg")} />
+                                    </Link>
 
-                                    <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                                    <p>In League of legends, solo queue is often an completly mess 
+                                        with different personalities and playstyles, which often results in some seriously questionable decisions. 
+                                        But it's always important to focus on yourself and your own performance. Don't blame 
+                                        anyone else, because if you do, you won't improve. Once you start taking ownership of the match 
+                                        result, you'll soon start climbing the ranks.</p>
 
-                                    <p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-
-                                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                                    <p>But <b>which champions are the best to carry in low elo? </b> Well, we've put together some of the best 
+                                       solo queue champions in League of Legends for a wide range of skill levels, for different roles. This
+                                       will give you different options to choose from when you have to decide with which league of legends you want to
+                                       use to smurf your enemies in low elo!</p>
 
                                     <blockquote className="wp-block-quote">
-                                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-
-                                        <cite>Tom Cruise</cite>
+                                        <p>This is not a definitive list. League of Legends is home to hundreds of champions,
+                                          so if your favourite champion isn't here, or a meta-breaking league of legends champion isn't on this list, don't 
+                                          count them out!!</p>
                                     </blockquote>
 
-                                    <p>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using ‘Content here, content here’, making it look like readable English.</p>
+                                    <h2>Top Lane</h2>
+                                    <h3>Irelia</h3>
+                                    <p>If you’re looking for a champion for the top lane, one of the best champs to carry in low elo is Irelia. 
+                                       She is an <b>excellent duelist</b>, she can outplay almost every champion while she is <b>really strong 
+                                       split pushing side lanes.</b></p>
 
-                                    <p>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for ‘lorem ipsum’ will uncover many web sites still in their infancy.</p>
+                                    <p>Her passive gives her a <b>big advantage over many champions who rely on shields</b>. So those supports based on shields
+                                    like Karma will be neutralized with this pick, making their adc vulnerable</p>
 
-                                    <p>Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+                                    <p> <b>Bladesurge will be an easy tool </b>for you to dash towards minions <b>to ensure you earn as much gold as possible</b>, 
+                                        but this hability can also be used more aggressively against enemy champions to look for kills. 
+                                        <b>Her ultimate will give you a huge playmaking option</b>, as it can entrap key targets for you and 
+                                        your allies to follow up on
+                                    </p>
 
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                    <h3>Darius</h3>
+                                    <p> Combining <b>tankiness with all his damage</b>, Darius can
+                                        take over the top lane and then snowball his advantage in other lanes with the rest of his team 
+                                        leading them to victory.</p>
 
-                                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                    <p> <b>Thanks to his bleeding passive</b>, Darius can to disrupt his lane opponent with a constant damage over time 
+                                        that <b>makes winning long and short trades easier</b>, and on top of while your enemy is retreating
+                                        <b>you can heal by using Decimate</b>.
 
-                                    <ul className="category">
-                                        <li><span>Tags:</span></li>
-                                        <li>
-                                            <Link href="#">
-                                                <a>Business</a>
-                                            </Link>
-                                        </li>
-                                        <li>
-                                            <Link href="#">
-                                                <a>IT</a>
-                                            </Link>
-                                        </li>
-                                        <li>
-                                            <Link href="#">
-                                                <a>Tips</a>
-                                            </Link>
-                                        </li>
-                                        <li>
-                                            <Link href="#">
-                                                <a>Design</a>
-                                            </Link>
-                                        </li>
-                                    </ul>
+                                        You really need to put yourself in a dangerous position to apply Hemorrhage by  
+                                        mixing his long-range abilities with auto attacks.</p>
+
+                                    <p> <b>Darius’ kill potential skyrockets once he reaches his level 6 and unlock Noxian Guillotine.</b>
+                                        If you take this power into a teamfight you can become a one man army.
+                                    </p>
+                                    <Link href="/product-details">
+                                        <img style={{marginBottom:'20px',cursor:'pointer'}} onClick={()=>{}} src={require("../../assets/blog/buy-lol-smurf.jpg")} />
+                                    </Link>
+                                    <h2>Jungle</h2>
+                                    <h3>Ekko</h3>
+                                    <p> Ekko is one of the best champions to carry in low elo, playing Ekko has basically no weaknesses. 
+                                        He has <b>strong ganks </b>because of his <b>high mobility</b> and he's got <b>great jungle clear</b>, 
+                                        .But one of the best things about Ekko is his <b>burst damage</b>, so you can kill enemy champions in seconds with your combo. 
+                                        Ah, and he's a really really <b>slippery</b> champion too.
+
+                                    </p>
+
+                                    <p>Ekko is an <b>amazing champion to look for ganks.</b> You start with Timewinder, 
+                                       that apply a nice bit amount of damage and also slow your enemy. This synergies well with Parallel Convergence,
+                                       and Phase Dive which.
+                                       Keep in mind that  Ekko has his <b>Chronobreaking</b> so <b>even if you mess up you can just rewind</b>.
+                                       </p>
+
+                                    <p> When looking for ganks, <b>it’s useful to pair Ekko with champions that can assist him with additional CC</b>,
+                                        as the slow from Timewinder it is not usually enough to guarantee kills.
+                                    </p>
+                                    <h3>Kha’Zix</h3>
+                                    <p> If you like hunting your enemies, then Kha’Zix is your champion for smurf your enemies in solo queue.
+                                        He is undoubtedly a strong jungler,and <b>his true power lies in his ability to walk around the map killing champions</b>
+                                        out of position or casually farming in lane alone.
+
+                                    </p>
+
+                                    <p> When you reach <b>level six, you can turn invisible </b> improving the odds you sneak up on opponents when 
+                                        looking for ganks. Try to make sure your allies don’t make it look obvious that you’re 
+                                        around. <b>You also have some crowd control's tools</b> to slow opponents with the Voidreaver’s 
+                                        Unseen Threat passive, plus the long-range Void Spike attack. You can also <b>jump into targets </b>if they are 
+                                        trying to run away from you.
+                                       </p>
+
+                                    <p> This champion <b>is a play maker </b>, Kha’Zix is an ideal pick for the solo queue where everything is a completly mess.
+                                    </p>
+
+                                    <Link href="/product-details">
+                                        <img style={{marginBottom:'20px',cursor:'pointer'}} onClick={()=>{}} src={require("../../assets/blog/buy-lol-smurf.jpg")} />
+                                    </Link>
+                                    <h2>Mid</h2>
+                                    <h3>Zed</h3>
+                                    <p> Zed is a champion whose sole purpose is to assassinate his enemies so if like to roam and snowball games 
+                                        he is your champion! Zed has a <b>decent laning phase</b>, and he can farm minions quite safely using Razor Shuriken and Shadow Slash
+                                        he can but once you reach <b>level 6 you can start to obliterate soft 
+                                        targets on the opposing team and snowball the game</b>.
+
+                                    </p>
+
+                                    <p> Your skill<b>,Death Mark, is gonna be a really powerful tool to use to kill weak opponents</b>,
+                                        that will allow you to set up some high burst damage. Plus,his passive, Contempt for the Weak,
+                                         will help you a lot by finishing off weakened targets.
+                                    </p>
+
+                                    <h3>Kassadin</h3>
+                                    <p> Kassadin is an <b>hyper-carry for the mid lane as he brings a lot of damage and anti-mage power </b>that 
+                                        gives him an advantage over others magic damage dealers.
+                                    </p>
+
+                                    <p>  <b>His passive </b>is really important as it <b>reduces all the magic damage taken by 15%</b>.
+                                         With his skill,<b>Null Sphere, can interrupt channels while gaining a magic damage shield.</b>
+                                         One key ability is <b>Force Pulse ability, that you need to charge up with spell casts.</b> Once it is fully
+                                         charged the spell is unlock and you can <b>deal a lot of damage</b> to the champions that are in front of you. 
+                                       </p>
+
+                                    <p> But it is <b>his mobility what makes Kassadin a real threat as the game progresses,</b> the more dangerous he becomes
+                                        as his ultimate cooldown is reduced.So <b>he can teleport in a short distance </b>closing the gap or creating space between 
+                                        you and your enemies. 
+                                    </p>
+
+
+                                    <Link href="/product-details">
+                                        <img style={{marginBottom:'20px',cursor:'pointer'}} onClick={()=>{}} src={require("../../assets/blog/buy-lol-smurf.jpg")} />
+                                    </Link>
+                                    <h2>Bot</h2>
+                                    <h3>Kai’Sa</h3>
+                                    <p> She is a <b> very versatile and adaptable</b> champion with a kit that grants 
+                                        her a lot of power as a damage dealer. She can be either AP or AD so she is a safe pick in many team 
+                                        compositions too, ensuring she will fit in many compositions that other adcs wouldn't.
+                                    </p>
+
+                                    <p> <b>Kai’Sa can inflic some serious damage with skills </b>such as Icathian Rain, whose targeting is random so
+                                         you'll need to be smart when you use it, and make sure you're
+                                        not missing enemies or minions because remember, farming is really important in League of Legends.
+                                       </p>
+
+                                    <p> <b>Upgrading Supercharge </b>is pretty important since this ability is gonna grant you some elusiveness in team
+                                         fights because you are gonna be one of the targets they are gonna focus on. The <b>brief invisibility </b>is not 
+                                        incredibly powerful, but that <b>will buy you some time to reposition yourself in those team fights</b>.
+                                    </p>
+                                    <p>
+                                        So,Kai'Sa is a all-rounder adc who does a lot of <b>hybrid damage</b> and <b>have some tools to protect herself like her ultimate 
+                                        </b>that you can use to reposition yourself in team fights.
+                                    </p>
+
+                                    <h3>Lucian</h3>
+                                    <p> Lucian is a really powerfull Marksman who <b>excels in the laning phase</b> and if played properly
+                                        will become a serious threat in during the mid and late game. Lucian is a solid pick for solo queue because
+                                         he <b>doesn’t have any bad matchup.</b>
+                                    </p>
+
+                                    <p> You have to notice that mostly all Marksmen champions are weaker at the start of a match,
+                                        but not Lucian so you should take advantage
+                                        of this <b>strong early game </b>and poke your oponents as much as possible during the early stages making sure you
+                                        end the lanning phase with an advantage. As a tip use his passive to gain a small edge over your opponents.
+                                        So <b>combine his abilities with a free double auto-attack </b>and you will find yourself
+                                        ahead in trades against your lane opponents.
+                                       </p>
+
+                                    <p> As a difference from other adcs, <b>Lucian can be a bruiser or a glass cannon</b> like a Caitlyn.
+                                    </p>
+
+
+                                    <Link href="/product-details">
+                                        <img style={{marginBottom:'20px',cursor:'pointer'}} onClick={()=>{}} src={require("../../assets/blog/buy-lol-smurf.jpg")} />
+                                    </Link>
+                                    <h2>Support</h2>
+                                    <h3>Pyke </h3>
+                                    <p> If you want to carry as a support in low elo you will need some damage and Pyke <b>has tons of damage</b>. He is
+                                         a champion that if player correctly, can solo carry a game.
+                                    </p>
+
+                                    <p> His ability to create picks with his Bone Skewer and Ghostwater Dive means you’re in a prime 
+                                        position to <b>directly impact in the engagements </b>creating key opportunities <b>by pulling an important or squishy champion 
+                                        towards you</b> and your allies will kill him instantly if the opportunity is great.
+                                       </p>
+
+                                    <p> If you’re worried your won't be able to finish the kills, <b>Pyke’s ultimate</b>, Death From Below, is here to save
+                                        your day since it can be used to
+                                         <b>execute low health champions, while ensuring everyone involved in the kill receives the full gold reward </b>(which is really op). 
+                                         And also on top of that you can re-cast it immediately.
+                                    </p>
+
+                                    <h3>Thresh</h3>
+                                    <p> Thresh is another support champion who <b>can proactively encourage your allies to overfoce some
+                                         plays because of your Lantern</b>. He is not as tanky as some of the game’s 
+                                         strongest tanks but he is still <b>pretty tanky </b>and can absorb some damage while the rest of the team 
+                                         is fighting.
+                                    </p>
+
+                                    <p> <b>Death Sentence is the ability you will have to master</b>, hooking your enemies and pouncing upon them
+                                        is gonna be the key for winning your games. You can also <b>use your skill Flay in order to hold an opponent in place
+                                        </b>long enough for your team to take them down.
+                                       </p>
+                                    
+                                    <h3>Thanks for reading</h3>
+                                    <p> Thanks for reading! If you are thinking about climbing in solo queue you should practice this champs in a smurf account,
+                                        so your main account's elo won't be affected by this. If you are thinking about getting one you can buy a smurf account for only $9.25 ! <Link href="/product-details">Just click here if you are interested</Link>
+                                    </p>
+                                    <Link href="/product-details">
+                                        <img style={{marginBottom:'20px',cursor:'pointer'}} onClick={()=>{}} src={require("../../assets/blog/buy-lol-smurf.jpg")} />
+                                    </Link>
                                 </div>
                             </div>
 
-                            <div className="comments-area">
-                                <h3 className="comments-title">2 Comments:</h3>
-
-                                <ol className="comment-list">
-                                    <li className="comment">
-                                        <article className="comment-body">
-                                            <footer className="comment-meta">
-                                                <div className="comment-author vcard">
-                                                    <img src={require("../../images/author1.jpg")} className="avatar" alt="image" />
-                                                    <b className="fn">Novine</b>
-                                                    <span className="says">says:</span>
-                                                </div>
-
-                                                <div className="comment-metadata">
-                                                    <Link href="#">
-                                                        <a>
-                                                            <time>April 24, 2019 at 10:59 am</time>
-                                                        </a>
-                                                    </Link>
-                                                </div>
-                                            </footer>
-
-                                            <div className="comment-content">
-                                                <p>Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                                            </div>
-
-                                            <div className="reply">
-                                                <Link href="#">
-                                                    <a className="comment-reply-link">Reply</a>
-                                                </Link>
-                                            </div>
-                                        </article>
-
-                                        <ol className="children">
-                                            <li className="comment">
-                                                <article className="comment-body">
-                                                    <footer className="comment-meta">
-                                                        <div className="comment-author vcard">
-                                                            <img src={require("../../images/author2.jpg")} className="avatar" alt="image" />
-                                                            <b className="fn">Novine</b>
-                                                            <span className="says">says:</span>
-                                                        </div>
-            
-                                                        <div className="comment-metadata">
-                                                            <Link href="#">
-                                                                <a>
-                                                                    <time>April 24, 2019 at 10:59 am</time>
-                                                                </a>
-                                                            </Link>
-                                                        </div>
-                                                    </footer>
-            
-                                                    <div className="comment-content">
-                                                        <p>Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                                                    </div>
-            
-                                                    <div className="reply">
-                                                        <Link href="#">
-                                                            <a className="comment-reply-link">Reply</a>
-                                                        </Link>
-                                                    </div>
-                                                </article>
-                                            </li>
-
-                                            <ol className="children">
-                                                <li className="comment">
-                                                    <article className="comment-body">
-                                                        <footer className="comment-meta">
-                                                            <div className="comment-author vcard">
-                                                                <img src={require("../../images/author3.jpg")} className="avatar" alt="image" />
-                                                                <b className="fn">Novine</b>
-                                                                <span className="says">says:</span>
-                                                            </div>
-                
-                                                            <div className="comment-metadata">
-                                                                <Link href="#">
-                                                                    <a>
-                                                                        <time>April 24, 2019 at 10:59 am</time>
-                                                                    </a>
-                                                                </Link>
-                                                            </div>
-                                                        </footer>
-                
-                                                        <div className="comment-content">
-                                                            <p>Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                                                        </div>
-                
-                                                        <div className="reply">
-                                                            <Link href="#">
-                                                                <a className="comment-reply-link">Reply</a>
-                                                            </Link>
-                                                        </div>
-                                                    </article>
-
-                                                    <ol className="children">
-                                                        <li className="comment">
-                                                            <article className="comment-body">
-                                                                <footer className="comment-meta">
-                                                                    <div className="comment-author vcard">
-                                                                        <img src={require("../../images/author4.jpg")} className="avatar" alt="image" />
-                                                                        <b className="fn">Novine</b>
-                                                                        <span className="says">says:</span>
-                                                                    </div>
-                        
-                                                                    <div className="comment-metadata">
-                                                                        <Link href="#">
-                                                                            <a>
-                                                                                <time>April 24, 2019 at 10:59 am</time>
-                                                                            </a>
-                                                                        </Link>
-                                                                    </div>
-                                                                </footer>
-                        
-                                                                <div className="comment-content">
-                                                                    <p>Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                                                                </div>
-                        
-                                                                <div className="reply">
-                                                                    <Link href="#">
-                                                                        <a className="comment-reply-link">Reply</a>
-                                                                    </Link>
-                                                                </div>
-                                                            </article>
-                                                        </li>
-                                                    </ol>
-                                                </li>
-                                            </ol>
-                                        </ol>
-                                    </li>
-
-                                    <li className="comment">
-                                        <article className="comment-body">
-                                            <footer className="comment-meta">
-                                                <div className="comment-author vcard">
-                                                    <img src={require("../../images/author2.jpg")} className="avatar" alt="image" />
-                                                    <b className="fn">Novine</b>
-                                                    <span className="says">says:</span>
-                                                </div>
-
-                                                <div className="comment-metadata">
-                                                    <Link href="#">
-                                                        <a>
-                                                            <time>April 24, 2019 at 10:59 am</time>
-                                                        </a>
-                                                    </Link>
-                                                </div>
-                                            </footer>
-
-                                            <div className="comment-content">
-                                                <p>Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                                            </div>
-
-                                            <div className="reply">
-                                                <Link href="#">
-                                                    <a className="comment-reply-link">Reply</a>
-                                                </Link>
-                                            </div>
-                                        </article>
-                                    </li>
-                                </ol>
-
-                                <div className="comment-respond">
-                                    <h3 className="comment-reply-title">Leave a Reply</h3>
-
-                                    <form className="comment-form">
-                                        <p className="comment-notes">
-                                            <span id="email-notes">Your email address will not be published.</span>
-                                            Required fields are marked 
-                                            <span className="required">*</span>
-                                        </p>
-                                        <p className="comment-form-comment">
-                                            <label>Comment</label>
-                                            <textarea name="comment" id="comment" cols="45" rows="5" maxLength="65525" required={true} />
-                                        </p>
-                                        <p className="comment-form-author">
-                                            <label>Name <span className="required">*</span></label>
-                                            <input type="text" id="author" name="author" required={true} />
-                                        </p>
-                                        <p className="comment-form-email">
-                                            <label>Email <span className="required">*</span></label>
-                                            <input type="email" id="email" name="email" required={true} />
-                                        </p>
-                                        <p className="comment-form-url">
-                                            <label>Website</label>
-                                            <input type="url" id="url" name="url" />
-                                        </p>
-                                        <p className="comment-form-cookies-consent">
-                                            <input type="checkbox" value="yes" name="wp-comment-cookies-consent" id="wp-comment-cookies-consent" />
-                                            <label>Save my name, email, and website in this browser for the next time I comment.</label>
-                                        </p>
-                                        <p className="form-submit">
-                                            <input type="submit" name="submit" id="submit" className="submit" value="Post Comment" />
-                                        </p>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
+                           </div>
                         
                         <div className="col-lg-4">
                             <BlogSidebar />
