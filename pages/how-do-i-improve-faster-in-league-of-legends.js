@@ -63,15 +63,15 @@ class BlogDetailsTwo extends Component {
                                         because it's a complex game with a lot of variables.</p>
 
                                     <p>The more you play with better players, the more you will improve your abilities. So in case you are playing with 
-                                        people with lower rank than you or with simply with less knowledge about the game than you try to find players with more knowledge than you, 
+                                        people with a lower rank than you or with simply with less knowledge about the game than you try to find players with more knowledge than you, 
                                         so you will know how to improve in League of Legends.</p>
 
                                     <h3>Work on your Skills</h3>
                                     <p> Sometimes, players tend to forget to <b>work on his mechanics</b>.So, if you really want 
-                                        to improve your level in League of Legends, then this is a really important point because with a great mechanics 
-                                        you can destroy all your enemies by your own without the need of any teammate. We would recommend you to <b>practice and 
-                                        {<Link style={{display : 'inline-block'}} href="/"><a style={{display : 'inline-block'}}>buy a lol smurf</a></Link>} in order to practice as much as you can your mechanics without lossing any of yours lps in ranked</b>, 
-                                        because this a also a really important point
+                                        to improve your level in League of Legends, then this is a really important point because with great mechanics 
+                                        you can destroy all your enemies on your own without the need of any teammate. We would recommend you to <b>practice and 
+                                        {<Link style={{display : 'inline-block'}} href="/"><a style={{display : 'inline-block'}}> buy a lol smurf</a></Link>} in order to practice as much as you can your mechanics without losing any of yours lps in ranked</b>, 
+                                        because this is also a really important point
                                         , if you really want to improve in League of Legends you need to <b>spam a lot of rankeds</b>, because no one takes normals serious.
                                     </p>
                                     
@@ -79,8 +79,8 @@ class BlogDetailsTwo extends Component {
                                     <h3>Learn About The Champions</h3>
                                     <p> In League of Legends <b>There are more than 150 champions</b>, where each champion has its own special abilities. 
                                         This is one of the hardest things in League of Legends, because <b>you should know each ability</b>, so you can 
-                                        know what your alies and your enemies can do and you can make your decisions based on that knowledge. 
-                                        But don't worry <b>you can learn them just by playing but if you want to accelerate the proccess and learn all those
+                                        know what your allies and your enemies can do and you can make your decisions based on that knowledge. 
+                                        But don't worry <b>you can learn them just by playing but if you want to accelerate the process and learn all those
                                         abilities from LOL you can just see them inside the client, Riot Games has a page for each champion in the game with a video for each ability</b></p>
 
                                         
@@ -89,7 +89,7 @@ class BlogDetailsTwo extends Component {
                                          in League of Legends. And remember if you want to practice new champions you should buy a league of legends lvl 30 account </p>
 
                                     <h3>Thanks for reading</h3>
-                                    <p> Thanks for reading! If you are thinking about climbing in solo queue you should practice this champs in a league of legends smurf account,
+                                    <p> Thanks for reading! If you are thinking about climbing in solo queue you should practice these champs in a league of legends smurf account,
                                         so your main account's elo won't be affected by this. If you are thinking about getting one you can buy a lol smurf account for only $9.25 ! <Link href="/product-details">Just click here if you are interested</Link>
                                     </p>
                                     <Link href="/">
