@@ -12,7 +12,7 @@ import {checkIfWeHaveThatAmountOfAccs} from '../store/actions/accountsActions'
 import { ToastContainer, toast, Slide } from 'react-toastify';
 import { ProductJsonLd } from 'next-seo';
 import {NextSeo} from 'next-seo'
-import Pixel from '../components/Pixel'
+//import Pixel from '../components/Pixel'
 class Index extends Component {
 
     state = {
@@ -71,7 +71,6 @@ class Index extends Component {
         let {hoursDisplayed,minutesDisplayed,secondsDisplayed} = this.state
         return (
             <React.Fragment>
-                <Pixel name='FACEBOOK_PIXEL_1' />
                  <NextSeo 
                 title='▷LolSmurf - Best League of Legends smurfs'
                 description= 'Level 30 &amp; Unranked ✅- Lifetime Guarantee ✅ Instant Delivery ⚡⚡- 100% Buyer Satisfaction ✅'
