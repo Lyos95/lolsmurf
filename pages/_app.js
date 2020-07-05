@@ -6,14 +6,16 @@ import '../assets/styles/fontawesome.min.css';
 import '../assets/styles/animate.min.css';
 import '../assets/styles/slick.min.css';
 import '../assets/styles/slick-theme.min.css';
+import dynamic from 'next/dynamic'
 
+const GoTop = dynamic(import('../components/Shared/GoTop'))
 
 import { Provider } from 'react-redux';
 import App, {Container} from 'next/app';
 import withRedux from 'next-redux-wrapper';
 import { initStore } from '../store/reducers/cartReducer';
 import { DefaultSeo } from 'next-seo';
-import GoTop from '../components/Shared/GoTop';
+//import GoTop from '../components/Shared/GoTop';
 import { persistStore } from 'redux-persist'
 import { PersistGate } from 'redux-persist/integration/react'
  
