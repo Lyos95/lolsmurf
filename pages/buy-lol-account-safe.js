@@ -13,7 +13,7 @@ class BlogDetailsTwo extends Component {
                 <NextSeo
                 title='▷How to buy a League of Legends account SAFELY'
                 description= 'These are the best tips for buying a League of Legends account safely'
-                canonical="https://lolsmurf.net//buy-lol-account-safe"
+                canonical="https://www.lolsmurf.net/buy-lol-account-safe"
                 />
                 <Navbar />
                 <Breadcrumb title='How to buy a League of Legends account SAFELY' />
