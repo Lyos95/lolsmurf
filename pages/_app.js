@@ -16,7 +16,7 @@ import { DefaultSeo } from 'next-seo';
 import GoTop from '../components/Shared/GoTop';
 import { persistStore } from 'redux-persist'
 import { PersistGate } from 'redux-persist/integration/react'
- 
+import { hotjar } from 'react-hotjar';
 
 export default withRedux(initStore)(
     class MyApp extends App {
