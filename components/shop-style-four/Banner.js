@@ -18,7 +18,7 @@ class Banner extends Component {
                                     <p>Available for all countries</p>
                                     <Link href="/product-details">
                                         <a onClick={() => {                                 
-                                            this.props.viewProductDetails(1)}} className="btn btn-primary">Buy now</a>
+                                            this.props.viewProductDetails(2)}} className="btn btn-primary">Buy now</a>
                                     </Link>
                                 </div>
                             </div>

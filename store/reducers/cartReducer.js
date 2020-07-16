@@ -80,13 +80,13 @@ const initState = {
     shipping: 0,
     totalProducts: 0,
     selectedProduct: {
-                        id: 1,
-                        title: "EU WEST",
+                        id: 2,
+                        title: "NA",
                         price: 9.25,
-                        image: require("../../assets/regions/demacia.jpg"),
+                        image: require("../../assets/regions/Noxus.jpg"),
                         stock: 0,
                         quantity: 0,
-                        imageALT: "lol account euw"
+                        imageALT: "lol account na"
                     },
     soldAccounts: [],
     userLogged: false

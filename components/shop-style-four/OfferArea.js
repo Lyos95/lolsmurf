@@ -16,7 +16,7 @@ class OfferArea extends Component {
                             <p>for a fresh new lvl 30 account</p>
                             <Link href="/product-details">
                                 <a onClick={() => {                                 
-                                            this.props.viewProductDetails(1)}}  className="btn btn-primary">Buy Now</a>
+                                            this.props.viewProductDetails(2)}}  className="btn btn-primary">Buy Now</a>
                             </Link>
                         </div>
                     </div>
