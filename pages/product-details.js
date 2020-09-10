@@ -72,7 +72,7 @@ class Index extends Component {
         return (
             <React.Fragment>
                  <NextSeo 
-                title='▷LolSmurf - Best League of Legends smurfs'
+                title='LolSmurf | Buy LoL Smurf | Unranked & Instant Access'
                 description= 'Level 30 &amp; Unranked ✅- Lifetime Guarantee ✅ Instant Delivery ⚡⚡- 100% Buyer Satisfaction ✅'
                 canonical="https://www.lolsmurf.net/product-details"
                 />

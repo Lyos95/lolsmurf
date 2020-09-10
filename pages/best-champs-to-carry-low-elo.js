@@ -12,7 +12,7 @@ class BlogDetailsTwo extends Component {
         return (
             <React.Fragment>
                 <NextSeo
-                title='▷Best champs to carry in low elo'
+                title='Best champs to carry in low elo'
                 description= 'These are the best champions in each role to carry in low elo'
                 canonical="https://www.lolsmurf.net/best-champs-to-carry-low-elo"
                 />

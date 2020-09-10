@@ -13,7 +13,7 @@ class Index extends Component {
               
 
                 <NextSeo 
-                title='▷LolSmurf - About - Best League of Legends smurfs'
+                title='LolSmurf - About - Best League of Legends smurfs'
                 description= 'Level 30 &amp; Unranked ✅- Lifetime Guarantee ✅ Instant Delivery ⚡⚡- 100% Buyer Satisfaction ✅'
                 canonical="https://www.lolsmurf.net/about"
                 />

@@ -11,7 +11,7 @@ class BlogDetailsTwo extends Component {
         return (
             <React.Fragment>
                 <NextSeo
-                title='▷How to buy a League of Legends account SAFELY'
+                title='How to buy a League of Legends account SAFELY'
                 description= 'These are the best tips for buying a League of Legends account safely'
                 canonical="https://www.lolsmurf.net/buy-lol-account-safe"
                 />

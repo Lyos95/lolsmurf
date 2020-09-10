@@ -11,7 +11,7 @@ class BlogDetailsTwo extends Component {
         return (
             <React.Fragment>
                 <NextSeo
-                title='▷How Do I Improve Faster in League of Legends'
+                title='How Do I Improve Faster in League of Legends'
                 description= 'These are the best tips for improving in League of Legends'
                 canonical="https://www.lolsmurf.net/how-do-i-improve-faster-in-league-of-legends"
                 />
