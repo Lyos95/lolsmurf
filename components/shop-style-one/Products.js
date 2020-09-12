@@ -163,15 +163,12 @@ class Products extends Component {
                                                         </div>
 
                                                         <div className="product-content">
-                                                            <h3>
+                                                            <h3 className="region-label">
                                                                 <Link href="/product-details">
                                                                     <a><b>{data.title}</b></a>
                                                                 </Link>
                                                             </h3>
                                                      
-                                                            <div className="product-price">
-                                                                <span className="new-price"><del>$18.5</del> <span style={{color:"#c56161"}}>${data.price}</span></span>
-                                                            </div>
 
                                                             <Link href="/product-details">
                                                                 <a 

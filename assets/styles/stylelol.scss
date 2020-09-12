@@ -2074,7 +2074,8 @@ All Products Area CSS
                 color: $black-color;
 
                 &:hover, &:focus {
-                    color: $black-color;
+                    color: rgb(214, 71, 71);
+                    text-decoration: none;
                 }
             }
         }
@@ -7768,4 +7769,9 @@ Go Top CSS
 
 .btn-check{
     padding: .375rem 1.75rem !important;
+}
+
+.region-label{
+    margin-top: -16px !important;
+  margin-bottom: 16px !important;
 }

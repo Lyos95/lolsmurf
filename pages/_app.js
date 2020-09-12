@@ -1,5 +1,5 @@
 
-import '../assets/styles/stylelol.min.css';
+import '../assets/styles/stylelol.css';
 import '../assets/styles/responsivelol.min.css';
 import '../assets/styles/bootstrap.min.css';
 import '../assets/styles/fontawesome.min.css';
