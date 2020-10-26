@@ -12,6 +12,7 @@ class MyDocument extends Document {
                 <Head>
                     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
                     <link rel="icon" type="image/png" href={require("../images/fabi.png")}></link>
+                    <script data-ad-client="ca-pub-2990372150294900" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
                 </Head>
                 <body>
                     <Main />
