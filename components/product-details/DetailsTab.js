@@ -80,7 +80,7 @@ class DetailsTab extends Component {
                                         <div className="row">
                                             <div className="col-lg-6 col-md-6">
                                                 <ul>
-                                                    <li>BE: More than 50000</li>
+                                                    <li>BE: More than 40000</li>
                                                     <li>Warranty: lifetime warranty</li>
                                                     <li>Email: Unverified</li>
                                                 </ul>
