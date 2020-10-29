@@ -52,7 +52,7 @@ app.prepare().then(() => {
         await stripe.charges.create({
             amount: req.body.amount,
             currency: 'usd',
-            description: 'React Next eCommerce Templates',
+            description: 'LOLSMURF',
             source: req.body.token.id
         });
         res.send({})

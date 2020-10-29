@@ -1,16 +1,19 @@
 import { createStore, applyMiddleware } from 'redux';
-import { persistStore, persistReducer } from 'redux-persist' 
+//import { persistStore, persistReducer } from 'redux-persist' 
 import storage from 'redux-persist/lib/storage' // defaults to localStorage for web
 import { composeWithDevTools } from 'redux-devtools-extension';
 import thunkMiddleware from 'redux-thunk';
 import { FETCH_ACCOUNT, FETCH_ACCOUNTS_COUNTER,RESET } from "../actions/action-types/account-actions";
 
+/*
+Para que persista la tienda
+
 const persistConfig = {
     key: 'root',
     storage,
-    blacklist:['products']
+    blacklist:['products','addedItems','selectedProduct']
   }
-
+*/ 
 import { 
     ADD_TO_CART,
     REMOVE_ITEM,
@@ -31,7 +34,7 @@ const initState = {
         {
             id: 1,
             title: "EU WEST",
-            price: 9.25,
+            price: 13.99,
             image: require("../../assets/regions/demacia.jpg"),
             stock: 0,
             quantity: 0,
@@ -40,7 +43,7 @@ const initState = {
         {
             id: 2,
             title: "NA",
-            price: 9.25,
+            price: 13.99,
             image: require("../../assets/regions/Noxus.jpg"),
             stock: 0,
             quantity: 0,
@@ -49,7 +52,7 @@ const initState = {
         {
             id: 3,
             title: "EU NORDIC & EAST",
-            price: 9.25,
+            price: 13.99,
             image: require("../../assets/regions/flelyor.jpg"),
             stock: 0,
             quantity: 0,
@@ -58,7 +61,7 @@ const initState = {
         {
             id: 4,
             title: "TURKEY",
-            price: 9.25,
+            price: 13.99,
             image: require("../../assets/regions/Shuriman.jpg"),
             stock: 0,
             quantity: 0,
@@ -67,7 +70,7 @@ const initState = {
         {
             id: 5,
             title: "PBE",
-            price: 9.25,
+            price: 13.99,
             image: require("../../assets/regions/Piltober.jpg"),
             stock: 0,
             quantity: 0,
@@ -82,7 +85,7 @@ const initState = {
     selectedProduct: {
                         id: 2,
                         title: "NA",
-                        price: 9.25,
+                        price: 13.99,
                         image: require("../../assets/regions/Noxus.jpg"),
                         stock: 0,
                         quantity: 0,
@@ -301,10 +304,11 @@ const cartReducer = (state = initState, action) => {
         return state
     }
 }
-const  persistedReducer = persistReducer(persistConfig, cartReducer)
+//const  persistedReducer = persistReducer(persistConfig, cartReducer) Persisting
 export const initStore = (initialState = initState) => {
     return createStore(
-        persistedReducer,
+        //persistedReducer, //Persinting
+        cartReducer, //Borrar si quieres que persista
         initialState,
         composeWithDevTools(applyMiddleware(thunkMiddleware))
     )
