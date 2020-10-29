@@ -60,7 +60,7 @@ class ArticleContent extends Component {
             <p>And, <b>How much time do you need to invest in order to get your lol account up to lvl 30?</b> At least <b> 1 month  and playing a lot of hours per day </b></p>
             <p> So, are you interested in buying a smurf account? If you want to buy a smurf account, then you are in the right place! 
                 Over here in Lol Smurf, we offer cheap league smurfs in the market. <b>Our unranked league of legends lvl 30 accounts 
-                has at least 40k BE </b>for buying lots of champions of your choice and we also grant you a lifetime warranty.
+                has at least 60k BE </b>for buying lots of champions of your choice and we also grant you a lifetime warranty.
             </p>
             
             <h2>What is the best place to buy league smurfs?</h2>
