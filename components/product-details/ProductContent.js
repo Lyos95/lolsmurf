@@ -18,7 +18,7 @@ class ProductContent extends Component {
 
     componentDidMount(){
         this.props.addedItems.find(item=> 2 === item.id) // buscar el selected product aqui para ver si existe y superponer en quantity del selected product con este 
-       
+
         if(this.props.product.stock-this.props.product.quantity === 0){
             this.setState({qty:0})
         }else {

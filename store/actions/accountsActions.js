@@ -37,7 +37,6 @@ export const fetchAccountsCounter = () => async (dispatch, getState) => {
 }
 
 export const checkIfWeHaveThatAmountOfAccs = () => async(dispatch,getState) => {
-
     
     let enumRegions = {
         "EU WEST": "EUW",
@@ -48,19 +47,19 @@ export const checkIfWeHaveThatAmountOfAccs = () => async(dispatch,getState) => {
     }
     let tran = true
     const { data } = await axios.post('/api/accounts/allAccounts', {});
-
+    
     let products = getState().products.map((product) => {
         return { ...product,quantity:0, stock: data[enumRegions[product.title]] }
     })
-
+    
     let addedItems = getState().addedItems
     let newtotalProducts = getState().totalProducts
     let newSelectedProduct = Object.assign({},getState().selectedProduct)
-
+    let selectProductAux = products.find(item => item.id === newSelectedProduct.id)
+    newSelectedProduct.stock = selectProductAux.stock
     let newTotal = getState().total
     for(let i = 0; i<addedItems.length; i++) {
         for(let j=0; j<products.length; j++){
-            
             if(addedItems[i].title === products[j].title && products[j].stock < addedItems[i].quantity){
                 newTotal = newTotal - (addedItems[i].quantity-products[j].stock)*products[j].price
                 newtotalProducts = newtotalProducts - (addedItems[i].quantity-products[j].stock)
@@ -70,12 +69,8 @@ export const checkIfWeHaveThatAmountOfAccs = () => async(dispatch,getState) => {
                 tran = false
                 if(products[j].title === newSelectedProduct.title){
                     newSelectedProduct.stock = products[j].stock
-                    
-                        newSelectedProduct.quantity = 0
-                    
+                        newSelectedProduct.quantity = 0                    
                 }
-                
-                
             }
         }
     }
