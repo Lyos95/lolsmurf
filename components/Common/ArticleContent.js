@@ -66,7 +66,7 @@ class ArticleContent extends Component {
             <h2>What is the best place to buy league smurfs?</h2>
             
             <p> Lol Smurf is the best site to buy lol accounts, over here in our lolsmurf shop, you can <b>buy your unranked league accounts
-                buy just $13.99! </b>Our cheap lol smurfs are also high quality, we can offer the accounts at that price because we already 
+                buy just $29.95! </b>Our cheap lol smurfs are also high quality, we can offer the accounts at that price because we already 
                 produce tons of them so we can afford to lower the price of our lol unranked accounts
             </p>
             

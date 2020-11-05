@@ -120,7 +120,7 @@ class RelatedProducts extends Component {
                                                 </h3>
 
                                                 <div className="product-price">
-                                                    <span className="new-price">$13.99</span>
+                                                    <span className="new-price">$29.95</span>
                                                 </div>
                                                 
                                                 <Link href="#">

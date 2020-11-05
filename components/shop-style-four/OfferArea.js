@@ -12,7 +12,7 @@ class OfferArea extends Component {
                     <div className="container">
                         <div className="products-offer-content">
                             <span>Get the best deal!</span>
-                            <h1>$13.99</h1>
+                            <h1>$29.95</h1>
                             <p>for a fresh new lvl 30 account</p>
                             <Link href="/product-details">
                                 <a onClick={() => {                                 
