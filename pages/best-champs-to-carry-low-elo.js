@@ -242,7 +242,7 @@ class BlogDetailsTwo extends Component {
                                     
                                     <h3>Thanks for reading</h3>
                                     <p> Thanks for reading! If you are thinking about climbing in solo queue you should practice this champs in a smurf account,
-                                        so your main account's elo won't be affected by this. If you are thinking about getting one you can buy a smurf account for only $29.95 ! <Link href="/product-details">Just click here if you are interested</Link>
+                                        so your main account's elo won't be affected by this. If you are thinking about getting one you can buy a smurf account! <Link href="/product-details">Just click here if you are interested</Link>
                                     </p>
                                     <Link href="/product-details">
                                         <img style={{marginBottom:'20px',cursor:'pointer'}} onClick={()=>{}} src={require("../assets/blog/buy-lol-smurf.jpg")} />
