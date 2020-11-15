@@ -68,27 +68,27 @@ class Footer extends Component {
                                 <ul className="payment-card">
                                     <li>
                                         <a href="#" target="_blank">
-                                            <img src={require("../../images/visa.png")} alt="image" />
+                                            <img style={{width:"47px",height:"37px"}} src={require("../../images/visa.png")} alt="image" />
                                         </a>
                                     </li>
                                     <li>
                                         <a href="#" target="_blank">
-                                            <img src={require("../../images/mastercard.png")} alt="image" />
+                                            <img style={{width:"48px",height:"37px"}} src={require("../../images/mastercard.png")} alt="image" />
                                         </a>
                                     </li>
                                     <li>
                                         <a href="#" target="_blank">
-                                            <img src={require("../../images/mastercard2.png")} alt="image" />
+                                            <img style={{width:"48px",height:"37px"}} src={require("../../images/mastercard2.png")} alt="image" />
                                         </a>
                                     </li>
                                     <li>
                                         <a href="#" target="_blank">
-                                            <img src={require("../../images/visa2.png")} alt="image" />
+                                            <img style={{width:"47px",height:"36px"}} src={require("../../images/visa2.png")} alt="image" />
                                         </a>
                                     </li>
                                     <li>
                                         <a href="#" target="_blank">
-                                            <img src={require("../../images/expresscard.png")} alt="image" />
+                                            <img style={{width:"48px",height:"36px"}} src={require("../../images/expresscard.png")} alt="image" />
                                         </a>
                                     </li>
                                 </ul>

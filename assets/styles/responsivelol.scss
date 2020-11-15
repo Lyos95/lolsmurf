@@ -287,6 +287,11 @@ $value_five: 1199px;
                 width: auto;
             }
         }
+        .product-image {    
+            img {
+                width: 100px;
+                height: 100px;
+            }
     }
     .all-products-slides {
         &.owl-theme {

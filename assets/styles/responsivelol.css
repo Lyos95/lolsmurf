@@ -237,7 +237,10 @@
     display: inline-block;
     width: auto;
   }
-
+  .single-product-box .product-image img {
+		width: 211.5px;
+		height: 258.31px;
+	}
   .all-products-slides.owl-theme .owl-nav {
     margin-bottom: 30px;
   }
@@ -1144,12 +1147,19 @@
   .main-banner-two .opacityZero {
     opacity: 1;
   }
+  .single-product-box .product-image img {
+	width: 330px;
+	height: 403.5px;
+}
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .navbar-area .comero-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu {
     left: -250px;
   }
-
+  .single-product-box .product-image img {
+	width: 210px;
+	height: 256.48px;
+}
   .products-details-tab {
     margin-top: -10px;
   }
@@ -1381,6 +1391,13 @@
   .btn-check {
     padding: 0.375rem 0.9rem !important;
   }
+}
+
+@media (min-width: 1199px){
+	.single-product-box .product-image img {
+		width: 255px;
+		height: 311.44px;
+	}
 }
 
 /*# sourceMappingURL=responsivelol.css.map */
