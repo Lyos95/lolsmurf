@@ -8,15 +8,7 @@ class Banner extends Component {
     render() {
         return (
             <LazyLoad once>
-                <div className="main-banner main-banner-three">
-                <img style={{
-                        zIndex:'-1',
-                        pointerEvents: 'none',
-                        position: 'absolute',
-                        width: "100%",
-                        height: "100%",
-                        filter: 'brightness(80%)'
-                    }} src={require('../../assets/pictures/mainbanner.jpg')}></img>
+                <div className="main-banner main-banner-three item-bg4">
                     <div style={{zIndex:2}} className="d-table">
                         <div className="d-table-cell">
                             <div className="container">
