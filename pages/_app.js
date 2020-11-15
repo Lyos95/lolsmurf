@@ -9,7 +9,7 @@ import '../assets/styles/slick-theme.min.css';
 
 
 import { Provider } from 'react-redux';
-import App, {Container} from 'next/app';
+import App from 'next/app';
 import withRedux from 'next-redux-wrapper';
 import { initStore } from '../store/reducers/cartReducer';
 import { DefaultSeo } from 'next-seo';

@@ -1,62 +1,5 @@
 @charset "UTF-8";
-/*
-@File: Comero Template Styles
 
-* This file contains the styling for the actual tepmlate, this
-is the file you need to edit to change the look of the
-tepmlate.
-
-This files table contents are outlined below>>>>>
-
-*******************************************
-*******************************************
-
-** - Default CSS~
-** - Top Panel Area CSS
-** - Top Header Area CSS
-** - Navbar Area CSS
-** - Modal CSS
-** - Main Banner Area CSS
-** - About Area CSS
-** - Offer Area CSS
-** - All Products Area CSS
-** - Products QuickView Modal Area CSS
-** - Category Products Area CSS
-** - Trending Products Area CSS
-** - Best Sellers Area CSS~
-** - Facility Area CSS
-** - Testimonials Area CSS
-** - Products Offer Area CSS
-** - News Area CSS
-** - News Details Area CSS
-** - Subscribe Area CSS
-** - Partner Area CSS
-** - Instagram Area CSS
-** - Page Title Area CSS
-** - Products Collections Area CSS
-** - Woocommerce Sidebar Area CSS
-** - Products Filter Modal Area CSS
-** - Gallery Area CSS
-** - Look Book Area CSS
-** - Sizing Guide Area CSS
-** - 404 Error Area CSS
-** - FAQs Area CSS
-** - Contact Area CSS
-** - Products Details Area CSS
-** - Pagination Area CSS
-** - Sidebar Area CSS
-** - Cart Area CSS
-** - Checkout Area CSS
-** - Compare Area CSS
-** - Login Area CSS
-** - Signup Area CSS
-** - Customer Service Area CSS
-** - Footer Area CSS
-** - Go Top CSS
-*/
-/*================================================
-Default CSS
-=================================================*/
 @import url("https://fonts.googleapis.com/css?family=Archivo:400,400i,500,500i,600,600i,700,700i&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 body {
@@ -65,7 +8,6 @@ body {
   font-family: "Archivo", sans-serif !important;
   font-size: 14px;
 }
-
 p {
   color: #666666;
   line-height: 1.8;
@@ -1758,6 +1700,10 @@ All Products Area CSS
 }
 .single-product-box .product-image {
   position: relative;
+}
+.single-product-box .product-image img{
+  width: 100px;
+	height: 100px;
 }
 
 .single-product-box .product-image img:nth-child(2) {

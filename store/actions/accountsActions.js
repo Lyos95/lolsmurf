@@ -99,8 +99,7 @@ export const verifyTransaction = (orderID, email, total, products) => async (dis
     
     dispatch({type: RESET, payload:{}})
     dispatch({type: SAVE_CLIENT_ACCOUNTS, payload:response.data.accounts})
-    console.log(response);
-    
+
     return response
 }
 

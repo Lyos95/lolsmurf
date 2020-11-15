@@ -12,7 +12,7 @@ class Footer extends Component {
                                 <div className="logo">
                                     <Link href="index.html">
                                         <a>
-                                            <img src={require("../../images/logo2.jpg")} alt="logo" />
+                                            <img style={{width:"212px",height:"46px"}} src={require("../../images/logo2.jpg")} alt="logo" />
                                         </a>
                                     </Link>
                                 </div>

@@ -182,7 +182,7 @@ router.post('/', async function (req, res, next) {
     }
     // return response.send(200);
   } catch (e) {
-    console.log(e);
+
     
     res.send({
       response: '400',

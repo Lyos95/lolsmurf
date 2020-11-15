@@ -86,7 +86,6 @@ class CartProduct extends Component {
 
                         <td className="product-subtotal">
                             <span className="subtotal-amount">${data.price * data.quantity}</span>
-
                             <Link href="#">
                                 <a
                                     className="remove"

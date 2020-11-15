@@ -1972,6 +1972,8 @@ All Products Area CSS
         position: relative;
 
         img {
+            width: 100px;
+		    height: 100px;
             &:nth-child(2) {
                 position: absolute;
                 top: 0;
@@ -7772,5 +7774,5 @@ Go Top CSS
 
 .region-label{
     margin-top: -16px !important;
-  margin-bottom: 16px !important;
+    margin-bottom: 16px !important;
 }

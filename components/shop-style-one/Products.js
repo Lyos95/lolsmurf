@@ -156,7 +156,7 @@ class Products extends Component {
                                                             <Link href="/league-of-legends-smurfs">
                                                                 <a>
                                                                     <LazyLoad once>
-                                                                        <img onClick={() => {viewProductDetails(data.id)}} src={data.image} alt={data.imageALT} />
+                                                                        <img style={{width:"100%",height:"100%"}} onClick={() => {viewProductDetails(data.id)}} src={data.image} alt={data.imageALT} />
                                                                     </LazyLoad>
                                                                 </a>
                                                             </Link>                                                          
@@ -165,7 +165,7 @@ class Products extends Component {
                                                         <div className="product-content">
                                                             <h3 className="region-label"> 
                                                                 <Link href="/league-of-legends-smurfs">                                    
-                                                                    <a>   <b>League of Legends Smurf</b> <br />
+                                                                    <a>   <b style={{color: "#222222b8"}}>League of Legends Smurf</b> <br />
                                                                         <b>{data.title}</b></a>
                                                                 </Link>
                                                             </h3>

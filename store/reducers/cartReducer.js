@@ -243,6 +243,7 @@ const cartReducer = (state = initState, action) => {
             addedItem.quantity -= 1
             let new_items = state.addedItems.filter(item=>item.id !== action.id)
             let newTotal = state.total - addedItem.price
+            newTotal = Math.round(newTotal * 100) / 100
             return {
                 ...state,
                 products: state.products.concat([]),
@@ -254,6 +255,8 @@ const cartReducer = (state = initState, action) => {
             addedItem.quantity -= 1
             //existed_item.quantity -= 1
             let newTotal = state.total - addedItem.price
+            newTotal = Math.round(newTotal * 100) / 100
+            
             return {
                 ...state,
                 products: state.products.concat([]),
