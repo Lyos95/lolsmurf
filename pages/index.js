@@ -35,7 +35,6 @@ class Index extends Component {
     render() {
         return (
             <React.Fragment>
-                
                 <NextSeo
                 title='LolSmurf | Buy LoL Smurf | Unranked & Instant Access'
                 description= 'Level 30 &amp; Unranked ✅- Lifetime Guarantee ✅ Instant Delivery ⚡⚡- 100% Buyer Satisfaction ✅'

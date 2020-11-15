@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import MUIDataTable from "mui-datatables";
-import {fetchAccounts} from '../store/actions/accountsActions'
+//import {fetchAccounts} from '../store/actions/accountsActions'
 import { connect } from 'react-redux'
 import axios from 'axios'
 import Router from 'next/router'

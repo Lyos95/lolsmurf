@@ -5,12 +5,10 @@ import Footer from '../components/Layout/Footer';
 import ProductImage from '../components/product-details/ProductImage';
 import ProductContent from '../components/product-details/ProductContent';
 import DetailsTab from '../components/product-details/DetailsTab';
-import RelatedProducts from '../components/product-details/RelatedProducts';
 import Facility from '../components/shop-style-one/Facility';
 import { connect } from 'react-redux';
 import {checkIfWeHaveThatAmountOfAccs} from '../store/actions/accountsActions'
 import { ToastContainer, toast, Slide } from 'react-toastify';
-import { ProductJsonLd } from 'next-seo';
 import {NextSeo} from 'next-seo'
 //import Pixel from '../components/Pixel'
 class Index extends Component {

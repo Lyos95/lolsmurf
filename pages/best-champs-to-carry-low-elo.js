@@ -3,7 +3,6 @@ import Navbar from '../components/Layout/Navbar';
 import Footer from '../components/Layout/Footer';
 import Facility from '../components/Common/Facility';
 import Breadcrumb from '../components/Common/Breadcrumb';
-import DetailsContentTwo from '../components/blog/DetailsContentTwo';
 import {NextSeo} from 'next-seo'
 import Link from 'next/link';
 import BlogSidebar from '../components/blog/BlogSidebar';

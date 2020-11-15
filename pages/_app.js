@@ -16,7 +16,6 @@ import { DefaultSeo } from 'next-seo';
 import GoTop from '../components/Shared/GoTop';
 import { persistStore } from 'redux-persist'
 import { PersistGate } from 'redux-persist/integration/react'
-import { hotjar } from 'react-hotjar';
 
 export default withRedux(initStore)(
     class MyApp extends App {
@@ -53,7 +52,7 @@ export default withRedux(initStore)(
             const { Component, pageProps, store } = this.props
 
             return (
-                <Container>
+                <>
                     <DefaultSeo
                         title="LolSmurf - Best League of Legends smurfs"
                         description="Unverified Ranked Unranked. Cheap Prices. Instant Delivery. Buy now! Lifetime Warranty. Lifetime Warranty. Highlights: Online Buying Option Available, We Offer Premium Support Service, Providing Instant Delivery. "
@@ -68,7 +67,7 @@ export default withRedux(initStore)(
                     </Provider>
                     
                     <GoTop scrollStepInPx="50" delayInMs="16.66" />
-                </Container>
+                </>
             );
         }
     }
