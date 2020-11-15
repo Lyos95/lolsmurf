@@ -120,7 +120,7 @@ class DetailsTab extends Component {
                                         <p>Here are more great reasons to buy from us:</p>
 
                                         <ol>
-                                            <li>If your account gets banned by a reasonable reasonm like, suspect of sharing account,buyed account detection, botting etc, we will give you another account completly for free</li>
+                                            <li>If your first account gets banned by a reasonable reason like, suspect of sharing account,buyed account detection, botting etc, we will give you another account completly for free</li>
                                             <li>We will give you the best support you can have</li>
                                             <li>We have been selling League of legends lvl 30 accounts for more than 5 years</li>
                                         </ol>

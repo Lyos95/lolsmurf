@@ -40,11 +40,11 @@ class BlogDetailsTwo extends Component {
                                     <h1>How to buy a League of Legends account SAFELY</h1>
 
                                     <p>In this article we are going to show you what do you need to take into cosideration when you are trying to buy a League of Legends</p>
-                                    <Link href="/product-details">
+                                    <Link href="/league-of-legends-smurfs">
                                         <img style={{marginBottom:'20px',cursor:'pointer'}} onClick={()=>{}} src={require("../assets/blog/buy-lol-smurf.jpg")} />
                                     </Link>
 
-                                    <p> If you are afraid of being scammed you need to be careful where do you buy your smurf accounts, <Link style={{display : 'inline-block'}} href="/product-details"><a style={{display : 'inline-block'}}>LolSmurf</a></Link>
+                                    <p> If you are afraid of being scammed you need to be careful where do you buy your smurf accounts, <Link style={{display : 'inline-block'}} href="/league-of-legends-smurfs"><a style={{display : 'inline-block'}}>LolSmurf</a></Link>
                                      is one of the <b>most reputable websites out there where you can safely buy your accounts </b>but there are others and we are going to teach you how to
                                      identify them!
                                     </p>
@@ -59,9 +59,9 @@ class BlogDetailsTwo extends Component {
                                     <p> Many League of Legends account sellers sell <b>already verified accounts (lol account with already a verified email) which is a red flag</b>. If you 
                                         want your own that League of legends account so you can change it's password, email and avoid anyone could steal your account in the future!
                                         Then be mindful about this topic and only <b>buy lol smurfs with an unverified email account </b>
-                                         You should be looking for LoL Smurf Shops who sell Unverified and Unranked accounts like <Link style={{display : 'inline-block'}} href="/product-details"><a style={{display : 'inline-block'}}>LolSmurf</a></Link>
+                                         You should be looking for LoL Smurf Shops who sell Unverified and Unranked accounts like <Link style={{display : 'inline-block'}} href="/league-of-legends-smurfs"><a style={{display : 'inline-block'}}>LolSmurf</a></Link>
                                     </p>
-                                    <Link href="/product-details">
+                                    <Link href="/league-of-legends-smurfs">
                                         <img style={{marginBottom:'20px',cursor:'pointer'}} onClick={()=>{}} src={require("../assets/blog/buy-lol-smurf.jpg")} />
                                     </Link>
 
@@ -76,12 +76,12 @@ class BlogDetailsTwo extends Component {
                                           you will be able to save some money.So try to always compare League of legends account stores!</p>
                                     <p>
                                      Buying a League of legends accounts is relatively safe to do. Just be careful with the scams and make sure to follow our guide and you'll be able to get your league of legends smurf without any problem!
-                                     If you haven't found a suitable website that has all the requirements you need, make sure to check out our website <Link style={{display : 'inline-block'}} href="/product-details"><a style={{display : 'inline-block'}}>LolSmurf</a></Link>. We offer the best Customer Service out there
+                                     If you haven't found a suitable website that has all the requirements you need, make sure to check out our website <Link style={{display : 'inline-block'}} href="/league-of-legends-smurfs"><a style={{display : 'inline-block'}}>LolSmurf</a></Link>. We offer the best Customer Service out there
                                       . And we are also one of the most reputable websites out there!
                                     </p>
                                     <h3>Thanks for reading</h3>
                                     <p> Thanks for reading! If you are thinking about climbing in solo queue you should practice these champs in a league of legends smurf account,
-                                        so your main account's elo won't be affected by this. If you are thinking about getting one you can buy a lol smurf account! <Link href="/product-details">Just click here if you are interested</Link>
+                                        so your main account's elo won't be affected by this. If you are thinking about getting one you can buy a lol smurf account! <Link href="/league-of-legends-smurfs">Just click here if you are interested</Link>
                                     </p>
                                     <Link href="/">
                                         <img style={{marginBottom:'20px',cursor:'pointer'}} onClick={()=>{}} src={require("../assets/blog/buy-lol-smurf.jpg")} />

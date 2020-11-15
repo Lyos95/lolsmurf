@@ -74,7 +74,7 @@ class Index extends Component {
                  <NextSeo 
                 title='LolSmurf | Buy LoL Smurf | Unranked & Instant Access'
                 description= 'Level 30 &amp; Unranked ✅- Lifetime Guarantee ✅ Instant Delivery ⚡⚡- 100% Buyer Satisfaction ✅'
-                canonical="https://www.lolsmurf.net/product-details"
+                canonical="https://www.lolsmurf.net/league-of-legends-smurfs"
                 />
                  
                 <Navbar />

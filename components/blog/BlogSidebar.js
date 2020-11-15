@@ -18,7 +18,7 @@ class BlogSidebar extends Component {
                         <div className="info">
                             <time>June 30, 2020</time>
                             <h4 className="title usmall">
-                                <Link href="/product-details">
+                                <Link href="/league-of-legends-smurfs">
                                     <a>Buy your lol smurf account now.</a>
                                 </Link>
                             </h4>
@@ -37,7 +37,7 @@ class BlogSidebar extends Component {
                         <div className="info">
                             <time>June 30, 2020</time>
                             <h4 className="title usmall">
-                                <Link href="/product-details">
+                                <Link href="/league-of-legends-smurfs">
                                     <a>Buy your lol smurf now</a>
                                 </Link>
                             </h4>

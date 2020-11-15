@@ -38,7 +38,7 @@ export default withRedux(initStore)(
               d.getElementsByTagName("head")[0].appendChild(s);
               
             })();*/
-            hotjar.initialize(1867163, 6);
+            //hotjar.initialize(1867163, 6);
         }
           
         static async getInitialProps ({ Component, ctx }) {

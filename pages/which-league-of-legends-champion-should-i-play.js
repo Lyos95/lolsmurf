@@ -43,7 +43,7 @@ class BlogDetailsTwo extends Component {
                                     <p>In this article we are going to discover what are the best League of Legends solo queue champions for you that will help you to rank up in solo queue</p>
 
                                     <p>Before we start we would recommend you to <b>practice this champions in a different account (buy lol smurf account) </b>so you won't lose any lps in your main account while you are practicing</p>
-                                    <Link href="/product-details">
+                                    <Link href="/league-of-legends-smurfs">
                                         <img style={{marginBottom:'20px',cursor:'pointer'}} onClick={()=>{}} src={require("../assets/blog/buy-lol-smurf.jpg")} />
                                     </Link>
 
@@ -90,7 +90,7 @@ class BlogDetailsTwo extends Component {
                                     with his Q and finishing him with his ultimate which does true damage.
                                     </p>
 
-                                    <Link href="/product-details">
+                                    <Link href="/league-of-legends-smurfs">
                                         <img style={{marginBottom:'20px',cursor:'pointer'}} onClick={()=>{}} src={require("../assets/blog/buy-lol-smurf.jpg")} />
                                     </Link>
                                     <h3>Janna</h3>
@@ -115,7 +115,7 @@ class BlogDetailsTwo extends Component {
                                     <p>One of the keys about this champ, and the reason he is really safe, is because <b>he has another flash in his kit!</b></p>
                                     <p> So, if you ever feel in danger you can just E away from your enemies as many times as you want to make really hard for your enemies to punish your miss position.
                                     </p>
-                                    <Link href="/product-details">
+                                    <Link href="/league-of-legends-smurfs">
                                         <img style={{marginBottom:'20px',cursor:'pointer'}} onClick={()=>{}} src={require("../assets/blog/buy-lol-smurf.jpg")} />
                                     </Link>
 
@@ -147,7 +147,7 @@ class BlogDetailsTwo extends Component {
                                     </p>
                                     
 
-                                    <Link href="/product-details">
+                                    <Link href="/league-of-legends-smurfs">
                                         <img style={{marginBottom:'20px',cursor:'pointer'}} onClick={()=>{}} src={require("../assets/blog/buy-lol-smurf.jpg")} />
                                     </Link>
                                     
@@ -186,7 +186,7 @@ class BlogDetailsTwo extends Component {
                                     </p>
 
 
-                                    <Link href="/product-details">
+                                    <Link href="/league-of-legends-smurfs">
                                         <img style={{marginBottom:'20px',cursor:'pointer'}} onClick={()=>{}} src={require("../assets/blog/buy-lol-smurf.jpg")} />
                                     </Link>
                                    
@@ -209,9 +209,9 @@ class BlogDetailsTwo extends Component {
 
                                     <h3>Thanks for reading</h3>
                                     <p> Thanks for reading! If you are thinking about climbing in solo queue you should practice this champs in a smurf account,
-                                        so your main account's elo won't be affected by this. If you are thinking about getting one you can buy lol smurf account! <Link href="/product-details">Just click here if you are interested</Link>
+                                        so your main account's elo won't be affected by this. If you are thinking about getting one you can buy lol smurf account! <Link href="/league-of-legends-smurfs">Just click here if you are interested</Link>
                                     </p>
-                                    <Link href="/product-details">
+                                    <Link href="/league-of-legends-smurfs">
                                         <img style={{marginBottom:'20px',cursor:'pointer'}} onClick={()=>{}} src={require("../assets/blog/buy-lol-smurf.jpg")} />
                                     </Link>
                                 </div>

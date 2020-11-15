@@ -100,7 +100,7 @@ class BestSeller extends Component {
                             <div className="col-lg-12 col-md-12" key={idx}>
                                 <div className="single-product-box">
                                     <div className="product-image">
-                                        <Link href="/product-details">
+                                        <Link href="/league-of-legends-smurfs">
                                             <a>
                                                 <img src={data.image} alt="image" />
                                                 <img src={data.imageHover} alt="image" />
@@ -143,7 +143,7 @@ class BestSeller extends Component {
 
                                     <div className="product-content">
                                         <h3>
-                                            <Link href="/product-details">
+                                            <Link href="/league-of-legends-smurfs">
                                                 <a>{data.title}</a>
                                             </Link>
                                         </h3>

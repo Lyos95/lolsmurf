@@ -1662,9 +1662,25 @@ All Products Area CSS
   padding-left: 18px;
   color: #858585;
 }
+.products-category-tab .tabs li h2 {
+  display: inline-block;
+  font-size: 18px;
+  position: relative;
+  padding-left: 18px;
+  color: #858585;
+}
 .products-category-tab .tabs li a .dot {
   position: absolute;
   top: 7px;
+  left: 0;
+  width: 12px;
+  height: 12px;
+  border: 1px solid #858585;
+  transition: 0.5s;
+}
+.products-category-tab .tabs li h2 .dot {
+  position: absolute;
+  top: 4px;
   left: 0;
   width: 12px;
   height: 12px;
@@ -1682,6 +1698,36 @@ All Products Area CSS
   margin: 1px;
   transition: 0.5s;
 }
+.products-category-tab .tabs li h2 .dot::before {
+  position: absolute;
+  top: 0;
+  content: "";
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #858585;
+  margin: 1px;
+  transition: 0.5s;
+}
+.products-category-tab .tabs li h2:hover, .products-category-tab .tabs li h2:focus {
+  color: #222222;
+}
+.products-category-tab .tabs li h2:hover .dot, .products-category-tab .tabs li h2:focus .dot {
+  border-color: #222222;
+}
+.products-category-tab .tabs li h2:hover .dot::before, .products-category-tab .tabs li h2:focus .dot::before {
+  background: #222222;
+}
+.products-category-tab .tabs li.current h2 {
+  color: #222222;
+}
+.products-category-tab .tabs li.current h2 .dot {
+  border-color: #222222;
+}
+.products-category-tab .tabs li.current h2 .dot::before {
+  background: #222222;
+}
+
 .products-category-tab .tabs li a:hover, .products-category-tab .tabs li a:focus {
   color: #222222;
 }

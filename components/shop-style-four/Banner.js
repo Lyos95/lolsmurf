@@ -16,7 +16,7 @@ class Banner extends Component {
                                     <span>Best league of legends smurf marketplace</span>
                                     <h1>BUY YOUR SMURF NOW!</h1>
                                     <p>Available for all countries</p>
-                                    <Link href="/product-details">
+                                    <Link href="/league-of-legends-smurfs">
                                         <a onClick={() => {                                 
                                             this.props.viewProductDetails(2)}} className="btn btn-primary">Buy now</a>
                                     </Link>

@@ -138,9 +138,9 @@ class Products extends Component {
                                         onClick={(e) => {e.preventDefault(); this.openTabSection(e, 'tab1')}}
                                         className="current"
                                     >
-                                        <a href="#">
-                                            <span className="dot"></span> Products
-                                        </a>
+                                        <h2 href="#">
+                                            <span className="dot"></span> League of Legends Smurfs
+                                        </h2>
                                     </li>    
                                 </ul>
                             </div>
@@ -153,7 +153,7 @@ class Products extends Component {
                                                 <div className="col-lg-3 col-md-6 col-sm-6 col-6" key={idx}>
                                                     <div className="single-product-box">
                                                         <div className="product-image">
-                                                            <Link href="/product-details">
+                                                            <Link href="/league-of-legends-smurfs">
                                                                 <a>
                                                                     <LazyLoad once>
                                                                         <img onClick={() => {viewProductDetails(data.id)}} src={data.image} alt={data.imageALT} />
@@ -163,14 +163,15 @@ class Products extends Component {
                                                         </div>
 
                                                         <div className="product-content">
-                                                            <h3 className="region-label">
-                                                                <Link href="/product-details">
-                                                                    <a><b>{data.title}</b></a>
+                                                            <h3 className="region-label"> 
+                                                                <Link href="/league-of-legends-smurfs">                                    
+                                                                    <a>   <b>League of Legends Smurf</b> <br />
+                                                                        <b>{data.title}</b></a>
                                                                 </Link>
                                                             </h3>
                                                      
 
-                                                            <Link href="/product-details">
+                                                            <Link href="/league-of-legends-smurfs">
                                                                 <a 
                                                                     className="btnLOL btn-lightLOL"
                                                                     onClick={() => {viewProductDetails(data.id)}}

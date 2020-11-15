@@ -38,7 +38,7 @@ const initState = {
             image: require("../../assets/regions/demacia.jpg"),
             stock: 0,
             quantity: 0,
-            imageALT: "lol account euw"
+            imageALT: "League of Legends smurf account EUW"
         },
         {
             id: 2,
@@ -47,16 +47,17 @@ const initState = {
             image: require("../../assets/regions/Noxus.jpg"),
             stock: 0,
             quantity: 0,
-            imageALT: "lol account na"
+            imageALT: "League of Legends smurf account na"
         },
         {
             id: 3,
             title: "EU NORDIC & EAST",
+            subtitle: "League of ",
             price: 29.95,
             image: require("../../assets/regions/flelyor.jpg"),
             stock: 0,
             quantity: 0,
-            imageALT: "lol account eune"
+            imageALT: "League of Legends smurf account eune"
         },
         {
             id: 4,
@@ -65,7 +66,7 @@ const initState = {
             image: require("../../assets/regions/Shuriman.jpg"),
             stock: 0,
             quantity: 0,
-            imageALT: "lol account turkey"
+            imageALT: "League of Legends smurf account turkey"
         },
         {
             id: 5,
@@ -74,7 +75,7 @@ const initState = {
             image: require("../../assets/regions/Piltober.jpg"),
             stock: 0,
             quantity: 0,
-            imageALT: "lol account pbe"
+            imageALT: "League of Legends smurf account pbe"
         }
     ],
     addedItems:[],
@@ -89,7 +90,7 @@ const initState = {
                         image: require("../../assets/regions/Noxus.jpg"),
                         stock: 0,
                         quantity: 0,
-                        imageALT: "lol account na"
+                        imageALT: "League of Legends smurf account na"
                     },
     soldAccounts: [],
     userLogged: false

@@ -42,7 +42,7 @@ class BlogDetailsTwo extends Component {
                                     <p>In this article we are going to see teach you how can you improve at League of Legends</p>
 
                                     <p>Before we start we would recommend you to <b>improve your skills by playing in a different account (lvl 30 | unranked league of legends account) </b>so you won't lose any lps in your main account while you are practicing</p>
-                                    <Link href="/product-details">
+                                    <Link href="/league-of-legends-smurfs">
                                         <img style={{marginBottom:'20px',cursor:'pointer'}} onClick={()=>{}} src={require("../assets/blog/buy-lol-smurf.jpg")} />
                                     </Link>
 
@@ -90,7 +90,7 @@ class BlogDetailsTwo extends Component {
 
                                     <h3>Thanks for reading</h3>
                                     <p> Thanks for reading! If you are thinking about climbing in solo queue you should practice these champs in a league of legends smurf account,
-                                        so your main account's elo won't be affected by this. If you are thinking about getting one you can buy a lol smurf account! <Link href="/product-details">Just click here if you are interested</Link>
+                                        so your main account's elo won't be affected by this. If you are thinking about getting one you can buy a lol smurf account! <Link href="/league-of-legends-smurfs">Just click here if you are interested</Link>
                                     </p>
                                     <Link href="/">
                                         <img style={{marginBottom:'20px',cursor:'pointer'}} onClick={()=>{}} src={require("../assets/blog/buy-lol-smurf.jpg")} />

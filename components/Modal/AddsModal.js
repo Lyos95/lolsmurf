@@ -33,7 +33,7 @@ class AddsModal extends Component {
                     <Link href="#">
                         <a onClick={this.closeModal} className="bts-popup-close close-white"></a>
                     </Link>
-                    <a href="https://www.lolsmurf.net/product-details" className="btnOffer">Buy now!</a>
+                    <a href="https://www.lolsmurf.net/league-of-legends-smurfs" className="btnOffer">Buy now!</a>
                 </div>
             </div>
         );

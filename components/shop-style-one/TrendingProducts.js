@@ -111,7 +111,7 @@ class TrendingProducts extends Component {
                             <div className="col-lg-3 col-md-6 col-sm-6 col-6" key={idx}>
                                 <div className="single-product-box">
                                     <div className="product-image">
-                                        <Link href="/product-details">
+                                        <Link href="/league-of-legends-smurfs">
                                             <a>
                                                 <img src={data.image} alt="image" />
                                                 <img src={data.imageHover} alt="image" />
@@ -152,7 +152,7 @@ class TrendingProducts extends Component {
 
                                     <div className="product-content">
                                         <h3>
-                                            <Link href="/product-details">
+                                            <Link href="/league-of-legends-smurfs">
                                                 <a>{data.title}</a>
                                             </Link>
                                         </h3>
