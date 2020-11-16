@@ -1246,6 +1246,9 @@ Main Banner Area CSS
 .main-banner-three {
   height: 820px;
 }
+.main-banner-three-container {
+  height: 820px;
+}
 
 .banner-image {
   text-align: center;

@@ -93,6 +93,9 @@
     padding-top: 110px;
     padding-bottom: 110px;
   }
+  .main-banner-three-container {
+    height: 359px;
+  }
   .main-banner.item-bg1 {
     background-position: left;
   }
@@ -972,6 +975,9 @@
   }
 
   .main-banner-three {
+    height: 537px;
+  }
+  .main-banner-three-container {
     height: 537px;
   }
 
