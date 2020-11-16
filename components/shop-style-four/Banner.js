@@ -2,12 +2,10 @@ import React, { Component } from 'react';
 import Link from 'next/link';
 import { connect } from 'react-redux';
 import { setProduct } from '../../store/actions/cartActions';
-import LazyLoad from 'react-lazyload';
 
 class Banner extends Component {
     render() {
         return (
-            <LazyLoad once>
                 <div className="main-banner main-banner-three item-bg4">
                     <div style={{zIndex:2}} className="d-table">
                         <div className="d-table-cell">
@@ -26,7 +24,7 @@ class Banner extends Component {
                     </div>
                     
                 </div>
-            </LazyLoad>            
+      
         );
     }
 }
