@@ -12,8 +12,8 @@ class OfferArea extends Component {
                     <div className="container">
                         <div className="products-offer-content">
                             <span>Get the best deal!</span>
-                            <h1>$29.95</h1>
-                            <p>for a fresh new lvl 30 account</p>
+                            <h1>$18.95</h1>
+                            <p>for a fresh new lol smurf</p>
                             <Link href="/league-of-legends-smurfs">
                                 <a onClick={() => {                                 
                                             this.props.viewProductDetails(2)}}  className="btn btn-primary">Buy Now</a>

@@ -17,7 +17,7 @@ class Index extends Component {
                 />
                 <Navbar />
                 <Breadcrumb title="Checkout" />
-                <CheckoutForm />
+       
 
                 <Facility />
                 <Footer />
