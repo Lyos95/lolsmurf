@@ -39,7 +39,8 @@ const Account = mongoose.model("account");
                     password: account.password,
                     region: account.region,
                     status: 'NOT_SOLD',
-                    email: ''
+                    email: '',
+                    be: account.be
                 })
                 let accountFound = await Account.find({'nickname': account.nickName});
                 if(accountFound.length === 0){
@@ -72,20 +73,81 @@ const Account = mongoose.model("account");
 
     router.post('/allAccounts', async function ( req, res, next) {
         try {        
-            let accountsObject = {"EUW":0,
-                                  "NA":0,
-                                  "EUNE":0,
-                                  "TURK":0,
-                                  "PBE":0
+            let accountsObject = {"EUW":[{be:40000,
+                                         "amount":0
+                                        },
+                                        {be:50000,
+                                        "amount":0
+                                        },
+                                        {be:60000,
+                                        "amount":0
+                                        },
+                                        {be:70000,
+                                        "amount":0
+                                        }],
+                                  "NA":[{be:40000,
+                                        "amount":0
+                                        },
+                                        {be:50000,
+                                        "amount":0
+                                        },
+                                        {be:60000,
+                                        "amount":0
+                                        },
+                                        {be:70000,
+                                        "amount":0
+                                        }],
+                                  "EUNE":[{be:40000,
+                                        "amount":0
+                                        },
+                                        {be:50000,
+                                        "amount":0
+                                        },
+                                        {be:60000,
+                                        "amount":0
+                                        },
+                                        {be:70000,
+                                        "amount":0
+                                        }],
+                                  "TURK":[{be:40000,
+                                        "amount":0
+                                        },
+                                        {be:50000,
+                                        "amount":0
+                                        },
+                                        {be:60000,
+                                        "amount":0
+                                        },
+                                        {be:70000,
+                                        "amount":0
+                                        }],
+                                  "OCE":[{be:40000,
+                                        "amount":0
+                                        },
+                                        {be:50000,
+                                        "amount":0
+                                        },
+                                        {be:60000,
+                                        "amount":0
+                                        },
+                                        {be:70000,
+                                        "amount":0
+                                        }],
                                 };
                                 
             let accountsFromBD = await Account.find();
             
             for(let i = 0; i< accountsFromBD.length; i++){
                 if(accountsFromBD[i].status === 'NOT_SOLD'){
-                    accountsObject[accountsFromBD[i].region] = accountsObject[accountsFromBD[i].region]+ 1;
+                    if(accountsFromBD[i].be){
+                        let account = accountsObject[accountsFromBD[i].region].find(element => element.be == accountsFromBD[i].be)
+                        account.amount = account.amount+1
+                    }else{
+                        let account = accountsObject[accountsFromBD[i].region].find(element => element.be === 60000)
+                        account.amount = account.amount+1
+                    }                    
                 }
-            }          
+            }        
             res.send(accountsObject);
         }catch(e){
             res.send('Error');

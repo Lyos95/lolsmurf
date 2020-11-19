@@ -28,54 +28,165 @@ import {
     SAVE_CLIENT_ACCOUNTS,
     CHECK_IF_ENOUGH_ACCS
 } from '../actions/action-types/cart-actions'
+import { filter } from 'lodash';
 
 const initState = {
     products: [
         {
             id: 1,
             title: "EU WEST",
-            price: 29.95,
             image: require("../../assets/regions/demacia.jpg"),
-            stock: 0,
-            quantity: 0,
-            imageALT: "League of Legends smurf account EUW"
+            imageALT: "League of Legends smurf account EUW",
+            type: [{
+                stock: 0,
+                quantity: 0,
+                price: 18.95,
+                be: 40000
+            },
+            {
+                stock: 0,
+                quantity: 0,
+                price: 24.95,
+                be: 50000
+            },
+            {
+                stock: 0,
+                quantity: 0,
+                price: 28.95,
+                be: 60000
+            },
+            {
+                stock: 0,
+                quantity: 0,
+                price: 34.95,
+                be: 70000
+            }
+        ]
         },
         {
             id: 2,
             title: "NA",
-            price: 29.95,
             image: require("../../assets/regions/Noxus.jpg"),
-            stock: 0,
-            quantity: 0,
-            imageALT: "League of Legends smurf account na"
+            imageALT: "League of Legends smurf account na",
+            type: [{
+                stock: 0,
+                quantity: 0,
+                price: 18.95,
+                be: 40000
+            },
+            {
+                stock: 0,
+                quantity: 0,
+                price: 24.95,
+                be: 50000
+            },
+            {
+                stock: 0,
+                quantity: 0,
+                price: 28.95,
+                be: 60000
+            },
+            {
+                stock: 0,
+                quantity: 0,
+                price: 34.95,
+                be: 70000
+            }
+        ]
         },
         {
             id: 3,
             title: "EU NORDIC & EAST",
             subtitle: "League of ",
-            price: 29.95,
             image: require("../../assets/regions/flelyor.jpg"),
-            stock: 0,
-            quantity: 0,
-            imageALT: "League of Legends smurf account eune"
+            imageALT: "League of Legends smurf account eune",
+            type: [{
+                stock: 0,
+                quantity: 0,
+                price: 18.95,
+                be: 40000
+            },
+            {
+                stock: 0,
+                quantity: 0,
+                price: 24.95,
+                be: 50000
+            },
+            {
+                stock: 0,
+                quantity: 0,
+                price: 28.95,
+                be: 60000
+            },
+            {
+                stock: 0,
+                quantity: 0,
+                price: 34.95,
+                be: 70000
+            }
+        ]
         },
         {
             id: 4,
             title: "TURKEY",
-            price: 29.95,
             image: require("../../assets/regions/Shuriman.jpg"),
-            stock: 0,
-            quantity: 0,
-            imageALT: "League of Legends smurf account turkey"
+            imageALT: "League of Legends smurf account turkey",
+            type: [{
+                stock: 0,
+                quantity: 0,
+                price: 18.95,
+                be: 40000
+            },
+            {
+                stock: 0,
+                quantity: 0,
+                price: 24.95,
+                be: 50000
+            },
+            {
+                stock: 0,
+                quantity: 0,
+                price: 28.95,
+                be: 60000
+            },
+            {
+                stock: 0,
+                quantity: 0,
+                price: 34.95,
+                be: 70000
+            }
+        ]
         },
         {
             id: 5,
-            title: "PBE",
-            price: 29.95,
-            image: require("../../assets/regions/Piltober.jpg"),
-            stock: 0,
-            quantity: 0,
-            imageALT: "League of Legends smurf account pbe"
+            title: "OCEANIA",
+            image: require("../../assets/regions/ionia.jpg"),
+            imageALT: "League of Legends smurf account oceania",
+            type: [{
+                stock: 0,
+                quantity: 0,
+                price: 18.95,
+                be: 40000
+            },
+            {
+                stock: 0,
+                quantity: 0,
+                price: 24.95,
+                be: 50000
+            },
+            {
+                stock: 0,
+                quantity: 0,
+                price: 28.95,
+                be: 60000
+            },
+            {
+                stock: 0,
+                quantity: 0,
+                price: 34.95,
+                be: 70000
+            }
+        ]
         }
     ],
     addedItems:[],
@@ -86,11 +197,33 @@ const initState = {
     selectedProduct: {
                         id: 2,
                         title: "NA",
-                        price: 29.95,
                         image: require("../../assets/regions/Noxus.jpg"),
-                        stock: 0,
-                        quantity: 0,
-                        imageALT: "League of Legends smurf account na"
+                        imageALT: "League of Legends smurf account na",
+                        type: [{
+                            stock: 0,
+                            quantity: 0,
+                            price: 18.95,
+                            be: 40000
+                        },
+                        {
+                            stock: 0,
+                            quantity: 0,
+                            price: 24.95,
+                            be: 50000
+                        },
+                        {
+                            stock: 0,
+                            quantity: 0,
+                            price: 28.95,
+                            be: 60000
+                        },
+                        {
+                            stock: 0,
+                            quantity: 0,
+                            price: 34.95,
+                            be: 70000
+                        }
+                    ]
                     },
     soldAccounts: [],
     userLogged: false
@@ -98,13 +231,62 @@ const initState = {
 
 const cartReducer = (state = initState, action) => {
    
-   
     if(action.type === ADD_TO_CART){
         let addedItem = state.products.find(item => item.id === action.id)
         let existed_item = state.addedItems.find(item => item.id === action.id)
-        
+
+        if(existed_item){ 
+            let existed_item_be = existed_item.type.find(item => item.be === action.be)
+            
+            if(existed_item_be){
+                if(existed_item_be.quantity < existed_item_be.stock){
+                    existed_item_be.quantity = existed_item_be.quantity + 1
+                    let newArr = []
+                    for(let i = 0; i < existed_item.type.length; i++){
+                        newArr.push(Object.assign({},existed_item.type[i]))
+                    }
+                    existed_item.type = newArr
+                    
+                    return  {...state,
+                             total: Math.round((state.total + existed_item_be.price)*100)/100,
+                             addedItems: state.addedItems.concat([]),
+                             totalProducts: state.totalProducts + 1
+                            }        
+                }
+            }else{
+                let newArr = []
+                for(let i = 0; i < existed_item.type.length; i++){
+                    newArr.push(Object.assign({},existed_item.type[i]))
+                }
+                let aux = addedItem.type.find(item => item.be === action.be) 
+                aux.quantity = 1
+                newArr.push(Object.assign(aux))
+                existed_item.type = newArr
+                return  {...state,
+                         total: Math.round((state.total + aux.price)*100)/100,
+                         addedItems: state.addedItems.concat([]),
+                         totalProducts: state.totalProducts + 1
+                        }    
+            }
+
+            
+        }else{
+            let aux = addedItem.type.find(item => item.be === action.be) 
+            aux.quantity = 1
+            let auxArr = addedItem.type.filter(item => item.quantity > 0)
+            
+            let auxAdded = Object.assign({},addedItem)
+            auxAdded.type = auxArr
+
+
+            return  {...state,
+                     total: Math.round((state.total + aux.price)*100)/100,
+                     addedItems: [...state.addedItems, auxAdded],
+                     totalProducts: state.totalProducts + 1
+                    }
+        }
         //check if the action id exists in the addedItems
-        state.totalProducts++;
+        /*state.totalProducts++;
         if(existed_item){
             addedItem.quantity += 1 
             existed_item.quantity += 1
@@ -120,7 +302,7 @@ const cartReducer = (state = initState, action) => {
             
             //calculating the total
             let newTotal = state.total + addedItem.price 
-            
+         
             return {
                 ...state,
                 products: state.products.concat([]),
@@ -129,7 +311,7 @@ const cartReducer = (state = initState, action) => {
                 totalProducts: state.totalProducts
             }
             
-        }
+          }*/
     }
     
     if(action.type === FETCH_ACCOUNT){
@@ -199,17 +381,19 @@ const cartReducer = (state = initState, action) => {
 
     if(action.type === REMOVE_ITEM){
         let itemToRemove = state.addedItems.find(item=> action.id === item.id)
-        let new_items = state.addedItems.filter(item=> action.id !== item.id)
-        let itemTobeRemovedQuantity = state.products.find(item => item.id === action.id)
-        itemTobeRemovedQuantity.quantity = 0
-        state.totalProducts = state.totalProducts - itemToRemove.quantity;
+        let realIteamToRemove = itemToRemove.type.find(item => item.be === action.be)
+        state.totalProducts = state.totalProducts - realIteamToRemove.quantity;
+
+        let newType = itemToRemove.type.filter(item => item.be !== action.be)
+        itemToRemove.type = newType
+        
+
         //calculating the total
-        let newTotal = state.total - (itemToRemove.price * itemToRemove.quantity );
+        let newTotal = state.total - (realIteamToRemove.price * realIteamToRemove.quantity );
         
         return {
             ...state,
-            addedItems: new_items,
-            products: state.products.concat([]),
+            addedItems: state.addedItems.concat([]),
             total: newTotal,
             totalProducts:state.totalProducts
         }
@@ -237,24 +421,30 @@ const cartReducer = (state = initState, action) => {
     if(action.type === SUB_QUANTITY){  
         //let addedItem = state.products.find(item=> item.id === action.id) 
         let addedItem = state.addedItems.find(item => item.id === action.id)
+        let addedItem_be = addedItem.type.find(item => item.be === action.be)
         //if the qt == 0 then it should be removed
         state.totalProducts--;
-        if(addedItem.quantity === 1){
-            addedItem.quantity -= 1
-            let new_items = state.addedItems.filter(item=>item.id !== action.id)
-            let newTotal = state.total - addedItem.price
+        if(addedItem_be.quantity === 1){
+            addedItem_be.quantity = 0            
+            let newItems = addedItem.type.filter(item => item.quantity > 0)
+            addedItem.type = newItems
+            let newTotal = state.total - addedItem_be.price
             newTotal = Math.round(newTotal * 100) / 100
             return {
                 ...state,
                 products: state.products.concat([]),
-                addedItems: new_items,
+                addedItems: state.addedItems.concat([]),
                 total: newTotal,
                 totalProducts:state.totalProducts
             }
         } else {
-            addedItem.quantity -= 1
-            //existed_item.quantity -= 1
-            let newTotal = state.total - addedItem.price
+            addedItem_be.quantity =  addedItem_be.quantity - 1
+            let newArr = []
+            for(let i = 0; i < addedItem.type.length; i++){
+                newArr.push(Object.assign({},addedItem.type[i]))
+            }
+            addedItem.type = newArr
+            let newTotal = state.total - addedItem_be.price
             newTotal = Math.round(newTotal * 100) / 100
             
             return {

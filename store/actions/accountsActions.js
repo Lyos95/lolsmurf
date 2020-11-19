@@ -6,7 +6,6 @@ import {
     CHECK_IF_ENOUGH_ACCS
 } from './action-types/account-actions'
 import axios from 'axios';
-import bcrypt from 'bcryptjs';
 
 export const fetchAccount = (account) => async (dispatch) => {
 
@@ -25,7 +24,7 @@ export const fetchAccountsCounter = () => async (dispatch, getState) => {
         "NA": "NA",
         "EU NORDIC & EAST": "EUNE",
         "TURKEY": "TURK",
-        "PBE": "PBE"
+        "OCEANIA": "OCE"
     }
     const { data } = await axios.post('/api/accounts/allAccounts', {});
 
@@ -43,21 +42,35 @@ export const checkIfWeHaveThatAmountOfAccs = () => async(dispatch,getState) => {
         "NA": "NA",
         "EU NORDIC & EAST": "EUNE",
         "TURKEY": "TURK",
-        "PBE": "PBE"
+        "OCEANIA": "OCE"
     }
     let tran = true
     const { data } = await axios.post('/api/accounts/allAccounts', {});
-    
     let products = getState().products.map((product) => {
-        return { ...product,quantity:0, stock: data[enumRegions[product.title]] }
+        let region = enumRegions[product.title]
+
+        let typeUpdated = product.type.map(accountType =>{
+            let subtype = data[region].find(element => accountType.be === element.be)
+            return {
+                ...accountType,
+                stock:subtype.amount,
+                quantity:0
+            }
+        })
+        
+        return { ...product, type: typeUpdated }
     })
     
+
+
     let addedItems = getState().addedItems
     let newtotalProducts = getState().totalProducts
     let newSelectedProduct = Object.assign({},getState().selectedProduct)
     let selectProductAux = products.find(item => item.id === newSelectedProduct.id)
-    newSelectedProduct.stock = selectProductAux.stock
+
+    newSelectedProduct.type = selectProductAux.type
     let newTotal = getState().total
+    /*
     for(let i = 0; i<addedItems.length; i++) {
         for(let j=0; j<products.length; j++){
             if(addedItems[i].title === products[j].title && products[j].stock < addedItems[i].quantity){
@@ -74,8 +87,22 @@ export const checkIfWeHaveThatAmountOfAccs = () => async(dispatch,getState) => {
             }
         }
     }
-    addedItems = addedItems.filter(item => item.stock > 0)
 
+     for(let i = 0; i < addedItem.type.length; i++){
+                auxArr.push(Object.assign({},addedItem.type[i]))
+            }
+            let auxAdded = Object.assign({},addedItem)
+            auxAdded.type = auxArr
+
+    
+
+    let addedItemsNew = []
+    for(let i = 0; i < addedItems.length; i++){
+        let newType = addedItems[i].type.filter(item => item.stock > 0)
+        addedItems[i].type = newType
+        addedItemsNew.push(Object.assign({},addedItems[i]))
+    }
+*/
     let addedItemsCopy = addedItems.map(item => item) 
     let productsCopy = products.map(item => item) 
     dispatch({ type: CHECK_IF_ENOUGH_ACCS, payload: {

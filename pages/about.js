@@ -27,7 +27,7 @@ class Index extends Component {
                                     <h2>About Our Store</h2>
                                     <p>We are the biggest, safest and best place in the whole world to buy League of Legends smurfs! If you are in need of a new smurf for trying new champs, improve your skills without affecting your real account elo, this is your store!</p>
                                     <p>We offer a lifetime guarantee, so if your account gets banned we will give you a fresh new account, so you don't have to worry about anything but playing and improving your gameplay!</p>
-                                    <p>Our catalog is pretty wide, we offer accounts in all the main countries, EUW, EUNE, Turkey, NA and even on the PBE! What are you waiting?! Join us and smurf your enemies!</p>
+                                    <p>Our catalog is pretty wide, we offer accounts in all the main countries, EUW, EUNE, Turkey, NA and Oceania! What are you waiting?! Join us and smurf your enemies!</p>
                                     <div className="signature mb-0">
                                     </div>
                                 </div>

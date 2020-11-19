@@ -6,12 +6,12 @@ import {NextSeo} from 'next-seo'
 
 const AddAccounts = (props) => {
   const [inputFields, setInputFields] = useState([
-    { nickName: '', password: '',region: 'EUW' }
+    { nickName: '', password: '',region: 'EUW',be: '40000' }
   ]);
 
   const handleAddFields = () => {
     const values = [...inputFields];
-    values.push({ nickName: '', password: '',region: 'EUW' });
+    values.push({ nickName: '', password: '',region: 'EUW',be: '40000' });
     setInputFields(values);
   };
 
@@ -27,6 +27,8 @@ const AddAccounts = (props) => {
       values[index].nickName = event.target.value;
     } else if(event.target.name === 'password'){
       values[index].password = event.target.value;
+    } else if(event.target.name === 'be'){
+      values[index].be = event.target.value;
     } else{
       values[index].region = event.target.value;
     }
@@ -101,7 +103,22 @@ const AddAccounts = (props) => {
                   <option value="EUNE">EUNE</option>
                   <option value="TURK">TURK</option>
                   <option value="NA">NA</option>
-                  <option value="PBE">PBE</option>
+                  <option value="OCE">OCE</option>
+                </select>
+              
+              </div>
+              <div className="form-group col-sm-2">
+                <label htmlFor="be">BE</label>
+                <select  
+                  className="form-control"
+                  value = {inputField.be}
+                  name = "be"
+                  onChange={event => handleInputChange(index, event)}
+                >
+                  <option value="40000">40000</option>
+                  <option value="50000">50000</option>
+                  <option value="60000">60000</option>
+                  <option value="70000">70000</option>
                 </select>
               
               </div>

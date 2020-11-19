@@ -9,28 +9,40 @@ class OrderSummary extends Component {
                     <thead>
                         <tr>
                             <th scope="col">Product Name</th>
+                            <th scope="col">BE</th>
                             <th scope="col">Total</th>
                         </tr>
                     </thead>
 
                     <tbody>
-                        {this.props.products.map((data, idx) => (
-                            <tr key={idx}>
-                                <td className="product-name">
-                                    <a href="#">{data.title}</a>
-                                </td>
-
-                                <td className="product-total">
-                                    <span className="subtotal-amount">${data.price * data.quantity}</span>
-                                </td>
-                            </tr>
-                        ))}
+                        {this.props.products.map((item,idx) =>{
+                            let info = item.type.map((data,idx2) =>{
+                                return  (
+                                    <tr key={`${idx}_${idx2}`}>
+                                        <td className="product-name">
+                                            <a href="#">{item.title}</a>
+                                        </td>
+                                        <td className="product-name">
+                                            <a href="#">{data.be}</a>
+                                        </td>
+        
+                                        <td className="product-total">
+                                            <span className="subtotal-amount">${Math.round(data.price * data.quantity*100)/100}</span>
+                                        </td>
+                                    </tr>
+                                )
+                            })
+                            return [...info]
+                        })}
                         
                         <tr>
                             <td className="total-price">
                                 <span>Order Total</span>
                             </td>
 
+                            <td className="product-subtotal">
+                               
+                            </td>
                             <td className="product-subtotal">
                                 <span className="subtotal-amount">${this.props.total + this.props.shipping}</span>
                             </td>

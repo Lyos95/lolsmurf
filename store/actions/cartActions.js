@@ -11,24 +11,27 @@ import {
 } from './action-types/cart-actions'
 
 //add cart action
-export const addToCart = (id) => {
+export const addToCart = (id,be) => {
     return {
         type: ADD_TO_CART,
-        id
+        id,
+        be
     }
 }
 //remove item action
-export const removeItem = (id) => {
+export const removeItem = (id,be) => {
     return {
         type: REMOVE_ITEM,
-        id
+        id,
+        be
     }
 }
 //subtract qt action
-export const subtractQuantity = (id) => {
+export const subtractQuantity = (id,be) => {
     return {
         type: SUB_QUANTITY,
-        id
+        id,
+        be
     }
 }
 //add qt action

@@ -20,6 +20,9 @@ const accountSchema = new Schema ({
                  required: true,
                  default: 'NOT_SOLD'
       },
+      be    : {type: String,
+                required: true
+      },
       firstName: {type:String},
       lastName: {type:String},
       dateOfSelling: {type: String}

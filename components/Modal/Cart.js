@@ -12,6 +12,36 @@ class Cart extends Component {
         this.props.onClick(this.state.display);
     }
 
+    renderCartIn = () => {
+        if(this.props.products.length > 0){
+            let aux2 = this.props.products.map((product,idx) => {
+                let aux = product.type.map((data,idx2) =>(
+                    <div className="product-cart" key={`${idx}_${idx2}`}>
+                    <div className="product-image">
+                        <img src={product.image} alt="image" />
+                    </div>
+    
+                    <div className="product-content">
+                        <h3>
+                            <Link href="#">
+                                <a>{product.title}</a>
+                            </Link>
+                        </h3>
+                        <span>BE: {data.be}</span>
+                        <div className="product-price">
+                            <span>{data.quantity}</span>
+                            <span>x</span>
+                            <span className="price">${data.price}</span>
+                        </div>
+                    </div>
+                </div>
+                ))
+                return [...aux]
+            }) 
+            return aux2 || 'Empty'
+        } 
+    }
+
     render() {
         let { products, total } = this.props;
         return (
@@ -38,27 +68,7 @@ class Cart extends Component {
 
                             <div className="product-cart-content">
 
-                                {products.length > 0 ? products.map((product, idx) => (
-                                    <div className="product-cart" key={idx}>
-                                        <div className="product-image">
-                                            <img src={product.image} alt="image" />
-                                        </div>
-
-                                        <div className="product-content">
-                                            <h3>
-                                                <Link href="#">
-                                                    <a>{product.title}</a>
-                                                </Link>
-                                            </h3>
-                                            <span>Fresh lvl 30 account</span>
-                                            <div className="product-price">
-                                                <span>{product.quantity}</span>
-                                                <span>x</span>
-                                                <span className="price">${product.price}</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                )) : 'Empty'}
+                                {this.renderCartIn()}
                                 
                             </div>
 

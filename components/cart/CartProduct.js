@@ -7,8 +7,8 @@ import 'react-toastify/dist/ReactToastify.css';
 
 class CartProduct extends Component {
 
-    handleRemove = (id) => {
-        this.props.removeItem(id);
+    handleRemove = (id,be) => {
+        this.props.removeItem(id,be);
 
         toast.error('Removed from cart', {
             position: "bottom-left",
@@ -20,40 +20,41 @@ class CartProduct extends Component {
         });
     }
     //to add the quantity
-    handleAddQuantity = (id,quantity)=>{
-        let item= this.props.products.find(item=> id === item.id);
-        
-            if(item.stock > quantity){
-                this.props.addQuantity(id);
+    handleAddQuantity = (id,quantity,be)=>{
+        let item = this.props.products.find(item=> id === item.id);
+        let itemFound = item.type.find(item => item.be === be)
+            if(itemFound.stock > quantity){
+                this.props.addQuantity(id,be);
             }
     }
     //to substruct from the quantity
-    handleSubtractQuantity = (id)=>{
-        this.props.subtractQuantity(id);
+    handleSubtractQuantity = (id,be)=>{
+        this.props.subtractQuantity(id,be);
     }
 
     render() {
         let cartItems = this.props.products.length ?
         (
-            this.props.products.map((data, idx) => {
+            this.props.products.map((productAux, idx) => {
+               let productsAux = productAux.type.map((data,idx2) =>{
                 return (
-                    <tr key={idx}>
+                    <tr key={`${idx}-${idx2}`}>
                         <td className="product-thumbnail">
                             <Link href="#">
                                 <a>
-                                    <img src={data.image} alt="item" />
+                                    <img src={productAux.image} alt="item" />
                                 </a>
                             </Link>
                         </td>
 
                         <td className="product-name">
                             <Link href="#">
-                                <a>{data.title}</a>
+                                <a>{productAux.title}</a>
                             </Link>
                             <ul>
-                                <li>Region: <strong>{data.title}</strong></li>
+                                <li>Region: <strong>{productAux.title}</strong></li>
                                 <li>Email: <strong>Unverified</strong></li>
-                                <li>BE: <strong>+60000 BE</strong></li>
+                                <li>BE: <strong>+{data.be} BE</strong></li>
                             </ul>
                         </td>
 
@@ -65,7 +66,7 @@ class CartProduct extends Component {
                             <div className="input-counter">
                                 <span 
                                     className="minus-btn"
-                                    onClick={()=>{this.handleSubtractQuantity(data.id)}}
+                                    onClick={()=>{this.handleSubtractQuantity(productAux.id,data.be)}}
                                 >
                                     <i className="fas fa-minus"></i>
                                 </span>
@@ -77,7 +78,7 @@ class CartProduct extends Component {
                                 />
                                 <span 
                                     className="plus-btn"
-                                    onClick={()=>{this.handleAddQuantity(data.id,data.quantity)}}
+                                    onClick={()=>{this.handleAddQuantity(productAux.id,data.quantity,data.be)}}
                                 >
                                     <i className="fas fa-plus"></i>
                                 </span>
@@ -85,11 +86,11 @@ class CartProduct extends Component {
                         </td>
 
                         <td className="product-subtotal">
-                            <span className="subtotal-amount">${data.price * data.quantity}</span>
+                            <span className="subtotal-amount">${Math.round(data.price * data.quantity * 100)/100}</span>
                             <Link href="#">
                                 <a
                                     className="remove"
-                                    onClick={(e)=>{e.preventDefault();this.handleRemove(data.id)}}
+                                    onClick={(e)=>{e.preventDefault();this.handleRemove(productAux.id,data.be)}}
                                 >
                                     <i className="far fa-trash-alt"></i>
                                 </a>
@@ -97,6 +98,10 @@ class CartProduct extends Component {
                         </td>
                     </tr>
                 )
+               })
+
+                return [...productsAux]
+                
             })
         ): (
             <tr>
@@ -137,9 +142,9 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
     return {
-        removeItem: (id) => {dispatch(removeItem(id))},
-        addQuantity: (id) => {dispatch(addToCart(id))},
-        subtractQuantity: (id) => {dispatch(subtractQuantity(id))}
+        removeItem: (id,be) => {dispatch(removeItem(id,be))},
+        addQuantity: (id,be) => {dispatch(addToCart(id,be))},
+        subtractQuantity: (id,be) => {dispatch(subtractQuantity(id,be))}
     }
 }
 

@@ -7,8 +7,16 @@ const User = mongoose.model("user");
 const bcrypt = require("bcryptjs")
 const PAYPAL_CLIENT = 'ActeDxf8liyWa8og-xYgIJs5G_JiB70Zk_w1_Xf-M-UosC8j7Eq8V4_Imd5us934RPmWJf6LXPtty3xE';
 const PAYPAL_SECRET = 'EO0gZ4bm0DrrEXvyri_nIiF_mYBJpaCeT-e8OwuUaJYXxeUwo7xh61Jos_ZLxTQOmPo86KWTWR0QQFHr';
+//const PAYPAL_CLIENT = 'AeLwHXhqy6L6HupiH10ZfMeoqzHSYGD37WnjUiOmLh1e2fGXsK5xPfifKNBdg_Fg_fsjgkkGe0vhEE8t'
+//const PAYPAL_SECRET = 'EBvqqh3_QpJ_Qyv1cd6OwjKArXP4stdfu5fJkAezNSyReG631BqeZBF0y2vjt-w_PyKQG5DlffRFRGHI'
+
 const PAYPAL_OAUTH_API = 'https://api.paypal.com/v1/oauth2/token/';
 const PAYPAL_ORDER_API = 'https://api.paypal.com/v2/checkout/orders/';
+
+//const PAYPAL_OAUTH_API = 'https://api.sandbox.paypal.com/v1/oauth2/token/';
+//const PAYPAL_ORDER_API = 'https://api.sandbox.paypal.com/v2/checkout/orders/';
+
+
 var Base64 = require('js-base64').Base64;
 const axios = require('axios');
 const Account = mongoose.model("account");
@@ -19,7 +27,7 @@ const region = {
   "NA": "NA",
   "EU NORDIC & EAST": "EUNE",
   "TURKEY": "TURK",
-  "PBE": "PBE"
+  "OCEANIA": "OCE"
 }
 router.post('/', async function (req, res, next) {
   try {
@@ -64,32 +72,30 @@ router.post('/', async function (req, res, next) {
 
 
       let accountsSold = [];
-      for (let i = 0; i < products.length; i++) {
-
-        for (let j = 0; j < Number(products[i].quantity); j++) {
-
-          let accountFromBD = await Account.findOne({
-            region: region[products[i].title],
-            status: 'NOT_SOLD'
-          });
-
-          if (accountFromBD) {
-            var today = new Date();
-            var dd = String(today.getDate()).padStart(2, '0');
-            var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
-            var yyyy = today.getFullYear();
-
-            today = mm + '/' + dd + '/' + yyyy;
-            accountFromBD.email = email
-            accountFromBD.status = 'SOLD'
-            accountFromBD.dateOfSelling = today
-            let accountSaved = await accountFromBD.save();
-            await accountsSold.push(accountSaved)
+      for(let i = 0; i < products.length; i++){
+        for(let j = 0; j < products[i].type.length; j++){
+          for(let k = 0; k < products[i].type[j].quantity; k++){
+            let accountFromBD = await Account.findOne({
+              region: region[products[i].title],
+              status: 'NOT_SOLD',
+              be: products[i].type[j].be
+            });
+  
+            if (accountFromBD) {
+              var today = new Date();
+              var dd = String(today.getDate()).padStart(2, '0');
+              var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+              var yyyy = today.getFullYear();
+  
+              today = mm + '/' + dd + '/' + yyyy;
+              accountFromBD.email = email
+              accountFromBD.status = 'SOLD'
+              accountFromBD.dateOfSelling = today
+              let accountSaved = await accountFromBD.save();
+              await accountsSold.push(accountSaved)
+            }
           }
-
         }
-
-
       }
 
       var transporter = nodemailer.createTransport({
@@ -102,7 +108,16 @@ router.post('/', async function (req, res, next) {
         }
       });
 
+      let accountsrow = ''
+      for (let i = 0; i < accountsSold.length; i++) {
+        accountsrow=accountsrow+`<tr>
+        <td>${accountsSold[i].region}</td>
+        <td>${accountsSold[i].nickName}</td>
+        <td>${accountsSold[i].password}</td>
+        <td>${accountsSold[i].be}</td>
+      </tr>`
 
+    }
       
       let html = `<html>
                     <head>
@@ -133,25 +148,17 @@ router.post('/', async function (req, res, next) {
                   <body>
                     <h2>Accounts</h2>
                     </br></br>
-                    Leave us a <a href="https://es.trustpilot.com/evaluate/lolsmurf.net">review</<a> 
                     <table>
                       <tr>
                         <th>Region</th>
                         <th>NickName</th>
                         <th>Password</th>
+                        <th>BE</th>
                       </tr>`
 
 
-      for (let i = 0; i < accountsSold.length; i++) {
-          html=html+`<tr>
-          <td>${accountsSold[i].region}</td>
-          <td>${accountsSold[i].nickName}</td>
-          <td>${accountsSold[i].password}</td>
-        </tr>`
-
-      }
-      html = html + `</table>
-      <p id='review' >Leave us a <a href="https://es.trustpilot.com/evaluate/lolsmurf.net">review</a></p> 
+     
+      html = html + accountsrow + `</table>
       </body>
       </html>`
       const mailOptions = {
@@ -168,7 +175,6 @@ router.post('/', async function (req, res, next) {
           res.status(200).json('recovery email sent');
         }
       })
-
       res.send({
         response: '200',
         accounts: accountsSold

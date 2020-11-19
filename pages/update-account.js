@@ -12,7 +12,7 @@ const UpdateAccount = (props) => {
   
   
   const [inputFields, setInputFields] = useState(
-    { _id:'' ,nickName: '', password: '', region: 'EUW', status: 'NOT_SOLD', email: '' }
+    { _id:'' ,nickName: '', password: '', region: 'EUW', status: 'NOT_SOLD', email: '',be:"40000" }
   );
 
   useEffect(() => {
@@ -29,7 +29,8 @@ const UpdateAccount = (props) => {
           password: account.password,
             region: account.region,
               email: account.email,
-            status: account.status
+            status: account.status,
+            be:account.be
           }
         )
       })
@@ -39,6 +40,7 @@ const UpdateAccount = (props) => {
   const handleInputChange = (event) => {  
     
     const values = {...inputFields};
+
     if (event.target.name === "nickName") {
       values.nickName = event.target.value;
     } else if(event.target.name === 'password'){
@@ -49,6 +51,8 @@ const UpdateAccount = (props) => {
       values.status = event.target.value;
     } else if(event.target.name === 'email'){
       values.email = event.target.value;
+    }else if(event.target.name === 'be'){
+      values.be = event.target.value;
     }
 
     setInputFields(values);
@@ -110,7 +114,7 @@ const UpdateAccount = (props) => {
                 <option value="EUNE">EUNE</option>
                 <option value="TURK">TURK</option>
                 <option value="NA">NA</option>
-                <option value="PBE">PBE</option>
+                <option value="OCE">OCE</option>
             </select>
         </div>
         <div className="form-group">
@@ -128,6 +132,21 @@ const UpdateAccount = (props) => {
                 <option value="PENDING_TO_REFUND">PENDING TO REFUND</option>
                 <option value="ACCOUNT_REFUNDED">ACCOUNT REFUNDED</option>
                 <option value="ACCOUNT_NOT_REFUNDED">ACCOUNT NOT REFUNDED</option>
+            </select>
+        </div>
+        <div className="form-group">
+            <label htmlFor="be">BE</label>
+            <select 
+              className="form-control" 
+              value = {inputFields.be}
+              name="be" 
+              id="be"
+              onChange={(e)=>{handleInputChange(e)}} 
+            >
+                <option value="40000">40000</option>
+                <option value="50000">50000</option>
+                <option value="60000">60000</option>
+                <option value="70000">70000</option>
             </select>
         </div>
         <div className="form-group">

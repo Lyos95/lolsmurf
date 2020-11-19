@@ -24,14 +24,14 @@ class Accounts extends Component {
     })
     }else {
     const {data} = await axios.get('/api/accounts');
-    
     let columns = data.map((account) => {
         return {
           nickName: account.nickName,
           password: account.password,
             region: account.region,
              email: account.email,
-            status: account.status
+            status: account.status,
+                be: account.be
         }
     })
     this.setState(prevState => ({
@@ -82,6 +82,14 @@ class Accounts extends Component {
           sort: false,
          }
         },
+        {
+          name: "be",
+          label: "BE",
+          options: {
+           filter: true,
+           sort: false,
+          }
+         }
        ];
        
        const oncli = (e) => {

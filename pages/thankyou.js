@@ -24,8 +24,8 @@ class Index extends Component {
                     return require('../assets/regions/flelyor.jpg')
                 case 'NA':
                     return require('../assets/regions/Noxus.jpg')
-                case 'PBE':
-                    return require('../assets/regions/Piltober.jpg')
+                case 'OCE':
+                    return require('../assets/regions/ionia.jpg')
                 default:
                     break;
             }
@@ -41,8 +41,8 @@ class Index extends Component {
                     return 'EU NORDIC & EAST'
                 case 'NA': 
                     return 'NA'
-                case 'PBE':
-                    return 'PBE'
+                case 'OCE':
+                    return 'OCEANIA'
                 default:
                     break;
             }
@@ -74,6 +74,9 @@ class Index extends Component {
                             </td>
                             <td className="product-price">
                                 {data.password}
+                            </td>   
+                            <td className="product-price">
+                                {data.be}
                             </td>                        
                         </tr>
                     )
@@ -111,6 +114,7 @@ class Index extends Component {
                                                     <th scope="col">Name</th>
                                                     <th scope="col">Username</th>
                                                     <th scope="col">Password</th>
+                                                    <th scope="col">BE</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
