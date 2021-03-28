@@ -130,6 +130,19 @@ export const verifyTransaction = (orderID, email, total, products) => async (dis
     return response
 }
 
+export const completeStripeTransaction = (email, total, products) => async (dispatch) => {
+     let response = await axios.post('/api/stripe/transaction-completed', {
+        email: email,
+        amount: total,
+        products: products
+    });
+    
+    dispatch({type: RESET, payload:{}})
+    dispatch({type: SAVE_CLIENT_ACCOUNTS, payload:response.data.accounts})
+
+    return response
+
+}
 
 export const saveAccounts = (products) => async (dispatch) => {
     let response = axios.post('/api/accounts/saveAccounts',products);

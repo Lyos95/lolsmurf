@@ -3,8 +3,9 @@ import Navbar from '../components/Layout/Navbar';
 import Footer from '../components/Layout/Footer';
 import Facility from '../components/Common/Facility';
 import Breadcrumb from '../components/Common/Breadcrumb';
-import CheckoutForm from '../components/checkout/CheckoutForm';
+import CheckoutFormWrapper from '../components/checkoutStripe/CheckoutFormWrapper';
 import {NextSeo} from 'next-seo'
+import OrderSummary from '../components/checkout/OrderSummary';
 //import Pixel from '../components/Pixel'
 class Index extends Component {
     render() {
@@ -17,7 +18,6 @@ class Index extends Component {
                 />
                 <Navbar />
                 <Breadcrumb title="Checkout" />
-       
 
                 <Facility />
                 <Footer />

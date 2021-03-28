@@ -5,9 +5,6 @@ const bodyParser = require('body-parser');
 const keys = require("./server/config/keys");
 const mongoose = require('mongoose');
 
-
-
-const stripe = require('stripe')(keys.stripeSecretKey);
 const dev = process.env.NODE_ENV !== 'production';
 
 const app = next({ dir: '.', dev });
@@ -37,8 +34,10 @@ app.prepare().then(() => {
     const accountsAPI = require('./server/routes/accounts-routers');
     const usersAPI = require('./server/routes/users-routes');
     const paypalAPI = require('./server/routes/paypal-routes')
+    const stripeAPI = require('./server/routes/stripe-routes')
     server.use('/api/accounts',accountsAPI)
     server.use('/api/user',usersAPI)
+    server.use('/api/stripe',stripeAPI)
     server.use('/api/paypal-transaction-complete',paypalAPI)
     
  
@@ -48,15 +47,6 @@ app.prepare().then(() => {
         return handle(req, res)
     });
     
-    server.post('/api/stripe/checkout', async (req, res) => {
-        await stripe.charges.create({
-            amount: req.body.amount,
-            currency: 'usd',
-            description: 'LOLSMURF',
-            source: req.body.token.id
-        });
-        res.send({})
-    });
 
     const PORT = process.env.PORT || 3000;
 

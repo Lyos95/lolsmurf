@@ -679,6 +679,10 @@
   .order-details {
     margin-top: 10px;
   }
+
+  .order-table {
+    padding: 0 3vw 0 3vw;
+  }
   .order-details .order-table table thead tr th {
     font-size: 13px;
   }
@@ -1408,4 +1412,7 @@
 	}
 }
 
+.responsibe-order-basket{
+  padding: 0 3vw 0 3vw;
+}
 /*# sourceMappingURL=responsivelol.css.map */

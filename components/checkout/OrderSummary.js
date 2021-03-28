@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 class OrderSummary extends Component {
     render() {
         return (
-            <div className="order-table table-responsive">
+            <div className="responsibe-order-basket order-table table-responsive">
                 <table className="table table-bordered">
                     <thead>
                         <tr>
@@ -20,10 +20,10 @@ class OrderSummary extends Component {
                                 return  (
                                     <tr key={`${idx}_${idx2}`}>
                                         <td className="product-name">
-                                            <a href="#">{item.title}</a>
+                                            {item.title}
                                         </td>
                                         <td className="product-name">
-                                            <a href="#">{data.be}</a>
+                                            {data.be}
                                         </td>
         
                                         <td className="product-total">
@@ -44,7 +44,7 @@ class OrderSummary extends Component {
                                
                             </td>
                             <td className="product-subtotal">
-                                <span className="subtotal-amount">${this.props.total + this.props.shipping}</span>
+                                <span className="subtotal-amount"><strong>${this.props.total + this.props.shipping}</strong></span>
                             </td>
                         </tr>
                     </tbody>
