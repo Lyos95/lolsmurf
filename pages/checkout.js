@@ -18,7 +18,8 @@ class Index extends Component {
                 />
                 <Navbar />
                 <Breadcrumb title="Checkout" />
-
+                <CheckoutFormWrapper/>
+                <OrderSummary></OrderSummary>
                 <Facility />
                 <Footer />
             </React.Fragment>
