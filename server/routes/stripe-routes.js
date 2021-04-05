@@ -150,9 +150,9 @@ router.post("/transaction-completed", async (req, res) => {
 
 router.post("/create-payment-intent", async (req, res) => {
   const body = req.body;
-  console.log('body',body)
-  
-  const productDetails = { currency: "USD", amount: body.amount*100 }
+
+  let amount =  (Number(body.amount)*100).toFixed(0);
+  const productDetails = { currency: "USD", amount: amount }
 
   const options = {
     ...body,

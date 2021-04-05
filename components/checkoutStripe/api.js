@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const createPaymentIntent = (total) =>
+const createPaymentIntent = (total) => 
   axios
     .post("/api/stripe/create-payment-intent", {amount:total})
     .then((res) => {
@@ -12,7 +12,6 @@ const createPaymentIntent = (total) =>
       }
     })
     .then((data) => {
-      console.log(data)
       if (!data || data.error) {
         console.log("API error:", { data });
         throw new Error("PaymentIntent API Error");

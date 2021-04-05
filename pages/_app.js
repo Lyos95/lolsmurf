@@ -67,9 +67,8 @@ export default withRedux(initStore)(
           <CookieConsent
             location="bottom"
             buttonText="Accept"
-            declineButtonText="Decline"
             cookieName="LOLSmurfCookies"
-            style={{ background: "#222222",fontFamily:'Archivo,sans-serif',textAlign:'center' }}
+            style={{ background: "#222222",fontFamily:'Archivo,sans-serif' }}
             buttonStyle={{background:'#007bff',borderRadius:'5px',fontFamily:'Archivo,sans-serif',color:'white'}}
             expires={150}
           >

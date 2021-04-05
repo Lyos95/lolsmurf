@@ -65,7 +65,7 @@ class CartContent extends Component {
                                 <div className="cart-totals">
                                     <h3>Cart Totals</h3>
                                     <ul>
-                                        <li>Total <span><b>${this.props.total + this.props.shipping}</b></span></li>
+                                        <li>Total <span><b>${this.props.total.toFixed(2)}</b></span></li>
                                     </ul>
                                     <Link href="/checkout">
                                         <a className="btn btn-primary ">Proceed to Checkout</a>
