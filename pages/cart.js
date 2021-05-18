@@ -8,7 +8,7 @@ import { ToastContainer, toast, Slide } from 'react-toastify';
 import { connect } from 'react-redux';
 import {verifyTransaction ,checkIfWeHaveThatAmountOfAccs} from '../store/actions/accountsActions'
 import {NextSeo} from 'next-seo'
-//import Pixel from '../components/Pixel'
+import Pixel from '../components/Pixel'
 
 class Index extends Component {
     async componentDidMount() {
@@ -36,6 +36,7 @@ class Index extends Component {
                 description= 'Level 30 &amp; Unranked ✅- Lifetime Guarantee ✅ Instant Delivery ⚡⚡- 100% Buyer Satisfaction ✅'
                 canonical="https://www.lolsmurf.net/cart"
                 />
+                <Pixel name='FACEBOOK_PIXEL_1' />
                 <Navbar />
                 <Breadcrumb title="Cart" />
                 <CartContent />

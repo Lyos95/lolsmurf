@@ -7,7 +7,7 @@ import OfferArea from '../components/shop-style-four/OfferArea';
 import Products from '../components/shop-style-one/Products';
 import ArticleContent from '../components/Common/ArticleContent';
 import {NextSeo} from 'next-seo'
-//import Pixel from '../components/Pixel'
+import Pixel from '../components/Pixel'
 class Index extends Component {
     constructor(props){
         super(props)
@@ -16,6 +16,7 @@ class Index extends Component {
     render() {
         return (
             <React.Fragment>
+                <Pixel name='FACEBOOK_PIXEL_1' />
                 <NextSeo
                 title='LolSmurf | Buy LoL Smurf | Unranked & Instant Access'
                 description= 'Level 30 &amp; Unranked ✅- Lifetime Guarantee ✅ Instant Delivery ⚡⚡- 100% Buyer Satisfaction ✅'
