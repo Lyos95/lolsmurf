@@ -44,8 +44,8 @@ class BlogDetailsTwo extends Component {
                                         <img style={{marginBottom:'20px',cursor:'pointer'}} onClick={()=>{}} src={require("../assets/blog/buy-lol-smurf.jpg")} />
                                     </Link>
 
-                                    <p> If you are afraid of being scammed you need to be careful where do you buy your smurf accounts, <Link style={{display : 'inline-block'}} href="/league-of-legends-smurfs"><a style={{display : 'inline-block'}}>LolSmurf</a></Link>
-                                     is one of the <b>most reputable websites out there where you can safely buy your accounts </b>but there are others and we are going to teach you how to
+                                    <p> If you are afraid of being scammed you need to be careful where do you buy your smurf accounts, <Link style={{display : 'inline-block'}} href="/league-of-legends-smurfs"><a style={{display : 'inline-block'}}>LolSmurf </a></Link> 
+                                      is one of the <b>most reputable websites out there where you can safely buy your accounts </b>but there are others and we are going to teach you how to
                                      identify them!
                                     </p>
                                     <h3>Find a Reputable Store</h3>

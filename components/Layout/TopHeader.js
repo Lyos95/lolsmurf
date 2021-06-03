@@ -20,6 +20,7 @@ class TopHeader extends Component {
                                     <li><Link href="/about"><a>About</a></Link></li>
                                     <li><Link href="/faq"><a>FAQ's</a></Link></li>
                                     <li><Link href="/contact-us"><a>Contact</a></Link></li>
+                                    <li><Link href="/blog"><a>Blog</a></Link></li>
                                 </ul>
                             </div>
 

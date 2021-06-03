@@ -9,11 +9,7 @@ class BlogSidebar extends Component {
                     <h3 className="widget-title">Popular Posts</h3>
 
                     <article className="item">
-                        <Link href="#">
-                            <a className="thumb">
-                                <span className="fullimage cover bg1" role="img"></span>
-                            </a>
-                        </Link>
+   
 
                         <div className="info">
                             <time>June 30, 2020</time>
@@ -28,11 +24,7 @@ class BlogSidebar extends Component {
                     </article>
 
                     <article className="item">
-                        <Link href="#">
-                            <a className="thumb">
-                                <span className="fullimage cover bg2" role="img"></span>
-                            </a>
-                        </Link>
+ 
 
                         <div className="info">
                             <time>June 30, 2020</time>
@@ -47,16 +39,12 @@ class BlogSidebar extends Component {
                     </article>
 
                     <article className="item">
-                        <Link href="#">
-                            <a className="thumb">
-                                <span className="fullimage cover bg3" role="img"></span>
-                            </a>
-                        </Link>
+                   
 
                         <div className="info">
                             <time>June 30, 2020</time>
                             <h4 className="title usmall">
-                                <Link href="/">
+                                <Link href="/about">
                                     <a>What is LolSmurf?</a>
                                 </Link>
                             </h4>
@@ -73,28 +61,23 @@ class BlogSidebar extends Component {
 
                     <ul>
                         <li>
-                            <Link href="/">
-                                <a>How to Become a Successful Jungler</a>
+                            <Link href="/which-league-of-legends-champion-should-i-play">
+                                <a>Which League of Legends champion should I play?</a>
                             </Link>
                         </li>
                         <li>
-                            <Link href="/">
-                                <a>What are the best champions to climb in solo queue?</a>
+                            <Link href="/buy-lol-account-safe">
+                                <a>How to buy a League of Legends account SAFELY</a>
                             </Link>
                         </li>
                         <li>
-                            <Link href="/">
-                                <a>Best place to buy league of legends smurf</a>
+                            <Link href="/best-champs-to-carry-low-elo">
+                                <a>Best champs to carry low elo</a>
                             </Link>
                         </li>
                         <li>
-                            <Link href="/">
-                                <a>Best place to buy lol lvl 30 account</a>
-                            </Link>
-                        </li>
-                        <li>
-                            <Link href="/">
-                                <a>Farm like a pro</a>
+                            <Link href="/how-do-i-improve-faster-in-league-of-legends">
+                                <a>How Do I Improve Faster in League of Legends</a>
                             </Link>
                         </li>
                     </ul>

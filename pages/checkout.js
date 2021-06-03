@@ -6,12 +6,10 @@ import Breadcrumb from "../components/Common/Breadcrumb";
 import CheckoutFormWrapper from "../components/checkoutStripe/CheckoutFormWrapper";
 import { NextSeo } from "next-seo";
 import OrderSummary from "../components/checkout/OrderSummary";
-import Pixel from '../components/Pixel'
 class Index extends Component {
   render() {
     return (
       <React.Fragment>
-        <Pixel name='FACEBOOK_PIXEL_1' />
         <NextSeo
           noindex={true}
           title="LolSmurf - Best League of Legends smurfs"

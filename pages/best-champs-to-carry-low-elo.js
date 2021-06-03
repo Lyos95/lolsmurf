@@ -23,7 +23,7 @@ class BlogDetailsTwo extends Component {
                         <div className="col-lg-8">
                             <div className="blog-details">
                                 <div className="article-img">
-                                    <img src={require("../assets/blog/best-champs-to-carry-low-elo.jpg")} alt="best-champs-to-carry-low-elo" />
+                                    <img src={require("../assets/blog/champion-yasuo-spirit-blossom-splash.jpg")} alt="best-champs-to-carry-low-elo" />
                                 </div>
 
                                 <div className="article-content">

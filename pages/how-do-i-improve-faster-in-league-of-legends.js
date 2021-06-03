@@ -23,7 +23,7 @@ class BlogDetailsTwo extends Component {
                         <div className="col-lg-8">
                             <div className="blog-details">
                                 <div className="article-img">
-                                    <img src={require("../assets/blog/ashe-high-noon1.webp")} alt="best-champs-to-carry-low-elo" />
+                                    <img src={require("../assets/blog/tft-legends.jpg")} alt="best-champs-to-carry-low-elo" />
                                 </div>
 
                                 <div className="article-content">
