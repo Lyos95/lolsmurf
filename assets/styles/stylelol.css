@@ -20,7 +20,6 @@ p:last-child {
 
 a {
   display: block;
-  transition: 0.5s;
   text-decoration: none;
 }
 a:hover, a:focus {
@@ -1781,7 +1780,7 @@ All Products Area CSS
   color: #222222;
 }
 .single-product-box .product-content h3 a:hover, .single-product-box .product-content h3 a:focus {
-  color: #d64747;
+
   text-decoration: none;
 }
 .single-product-box .product-content .product-price {
