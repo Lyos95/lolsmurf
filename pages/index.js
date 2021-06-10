@@ -7,6 +7,7 @@ import OfferArea from '../components/shop-style-four/OfferArea';
 import Products from '../components/shop-style-one/Products';
 import ArticleContent from '../components/Common/ArticleContent';
 import {NextSeo} from 'next-seo'
+import LazyLoad from 'react-lazyload';
 class Index extends Component {
     constructor(props){
         super(props)
@@ -21,12 +22,24 @@ class Index extends Component {
                 canonical="https://www.lolsmurf.net/"
                 />
                 <Navbar />
+                <LazyLoad once>   
                 <Banner />
-                <Facility />                
-                <Products />
-                <OfferArea />
-                <ArticleContent/>
-                <Footer />
+                </LazyLoad>
+                <LazyLoad once>   
+                     <Facility />  
+                </LazyLoad>
+                <LazyLoad once>       
+                    <Products />
+                </LazyLoad>
+                <LazyLoad once>  
+                    <OfferArea />
+                </LazyLoad>
+                <LazyLoad once>  
+                     <ArticleContent/>
+                </LazyLoad>
+                <LazyLoad once>  
+                     <Footer />
+                </LazyLoad>
             </React.Fragment>
         );
     }

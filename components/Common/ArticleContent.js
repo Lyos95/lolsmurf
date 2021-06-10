@@ -1,19 +1,5 @@
 import React, { Component } from 'react';
-import dynamic from 'next/dynamic';
-const OwlCarousel = dynamic(import('react-owl-carousel3'));
-
-const options = {
-    loop: true,
-    nav: false,
-    dots: true,
-    autoplayHoverPause: true,
-    items: 1,
-    autoplay: true,
-    navText: [
-        "<i class='fas fa-chevron-left'></i>",
-        "<i class='fas fa-chevron-right'></i>"
-    ]
-}
+import LazyLoad from 'react-lazyload';
 
 class ArticleContent extends Component {
 
@@ -28,6 +14,7 @@ class ArticleContent extends Component {
 
     render() {
         return (
+            <LazyLoad>
             <div className="parag">
          
             <h2 className="margin-top-h2">What is a League of Legends smurf account?</h2>
@@ -104,6 +91,7 @@ class ArticleContent extends Component {
 
         
         </div>
+        </LazyLoad>
         );
     }
 }
