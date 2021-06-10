@@ -4931,7 +4931,7 @@ Products Details Area CSS
   bottom: 0;
   background: #666666;
   margin: 1px;
-  transition: 0.5s;
+  
 }
 .products-details-tab .tabs li a:hover, .products-details-tab .tabs li a:focus {
   color: #222222;
