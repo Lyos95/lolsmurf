@@ -58,7 +58,7 @@ class MegaMenu extends Component {
                     <div className="container">
                         <nav className="navbar navbar-expand-md navbar-light">
                             <Link href="/">
-                                <a className="navbar-brand">
+                                <a>
                                     <img style={{width:"212px",height:"46px"}} src={require("../../images/logo2.jpg")} alt="logo" />
                                 </a>
                             </Link>

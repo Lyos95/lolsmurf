@@ -401,12 +401,7 @@ Navbar Area CSS
   animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
 }
 
-.navbar-brand {
-  position: relative;
-  top: -1px;
-  padding-top: 0;
-  padding-bottom: 0;
-}
+
 
 .comero-nav {
   background-color: #ffffff;

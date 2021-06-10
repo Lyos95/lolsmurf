@@ -14,8 +14,7 @@ import { DefaultSeo } from "next-seo";
 import GoTop from "../components/Shared/GoTop";
 import { persistStore } from "redux-persist";
 import { PersistGate } from "redux-persist/integration/react";
-import CookieConsent from "react-cookie-consent";
-import Link from 'next/link';
+
 export default withRedux(initStore)(
   class MyApp extends App {
     constructor(props) {
@@ -64,16 +63,7 @@ export default withRedux(initStore)(
               <Component {...pageProps} />
             </PersistGate>
           </Provider>
-          <CookieConsent
-            location="bottom"
-            buttonText="Accept"
-            cookieName="LOLSmurfCookies"
-            style={{ background: "#222222",fontFamily:'Archivo,sans-serif' }}
-            buttonStyle={{background:'#007bff',borderRadius:'5px',fontFamily:'Archivo,sans-serif',color:'white'}}
-            expires={150}
-          >
-            This website uses <a style={{display:'contents'}} href='/cookies'>cookies</a> to enhance the user experience
-          </CookieConsent>
+
           <GoTop scrollStepInPx="50" delayInMs="16.66" />
         </>
       );
