@@ -308,22 +308,8 @@ Top Header Area CSS
   line-height: initial;
   position: relative;
 }
-.top-header-nav li a::before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0;
-  height: 1px;
-  background: #222222;
-  transition: 0.5s;
-}
-.top-header-nav li a:hover, .top-header-nav li a:focus {
-  color: #222222;
-}
-.top-header-nav li a:hover::before, .top-header-nav li a:focus::before {
-  width: 100%;
-}
+
+
 .top-header-nav li::before {
   content: "";
   position: absolute;
