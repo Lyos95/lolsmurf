@@ -16,7 +16,7 @@ class Navbar extends Component {
     render() {
         return (
             <React.Fragment>
-               
+                <TopHeader />
                 <MegaMenu />
             </React.Fragment>
         );
