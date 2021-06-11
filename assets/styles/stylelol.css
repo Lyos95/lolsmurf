@@ -1601,7 +1601,6 @@ All Products Area CSS
   width: 12px;
   height: 12px;
   border: 1px solid #858585;
-  transition: 0.5s;
 }
 .products-category-tab .tabs li h2 .dot {
   position: absolute;
@@ -1610,7 +1609,6 @@ All Products Area CSS
   width: 12px;
   height: 12px;
   border: 1px solid #858585;
-  transition: 0.5s;
 }
 .products-category-tab .tabs li a .dot::before {
   position: absolute;
@@ -1621,7 +1619,6 @@ All Products Area CSS
   bottom: 0;
   background: #858585;
   margin: 1px;
-  transition: 0.5s;
 }
 .products-category-tab .tabs li h2 .dot::before {
   position: absolute;
@@ -1632,7 +1629,6 @@ All Products Area CSS
   bottom: 0;
   background: #858585;
   margin: 1px;
-  transition: 0.5s;
 }
 .products-category-tab .tabs li h2:hover, .products-category-tab .tabs li h2:focus {
   color: #222222;
@@ -4920,7 +4916,6 @@ Products Details Area CSS
   width: 12px;
   height: 12px;
   border: 1px solid #666666;
-  transition: 0.5s;
 }
 .products-details-tab .tabs li a .dot::before {
   position: absolute;
