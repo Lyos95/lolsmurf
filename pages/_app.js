@@ -1,10 +1,8 @@
-import "../assets/styles/stylelol.css";
-import "../assets/styles/responsivelol.css";
+import "../assets/styles/stylelol.min.css";
+import "../assets/styles/responsivelol.min.css";
 import "../assets/styles/bootstrap.min.css";
 import "../assets/styles/fontawesome.min.css";
 import "../assets/styles/animate.min.css";
-import "../assets/styles/slick.min.css";
-import "../assets/styles/slick-theme.min.css";
 
 import { Provider } from "react-redux";
 import App from "next/app";
