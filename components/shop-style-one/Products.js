@@ -23,6 +23,7 @@ class Products extends Component {
         minutesDisplayed:0,
         secondsDisplayed:0
     };
+    /*
     componentDidMount() {
         let second = 1000;
         let minute = second * 60;
@@ -52,7 +53,18 @@ class Products extends Component {
             }
             
           }, 1000)
-      }
+        }
+
+                <div className="container-timing">
+                    <h1><b><u>Countdown</u></b></h1>
+                    <ul>
+                        <li><span id="hours">{hoursDisplayed}</span>Hours</li>
+                        <li><span id="minutes">{minutesDisplayed}</span>Minutes</li>
+                        <li><span id="seconds">{secondsDisplayed}</span>Seconds</li>
+                    </ul>
+                </div>
+                        let {hoursDisplayed,minutesDisplayed,secondsDisplayed} = this.state
+        */
 
 
     openTabSection = (evt, tabNmae) => {
@@ -116,17 +128,11 @@ class Products extends Component {
     render() {
         let { products,viewProductDetails } = this.props;
         const { modalOpen } = this.state;
-        let {hoursDisplayed,minutesDisplayed,secondsDisplayed} = this.state
+
         return (
             <section className="all-products-area pb-60">
-                <div className="container-timing">
-                    <h1><b><u>Countdown</u></b></h1>
-                    <ul>
-                        <li><span id="hours">{hoursDisplayed}</span>Hours</li>
-                        <li><span id="minutes">{minutesDisplayed}</span>Minutes</li>
-                        <li><span id="seconds">{secondsDisplayed}</span>Seconds</li>
-                    </ul>
-                </div>
+                
+        
                 <ReactTooltip  />
                 <ToastContainer transition={Slide} />
                 <div className="container">
