@@ -6,7 +6,7 @@ import axios from 'axios'
 import Router from 'next/router'
 import Link from 'next/link';
 import {NextSeo} from 'next-seo'
-
+import '../assets/styles/font.min.css'
 class Accounts extends Component {
 
   constructor(props){

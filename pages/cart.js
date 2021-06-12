@@ -8,7 +8,7 @@ import { ToastContainer, toast, Slide } from 'react-toastify';
 import { connect } from 'react-redux';
 import { checkIfWeHaveThatAmountOfAccs} from '../store/actions/accountsActions'
 import {NextSeo} from 'next-seo'
-
+import '../assets/styles/font.min.css'
 class Index extends Component {
     async componentDidMount() {
       

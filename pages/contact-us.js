@@ -4,7 +4,7 @@ import Footer from '../components/Layout/Footer';
 import Facility from '../components/Common/Facility';
 import Breadcrumb from '../components/Common/Breadcrumb';
 import {NextSeo} from 'next-seo'
-
+import '../assets/styles/font.min.css'
 class Index extends Component {
     render() {
         return (

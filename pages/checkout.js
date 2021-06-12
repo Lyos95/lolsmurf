@@ -6,6 +6,7 @@ import Breadcrumb from "../components/Common/Breadcrumb";
 import CheckoutFormWrapper from "../components/checkoutStripe/CheckoutFormWrapper";
 import { NextSeo } from "next-seo";
 import OrderSummary from "../components/checkout/OrderSummary";
+import '../assets/styles/font.min.css'
 class Index extends Component {
   render() {
     return (

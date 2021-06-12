@@ -3,7 +3,7 @@ import {saveAccounts} from '../store/actions/accountsActions';
 import { connect } from 'react-redux'
 import Router from 'next/router'
 import {NextSeo} from 'next-seo'
-
+import '../assets/styles/font.min.css'
 const AddAccounts = (props) => {
   const [inputFields, setInputFields] = useState([
     { nickName: '', password: '',region: 'EUW',be: '40000' }

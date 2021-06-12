@@ -6,6 +6,7 @@ import Breadcrumb from '../components/Common/Breadcrumb';
 import {NextSeo} from 'next-seo'
 import Link from 'next/link';
 import BlogSidebar from '../components/blog/BlogSidebar';
+
 class BlogDetailsTwo extends Component {
     render() {
         return (

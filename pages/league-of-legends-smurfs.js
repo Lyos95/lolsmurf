@@ -10,6 +10,8 @@ import { connect } from 'react-redux';
 import {checkIfWeHaveThatAmountOfAccs} from '../store/actions/accountsActions'
 import { ToastContainer, toast, Slide } from 'react-toastify';
 import {NextSeo} from 'next-seo'
+import '../assets/styles/font.min.css'
+import "../assets/styles/animate.min.css";
 class Index extends Component {
 
     state = {

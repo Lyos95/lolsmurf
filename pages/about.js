@@ -5,7 +5,7 @@ import Facility from '../components/Common/Facility';
 import Breadcrumb from '../components/Common/Breadcrumb';
 import Testimonials from '../components/Common/Testimonials';
 import {NextSeo} from 'next-seo'
-
+import '../assets/styles/font.min.css'
 class Index extends Component {
     render() {
         return (
