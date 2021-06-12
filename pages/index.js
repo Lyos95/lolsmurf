@@ -36,9 +36,9 @@ class Index extends Component {
                     <LazyLoad once={true}>   
                         <OfferArea />
                     </LazyLoad> 
-                     <LazyLoad once={true}>   
+                     
                         <ArticleContent/>
-                    </LazyLoad> 
+             
                      <LazyLoad once={true}>   
                         <Footer />
                     </LazyLoad> 
