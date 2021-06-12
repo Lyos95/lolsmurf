@@ -9,8 +9,22 @@ class Banner extends Component {
         return (
       
             <div className="main-banner-three-container">
-                <div className="main-banner main-banner-three ">
-                   <img src={require("../../assets/pictures/mainbanner.jpg")}></img>                  
+                <div className="main-banner main-banner-three item-bg4">
+                    <div style={{zIndex:2}} className="d-table">
+                        <div className="d-table-cell">
+                            <div className="container">
+                                <div className="main-banner-content white-color">
+                                    <span>Best league of legends smurf marketplace</span>
+                                    <h1>BUY YOUR SMURF NOW!</h1>
+                                    <p>Available for all countries</p>
+                                    <Link href="/league-of-legends-smurfs">
+                                        <a onClick={() => {                                 
+                                            this.props.viewProductDetails(2)}} className="btn btn-primary">Buy now</a>
+                                    </Link>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                    
                 </div>
             </div>         
         );
