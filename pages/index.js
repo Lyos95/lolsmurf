@@ -22,25 +22,28 @@ class Index extends Component {
                 canonical="https://www.lolsmurf.net/"
                 />
                 <Navbar />
-                <LazyLoad once>   
+      
                 <Banner />
-                </LazyLoad>
-                <LazyLoad once>   
+   
+            
                      <Facility />  
-                </LazyLoad>
-                <LazyLoad once>       
+ 
+                     <LazyLoad once={true}>   
                     <Products />
-                </LazyLoad>
-                <LazyLoad once>  
-                    <OfferArea />
-                </LazyLoad>
-                <LazyLoad once>  
-                     <ArticleContent/>
-                </LazyLoad>
-                <LazyLoad once>  
-                     <Footer />
-                </LazyLoad>
-            </React.Fragment>
+                    </LazyLoad>   
+                    
+                                
+                    <LazyLoad once={true}>   
+                        <OfferArea />
+                    </LazyLoad> 
+                     <LazyLoad once={true}>   
+                        <ArticleContent/>
+                    </LazyLoad> 
+                     <LazyLoad once={true}>   
+                        <Footer />
+                    </LazyLoad> 
+                     
+                            </React.Fragment>
         );
     }
 }

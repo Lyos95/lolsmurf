@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import LazyLoad from 'react-lazyload';
 
 class ArticleContent extends Component {
 
@@ -14,7 +13,6 @@ class ArticleContent extends Component {
 
     render() {
         return (
-            <LazyLoad>
             <div className="parag">
          
             <h2 className="margin-top-h2">What is a League of Legends smurf account?</h2>
@@ -91,7 +89,6 @@ class ArticleContent extends Component {
 
         
         </div>
-        </LazyLoad>
         );
     }
 }

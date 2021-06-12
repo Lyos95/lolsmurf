@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
 import Link from "next/link";
-import LazyLoad from 'react-lazyload';
 class Footer extends Component {
     render() {
         return (
             <footer className="footer-area">
-                <LazyLoad once>
+    
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-3 col-md-6">
@@ -97,7 +96,6 @@ class Footer extends Component {
                         </div>
                     </div>
                 </div>
-                </LazyLoad>
             </footer>
         );
     }

@@ -2,12 +2,11 @@ import React, { Component } from 'react';
 import Link from 'next/link';
 import { connect } from 'react-redux';
 import { setProduct } from '../../store/actions/cartActions';
-import LazyLoad from 'react-lazyload';
+
 
 class OfferArea extends Component {
     render() {
         return (
-            <LazyLoad once>
                 <section className="products-offer-area ptb-60">
                     <div className="container">
                         <div className="products-offer-content">
@@ -21,7 +20,6 @@ class OfferArea extends Component {
                         </div>
                     </div>
                 </section>
-            </LazyLoad>
         );
     }
 }
