@@ -34,7 +34,7 @@ class ArticleContent extends Component {
                 
                 <p>So, if you want to have fun at this game you need a lol lvl 30 account to play ranked games. Since it can
                 require some investment to climb your League of Legends account to level 30 , we've thought of a quicker way. For less than $1 a level, you can buy a level 30 LoL account which is already
-                prepared to play in ranked games. This implies you can just buy your smurf account, sign in and you can start having fun playing rankeds without going through
+                prepared to play in ranked games. This implies you can just buy your lol smurf account, sign in and you can start having fun playing rankeds without going through
                 months of playing to level up your account.</p>
                 
                 <p>As you can see, with the amount of time you have saved by buying a League of Legends account, it's pretty obvious to see why to buy a lvl 30 lol account is so popular. This has led to 
@@ -43,7 +43,7 @@ class ArticleContent extends Component {
                 you encounter any problems, you can always contact us and we will try to help you as much as we can. </p>
          
             <p>And, <b>How much time do you need to invest in order to get your lol account up to lvl 30?</b> At least <b> 1 month  and playing a lot of hours per day </b></p>
-            <p> So, are you interested in buying a smurf account? If you want to buy a smurf account, then you are in the right place! 
+            <p> So, are you interested in buying a smurf account? If you want to buy a lol smurf account, then you are in the right place! 
                 Over here in Lol Smurf, we offer cheap league smurfs in the market. <b>Our unranked league of legends lvl 30 accounts 
                 has at least 60k BE </b>for buying lots of champions of your choice and we also grant you a lifetime warranty.
             </p>
