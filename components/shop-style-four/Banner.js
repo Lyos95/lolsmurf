@@ -9,7 +9,16 @@ class Banner extends Component {
         return (
       
             <div className="main-banner-three-container">
-                <div className="main-banner main-banner-three item-bg4">
+                <div className="main-banner main-banner-three ">
+                    <img style={{   zIndex:'-14',
+                                    position: 'absolute',
+                                    display: 'inline-block',
+                                    width: '100%',
+                                    filter: 'brightness(0.8)',
+                                    objectFit: 'cover',
+                                    top: 0,
+                                    height: '100%'}} 
+    src={require('../../assets/pictures/mainbanner.jpg')}></img>
                     <div style={{zIndex:2}} className="d-table">
                         <div className="d-table-cell">
                             <div className="container">
@@ -19,7 +28,8 @@ class Banner extends Component {
                                     <p>Available for all countries</p>
                                     <Link href="/league-of-legends-smurfs">
                                         <a onClick={() => {                                 
-                                            this.props.viewProductDetails(2)}} className="btn btn-primary">Buy now</a>
+                                            this.props.viewProductDetails(2)
+                                            }} className="btn btn-primary">Buy now</a>
                                     </Link>
                                 </div>
                             </div>
