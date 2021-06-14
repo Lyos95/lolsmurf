@@ -8,6 +8,9 @@ import Link from 'next/link';
 import BlogSidebar from '../components/blog/BlogSidebar';
 class BlogDetailsTwo extends Component {
     render() {
+        function fromBanner(name,value) {
+            document.cookie = name + "=" + (value || "");
+        }
         return (
             <React.Fragment>
                 <NextSeo
@@ -23,7 +26,7 @@ class BlogDetailsTwo extends Component {
                         <div className="col-lg-8">
                             <div className="blog-details">
                                 <div className="article-img">
-                                    <img src={require("../assets/blog/tft-legends.jpg")} alt="best-champs-to-carry-low-elo" />
+                                    <img  src={require("../assets/blog/tft-legends.jpg")} alt="best-champs-to-carry-low-elo" />
                                 </div>
 
                                 <div className="article-content">
@@ -43,7 +46,7 @@ class BlogDetailsTwo extends Component {
 
                                     <p>Before we start we would recommend you to <b>improve your skills by playing in a different account (lvl 30 | unranked league of legends account) </b>so you won't lose any lps in your main account while you are practicing</p>
                                     <Link href="/league-of-legends-smurfs">
-                                        <img style={{marginBottom:'20px',cursor:'pointer'}} onClick={()=>{}} src={require("../assets/blog/buy-lol-smurf.jpg")} />
+                                        <img style={{marginBottom:'20px',cursor:'pointer'}} onClick={()=>{fromBanner('funnel','howtoimprove')}} src={require("../assets/blog/buy-lol-smurf.jpg")} />
                                     </Link>
 
                                     <p> The gaming industry is becoming one of the largest industries in the world and the MOBA genre is the bigger one.
@@ -93,7 +96,7 @@ class BlogDetailsTwo extends Component {
                                         so your main account's elo won't be affected by this. If you are thinking about getting one you can buy a lol smurf account! <Link href="/league-of-legends-smurfs">Just click here if you are interested</Link>
                                     </p>
                                     <Link href="/">
-                                        <img style={{marginBottom:'20px',cursor:'pointer'}} onClick={()=>{}} src={require("../assets/blog/buy-lol-smurf.jpg")} />
+                                        <img style={{marginBottom:'20px',cursor:'pointer'}} onClick={()=>{fromBanner('funnel','howtoimprove')}} src={require("../assets/blog/buy-lol-smurf.jpg")} />
                                     </Link>
                                 </div>
                             </div>

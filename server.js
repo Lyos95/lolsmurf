@@ -31,16 +31,17 @@ app.prepare().then(() => {
     mongoose.connect(keys.mongoURI, {useNewUrlParser: true, useUnifiedTopology: true});
     require('./server/models/Account');
     require('./server/models/User');
+    require('./server/models/Funnel');
     const accountsAPI = require('./server/routes/accounts-routers');
     const usersAPI = require('./server/routes/users-routes');
     const paypalAPI = require('./server/routes/paypal-routes')
+    const funnelAPI = require('./server/routes/funnel-routes')
     const stripeAPI = require('./server/routes/stripe-routes')
     server.use('/api/accounts',accountsAPI)
     server.use('/api/user',usersAPI)
     server.use('/api/stripe',stripeAPI)
     server.use('/api/paypal-transaction-complete',paypalAPI)
-    
- 
+    server.use('/api/funnel',funnelAPI)
 
     server.get('/sitemap.xml', (req, res) => res.status(200).sendFile('sitemap.xml', sitemapOptions));
     server.get('*', (req, res) => {

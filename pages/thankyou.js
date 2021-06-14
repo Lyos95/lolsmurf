@@ -5,14 +5,23 @@ import Facility from '../components/shop-style-one/Facility';
 import Footer from '../components/Layout/Footer';
 import { connect } from 'react-redux'
 import {NextSeo} from 'next-seo'
-
-
+import axios from 'axios'
+import Cookies from 'js-cookie';
+import { Cookie } from 'express-session';
 class Index extends Component {
+
+    
     constructor(props){
-        super(props)
+        super(props);
+       
     }
+    state = {
+        cookie: Cookies.get('funnel')
+    }
+    
+
     render() {
-        
+ 
         function getImage(region) {
             switch (region) {
                 case 'EUW':
@@ -49,8 +58,6 @@ class Index extends Component {
 
         let cartItems = this.props.products.length ?
             (
-                
-                
                 this.props.products.map((data, idx) => {
                     return (
                         <tr key={idx}>
@@ -87,7 +94,14 @@ class Index extends Component {
                     </td>
                 </tr>
             );
+      
 
+         
+            if(this.state.cookie !== ''){
+                
+              axios.post('/api/funnel',{data:this.state.cookie});
+              Cookies.set('funnel','')
+            }
         return (
             <React.Fragment>
                <NextSeo    noindex={true}

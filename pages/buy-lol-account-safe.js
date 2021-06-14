@@ -8,6 +8,11 @@ import Link from 'next/link';
 import BlogSidebar from '../components/blog/BlogSidebar';
 class BlogDetailsTwo extends Component {
     render() {
+
+        function fromBanner(name,value) {
+            document.cookie = name + "=" + (value || "");
+        }
+
         return (
             <React.Fragment>
                 <NextSeo
@@ -41,7 +46,7 @@ class BlogDetailsTwo extends Component {
 
                                     <p>In this article we are going to show you what do you need to take into cosideration when you are trying to buy a League of Legends</p>
                                     <Link href="/league-of-legends-smurfs">
-                                        <img style={{marginBottom:'20px',cursor:'pointer'}} onClick={()=>{}} src={require("../assets/blog/buy-lol-smurf.jpg")} />
+                                        <img style={{marginBottom:'20px',cursor:'pointer'}} onClick={()=>{fromBanner('funnel','buylolaccountsafe')}} src={require("../assets/blog/buy-lol-smurf.jpg")} />
                                     </Link>
 
                                     <p> If you are afraid of being scammed you need to be careful where do you buy your smurf accounts, <Link style={{display : 'inline-block'}} href="/league-of-legends-smurfs"><a style={{display : 'inline-block'}}>LolSmurf </a></Link> 
@@ -62,7 +67,7 @@ class BlogDetailsTwo extends Component {
                                          You should be looking for LoL Smurf Shops who sell Unverified and Unranked accounts like <Link style={{display : 'inline-block'}} href="/league-of-legends-smurfs"><a style={{display : 'inline-block'}}>LolSmurf</a></Link>
                                     </p>
                                     <Link href="/league-of-legends-smurfs">
-                                        <img style={{marginBottom:'20px',cursor:'pointer'}} onClick={()=>{}} src={require("../assets/blog/buy-lol-smurf.jpg")} />
+                                        <img style={{marginBottom:'20px',cursor:'pointer'}} onClick={()=>{fromBanner('funnel','buylolaccountsafe')}} src={require("../assets/blog/buy-lol-smurf.jpg")} />
                                     </Link>
 
                                     <h3>Make sure Paypal is supported</h3>
@@ -84,7 +89,7 @@ class BlogDetailsTwo extends Component {
                                         so your main account's elo won't be affected by this. If you are thinking about getting one you can buy a lol smurf account! <Link href="/league-of-legends-smurfs">Just click here if you are interested</Link>
                                     </p>
                                     <Link href="/">
-                                        <img style={{marginBottom:'20px',cursor:'pointer'}} onClick={()=>{}} src={require("../assets/blog/buy-lol-smurf.jpg")} />
+                                        <img style={{marginBottom:'20px',cursor:'pointer'}} onClick={()=>{fromBanner('funnel','buylolaccountsafe')}} src={require("../assets/blog/buy-lol-smurf.jpg")} />
                                     </Link>
                                 </div>
                             </div>

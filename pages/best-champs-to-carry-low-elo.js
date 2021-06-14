@@ -9,6 +9,11 @@ import BlogSidebar from '../components/blog/BlogSidebar';
 
 class BlogDetailsTwo extends Component {
     render() {
+
+        function fromBanner(name,value) {
+            document.cookie = name + "=" + (value || "");
+        }
+
         return (
             <React.Fragment>
                 <NextSeo
@@ -44,7 +49,7 @@ class BlogDetailsTwo extends Component {
 
                                     <p>Before we start we would recommend you to <b>practice this champions in a different account (lol smurf account) </b>so you won't lose any any lps in your main account while you are practicing</p>
                                     <Link href="/league-of-legends-smurfs">
-                                        <img style={{marginBottom:'20px',cursor:'pointer'}} onClick={()=>{}} src={require("../assets/blog/buy-lol-smurf.jpg")} />
+                                        <img style={{marginBottom:'20px',cursor:'pointer'}} onClick={()=>{fromBanner('funnel','bestchampstocarry')}} src={require("../assets/blog/buy-lol-smurf.jpg")} />
                                     </Link>
 
                                     <p>In League of legends, solo queue is often a completely mess 
@@ -95,7 +100,7 @@ class BlogDetailsTwo extends Component {
                                         If you take this power into a team fight you can become a one-man army.
                                     </p>
                                     <Link href="/league-of-legends-smurfs">
-                                        <img style={{marginBottom:'20px',cursor:'pointer'}} onClick={()=>{}} src={require("../assets/blog/buy-lol-smurf.jpg")} />
+                                        <img style={{marginBottom:'20px',cursor:'pointer'}} onClick={()=>{fromBanner('funnel','bestchampstocarry')}} src={require("../assets/blog/buy-lol-smurf.jpg")} />
                                     </Link>
                                     <h2>Jungle</h2>
                                     <h3>Ekko</h3>
@@ -133,7 +138,7 @@ class BlogDetailsTwo extends Component {
                                     </p>
 
                                     <Link href="/league-of-legends-smurfs">
-                                        <img style={{marginBottom:'20px',cursor:'pointer'}} onClick={()=>{}} src={require("../assets/blog/buy-lol-smurf.jpg")} />
+                                        <img style={{marginBottom:'20px',cursor:'pointer'}} onClick={()=>{fromBanner('funnel','bestchampstocarry')}} src={require("../assets/blog/buy-lol-smurf.jpg")} />
                                     </Link>
                                     <h2>Mid</h2>
                                     <h3>Zed</h3>
@@ -167,7 +172,7 @@ class BlogDetailsTwo extends Component {
 
 
                                     <Link href="/league-of-legends-smurfs">
-                                        <img style={{marginBottom:'20px',cursor:'pointer'}} onClick={()=>{}} src={require("../assets/blog/buy-lol-smurf.jpg")} />
+                                        <img style={{marginBottom:'20px',cursor:'pointer'}} onClick={()=>{fromBanner('funnel','bestchampstocarry')}} src={require("../assets/blog/buy-lol-smurf.jpg")} />
                                     </Link>
                                     <h2>Bot</h2>
                                     <h3>Kai’Sa</h3>
@@ -209,7 +214,7 @@ class BlogDetailsTwo extends Component {
 
 
                                     <Link href="/league-of-legends-smurfs">
-                                        <img style={{marginBottom:'20px',cursor:'pointer'}} onClick={()=>{}} src={require("../assets/blog/buy-lol-smurf.jpg")} />
+                                        <img style={{marginBottom:'20px',cursor:'pointer'}} onClick={()=>{fromBanner('funnel','bestchampstocarry')}} src={require("../assets/blog/buy-lol-smurf.jpg")} />
                                     </Link>
                                     <h2>Support</h2>
                                     <h3>Pyke </h3>
@@ -245,7 +250,7 @@ class BlogDetailsTwo extends Component {
                                         so your main account's elo won't be affected by this. If you are thinking about getting one you can buy a smurf account! <Link href="/league-of-legends-smurfs">Just click here if you are interested</Link>
                                     </p>
                                     <Link href="/league-of-legends-smurfs">
-                                        <img style={{marginBottom:'20px',cursor:'pointer'}} onClick={()=>{}} src={require("../assets/blog/buy-lol-smurf.jpg")} />
+                                        <img style={{marginBottom:'20px',cursor:'pointer'}} onClick={()=>{fromBanner('funnel','bestchampstocarry')}} src={require("../assets/blog/buy-lol-smurf.jpg")} />
                                     </Link>
                                 </div>
                             </div>

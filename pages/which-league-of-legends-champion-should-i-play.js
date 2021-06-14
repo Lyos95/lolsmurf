@@ -8,6 +8,9 @@ import Link from 'next/link';
 import BlogSidebar from '../components/blog/BlogSidebar';
 class BlogDetailsTwo extends Component {
     render() {
+        function fromBanner(name,value) {
+            document.cookie = name + "=" + (value || "");
+        }
         return (
             <React.Fragment>
                 <NextSeo
@@ -43,7 +46,7 @@ class BlogDetailsTwo extends Component {
 
                                     <p>Before we start we would recommend you to <b>practice this champions in a different account (buy lol smurf account) </b>so you won't lose any lps in your main account while you are practicing</p>
                                     <Link href="/league-of-legends-smurfs">
-                                        <img style={{marginBottom:'20px',cursor:'pointer'}} onClick={()=>{}} src={require("../assets/blog/buy-lol-smurf.jpg")} />
+                                        <img style={{marginBottom:'20px',cursor:'pointer'}} onClick={()=>{fromBanner('funnel','whichlolchampshouldplay')}} src={require("../assets/blog/buy-lol-smurf.jpg")} />
                                     </Link>
 
                                     <p>In League of legends, solo queue is a place where completely different personalities and playstyles have to coexist. 
@@ -90,7 +93,7 @@ class BlogDetailsTwo extends Component {
                                     </p>
 
                                     <Link href="/league-of-legends-smurfs">
-                                        <img style={{marginBottom:'20px',cursor:'pointer'}} onClick={()=>{}} src={require("../assets/blog/buy-lol-smurf.jpg")} />
+                                        <img style={{marginBottom:'20px',cursor:'pointer'}} onClick={()=>{fromBanner('funnel','whichlolchampshouldplay')}} src={require("../assets/blog/buy-lol-smurf.jpg")} />
                                     </Link>
                                     <h3>Janna</h3>
                                     <p> <b>Janna is one of the most OP supports in the game</b>, no matter in which patch we are, she has always had a great winratio. <b>She offers </b>really valuable things with her kit, <b>move speed,shields,slows and healing!!</b> 
@@ -115,7 +118,7 @@ class BlogDetailsTwo extends Component {
                                     <p> So, if you ever feel in danger you can just E away from your enemies as many times as you want to make really hard for your enemies to punish your miss position.
                                     </p>
                                     <Link href="/league-of-legends-smurfs">
-                                        <img style={{marginBottom:'20px',cursor:'pointer'}} onClick={()=>{}} src={require("../assets/blog/buy-lol-smurf.jpg")} />
+                                        <img style={{marginBottom:'20px',cursor:'pointer'}} onClick={()=>{fromBanner('funnel','whichlolchampshouldplay')}} src={require("../assets/blog/buy-lol-smurf.jpg")} />
                                     </Link>
 
                                     <h3>Ziggs</h3>
@@ -147,7 +150,7 @@ class BlogDetailsTwo extends Component {
                                     
 
                                     <Link href="/league-of-legends-smurfs">
-                                        <img style={{marginBottom:'20px',cursor:'pointer'}} onClick={()=>{}} src={require("../assets/blog/buy-lol-smurf.jpg")} />
+                                        <img style={{marginBottom:'20px',cursor:'pointer'}} onClick={()=>{fromBanner('funnel','whichlolchampshouldplay')}} src={require("../assets/blog/buy-lol-smurf.jpg")} />
                                     </Link>
                                     
                                     
@@ -186,7 +189,7 @@ class BlogDetailsTwo extends Component {
 
 
                                     <Link href="/league-of-legends-smurfs">
-                                        <img style={{marginBottom:'20px',cursor:'pointer'}} onClick={()=>{}} src={require("../assets/blog/buy-lol-smurf.jpg")} />
+                                        <img style={{marginBottom:'20px',cursor:'pointer'}} onClick={()=>{fromBanner('funnel','whichlolchampshouldplay')}} src={require("../assets/blog/buy-lol-smurf.jpg")} />
                                     </Link>
                                    
                                    
@@ -211,7 +214,7 @@ class BlogDetailsTwo extends Component {
                                         so your main account's elo won't be affected by this. If you are thinking about getting one you can buy lol smurf account! <Link href="/league-of-legends-smurfs">Just click here if you are interested</Link>
                                     </p>
                                     <Link href="/league-of-legends-smurfs">
-                                        <img style={{marginBottom:'20px',cursor:'pointer'}} onClick={()=>{}} src={require("../assets/blog/buy-lol-smurf.jpg")} />
+                                        <img style={{marginBottom:'20px',cursor:'pointer'}} onClick={()=>{fromBanner('funnel','whichlolchampshouldplay')}} src={require("../assets/blog/buy-lol-smurf.jpg")} />
                                     </Link>
                                 </div>
                             </div>
