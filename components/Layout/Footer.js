@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Link from "next/link";
+import LazyLoad from 'react-lazyload';
 class Footer extends Component {
     render() {
         return (
@@ -12,7 +13,9 @@ class Footer extends Component {
                                 <div className="logo">
                                     <Link href="index.html">
                                         <a>
+                                        <LazyLoad once={true}>  
                                             <img style={{width:"212px",height:"46px"}} src={require("../../images/logo2.jpg")} alt="logo" />
+                                        </LazyLoad>
                                         </a>
                                     </Link>
                                 </div>
@@ -68,27 +71,38 @@ class Footer extends Component {
                                 <ul className="payment-card">
                                     <li>
                                         <a href="#" target="_blank">
+                                            
+                                            <LazyLoad once={true}>  
                                             <img style={{width:"47px",height:"37px"}} src={require("../../images/visa.png")} alt="image" />
+                                        </LazyLoad>
                                         </a>
                                     </li>
                                     <li>
                                         <a href="#" target="_blank">
+                                            <LazyLoad once={true}>  
                                             <img style={{width:"48px",height:"37px"}} src={require("../../images/mastercard.png")} alt="image" />
+                                        </LazyLoad>
                                         </a>
                                     </li>
                                     <li>
                                         <a href="#" target="_blank">
+                                            <LazyLoad once={true}>  
                                             <img style={{width:"48px",height:"37px"}} src={require("../../images/mastercard2.png")} alt="image" />
+                                        </LazyLoad>
                                         </a>
                                     </li>
                                     <li>
                                         <a href="#" target="_blank">
+                                            <LazyLoad once={true}>  
                                             <img style={{width:"47px",height:"36px"}} src={require("../../images/visa2.png")} alt="image" />
+                                        </LazyLoad>
                                         </a>
                                     </li>
                                     <li>
                                         <a href="#" target="_blank">
+                                            <LazyLoad once={true}>  
                                             <img style={{width:"48px",height:"36px"}} src={require("../../images/expresscard.png")} alt="image" />
+                                        </LazyLoad>
                                         </a>
                                     </li>
                                 </ul>
